@@ -1,0 +1,2139 @@
+{
+ "generated": "2026-10-11",
+ "essays": [
+  {
+   "no": "1",
+   "title": "Psychosis: first episode and predisposing factors",
+   "sections": [
+    {
+     "id": "e1-what",
+     "title": "What psychosis is, and how a delusion is defined",
+     "intent": "Fix the terms before using them. Definition first, with its source named."
+    },
+    {
+     "id": "e1-continuum",
+     "title": "Psychosis on a transdiagnostic continuum",
+     "intent": "The model that lets risk be discussed below the diagnostic threshold."
+    },
+    {
+     "id": "e1-prodrome",
+     "title": "The prodrome and the first episode",
+     "intent": "The window in which onset happens, and what subthreshold symptoms predict."
+    },
+    {
+     "id": "e1-predispose",
+     "title": "Predisposing factors",
+     "intent": "What raises risk: neurodevelopmental, behavioural, environmental. The essay's title promises this section, so it carries the most weight."
+    },
+    {
+     "id": "e1-assess",
+     "title": "Assessing risk, and what the instruments cannot say",
+     "intent": "PQ-B and its kind. A screening threshold is not a clinical determination."
+    },
+    {
+     "id": "e1-treat",
+     "title": "Treatment, and why CBTp underperforms for delusions",
+     "intent": "Guideline-recommended, small-to-moderate effect. Say why."
+    },
+    {
+     "id": "e1-coping",
+     "title": "Coping as the active ingredient",
+     "intent": "The mechanism the treatment section implies: coping mediates exacerbation."
+    }
+   ]
+  },
+  {
+   "no": "2",
+   "title": "Vignette: internet and AI use as a predicating factor",
+   "sections": [
+    {
+     "id": "e2-vignette",
+     "title": "The vignette",
+     "intent": "The case the essay argues from. Published cases sit here as models and as corroboration, not as the vignette itself."
+    },
+    {
+     "id": "e2-scale",
+     "title": "The scale of exposure",
+     "intent": "Establish a population-level exposure, with real adoption data."
+    },
+    {
+     "id": "e2-history",
+     "title": "This is not new: pathoplastic, not pathogenic",
+     "intent": "The intellectual core. Influencing machines since 1810; technology has shaped delusional content for two centuries. Concede this before claiming anything."
+    },
+    {
+     "id": "e2-definition",
+     "title": "Naming it: AI-related psychosis, and its contested status",
+     "intent": "Define the term, say whose definition it is, and that it is descriptive rather than diagnostic."
+    },
+    {
+     "id": "e2-mechanism",
+     "title": "Why this technology invites it",
+     "intent": "What is actually different this time: a fluent, agreeable, second-person interlocutor. Mindless social response, sycophancy, misread referentiality, and the documented failures that stop this being theoretical."
+    },
+    {
+     "id": "e2-evidence",
+     "title": "What the evidence actually shows",
+     "intent": "The empirical core, with the cross-sectional limit stated in the authors' own words. Survey base rates, then the clinical tail."
+    },
+    {
+     "id": "e2-window",
+     "title": "First episode and the developmental window",
+     "intent": "Where the two essays meet: peak adoption age meets peak onset age, and the clinical data points the same way."
+    },
+    {
+     "id": "e2-benefit",
+     "title": "The other side",
+     "intent": "Access, waitlists, companionship, changing attitudes. Held after the risk so the essay is not a one-sided alarm."
+    },
+    {
+     "id": "e2-practice",
+     "title": "Assessment and practice implications",
+     "intent": "Digital-use history, technological literacy, screening, early intervention."
+    }
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "e1-what",
+   "title": "What psychosis is, and how a delusion is defined",
+   "intent": "Fix the terms before using them. Definition first, with its source named."
+  },
+  {
+   "id": "e1-continuum",
+   "title": "Psychosis on a transdiagnostic continuum",
+   "intent": "The model that lets risk be discussed below the diagnostic threshold."
+  },
+  {
+   "id": "e1-prodrome",
+   "title": "The prodrome and the first episode",
+   "intent": "The window in which onset happens, and what subthreshold symptoms predict."
+  },
+  {
+   "id": "e1-predispose",
+   "title": "Predisposing factors",
+   "intent": "What raises risk: neurodevelopmental, behavioural, environmental. The essay's title promises this section, so it carries the most weight."
+  },
+  {
+   "id": "e1-assess",
+   "title": "Assessing risk, and what the instruments cannot say",
+   "intent": "PQ-B and its kind. A screening threshold is not a clinical determination."
+  },
+  {
+   "id": "e1-treat",
+   "title": "Treatment, and why CBTp underperforms for delusions",
+   "intent": "Guideline-recommended, small-to-moderate effect. Say why."
+  },
+  {
+   "id": "e1-coping",
+   "title": "Coping as the active ingredient",
+   "intent": "The mechanism the treatment section implies: coping mediates exacerbation."
+  },
+  {
+   "id": "e2-vignette",
+   "title": "The vignette",
+   "intent": "The case the essay argues from. Published cases sit here as models and as corroboration, not as the vignette itself."
+  },
+  {
+   "id": "e2-scale",
+   "title": "The scale of exposure",
+   "intent": "Establish a population-level exposure, with real adoption data."
+  },
+  {
+   "id": "e2-history",
+   "title": "This is not new: pathoplastic, not pathogenic",
+   "intent": "The intellectual core. Influencing machines since 1810; technology has shaped delusional content for two centuries. Concede this before claiming anything."
+  },
+  {
+   "id": "e2-definition",
+   "title": "Naming it: AI-related psychosis, and its contested status",
+   "intent": "Define the term, say whose definition it is, and that it is descriptive rather than diagnostic."
+  },
+  {
+   "id": "e2-mechanism",
+   "title": "Why this technology invites it",
+   "intent": "What is actually different this time: a fluent, agreeable, second-person interlocutor. Mindless social response, sycophancy, misread referentiality, and the documented failures that stop this being theoretical."
+  },
+  {
+   "id": "e2-evidence",
+   "title": "What the evidence actually shows",
+   "intent": "The empirical core, with the cross-sectional limit stated in the authors' own words. Survey base rates, then the clinical tail."
+  },
+  {
+   "id": "e2-window",
+   "title": "First episode and the developmental window",
+   "intent": "Where the two essays meet: peak adoption age meets peak onset age, and the clinical data points the same way."
+  },
+  {
+   "id": "e2-benefit",
+   "title": "The other side",
+   "intent": "Access, waitlists, companionship, changing attitudes. Held after the risk so the essay is not a one-sided alarm."
+  },
+  {
+   "id": "e2-practice",
+   "title": "Assessment and practice implications",
+   "intent": "Digital-use history, technological literacy, screening, early intervention."
+  }
+ ],
+ "strengths": [
+  "strong",
+  "moderate",
+  "indicative",
+  "weak",
+  "not-citable"
+ ],
+ "sources": [
+  {
+   "key": "basaran-2026-llm-case",
+   "authors": "Basaran, A. S. & Cosar, B.",
+   "year": "2026",
+   "title": "Psychotic episode concurrent with interaction with a large language model (LLM): a case report",
+   "doi": "10.1186/s12888-026-08288-3",
+   "design": "case-report",
+   "n": "1",
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "themes": [
+    "clinical-practice",
+    "referentiality",
+    "assessment"
+   ],
+   "appraised": false
+  },
+  {
+   "key": "bergson-2026-ai-psychosis-ehr",
+   "authors": "Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M.",
+   "year": "2026",
+   "title": "Characterizing Artificial Intelligence Psychosis in a Large Medical Setting",
+   "doi": "10.1001/jamapsychiatry.2026.2923",
+   "design": "cohort",
+   "n": "73",
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "themes": [
+    "prevalence",
+    "first-episode",
+    "typology",
+    "sycophancy",
+    "clinical-practice"
+   ],
+   "appraised": false
+  },
+  {
+   "key": "bick-2025-genai-adoption",
+   "authors": "Bick, A., Blandin, A. & Deming, D. J.",
+   "year": "2025",
+   "title": "The Rapid Adoption of Generative AI",
+   "doi": "10.3386/w32966",
+   "design": "cross-sectional",
+   "n": "not reported",
+   "strength": "indicative",
+   "strength_why": "",
+   "strength_basis": "",
+   "themes": [
+    "adoption",
+    "scale"
+   ],
+   "appraised": false
+  },
+  {
+   "key": "boge-2025-dice-delusions",
+   "authors": "B\u00f6ge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N.",
+   "year": "2025",
+   "title": "Feasibility, acceptability and preliminary clinical outcomes of a brief coping-focused intervention for delusions blended with smartphone-based ecological momentary assessment and intervention in persons with schizophrenia spectrum disorders: A pilot single-arm trial",
+   "doi": "10.1016/j.invent.2025.100804",
+   "design": "single-arm-trial",
+   "n": "10",
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "themes": [
+    "delusions",
+    "cbtp",
+    "coping",
+    "ema",
+    "treatment"
+   ],
+   "appraised": false
+  },
+  {
+   "key": "bokhari-2026-technology-delusions",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "appraised": false
+  },
+  {
+   "key": "buck-2026-genai-psychosis",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "appraised": true
+  },
+  {
+   "key": "chamarthi-2025-adolescent-stressor",
+   "authors": "Chamarthi, V. S., Das, P. & Kashyap, R.",
+   "year": "2025",
+   "title": "AI as a Novel Digital Stressor in Adolescent Psychosis: Clinical and Ethical Implications.",
+   "doi": "10.1177/00912174251392768",
+   "design": "narrative-review",
+   "n": "not reported",
+   "strength": "indicative",
+   "strength_why": "",
+   "strength_basis": "",
+   "themes": [
+    "definition",
+    "adolescence",
+    "neurodevelopment",
+    "screening",
+    "clinical-practice"
+   ],
+   "appraised": false
+  },
+  {
+   "key": "lowe-2024-persistent-symptoms",
+   "authors": "L\u00f6we, B., Toussaint, A., Rosmalen, J. G. M., Huang, W.-L., Burton, C., Weigel, A., Levenson, J. L. & Henningsen, P.",
+   "year": "2024",
+   "title": "Persistent physical symptoms: definition, genesis, and management",
+   "doi": "10.1016/S0140-6736(24)00623-8",
+   "design": "narrative-review",
+   "n": "not reported",
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "themes": [
+    "unassigned"
+   ],
+   "appraised": false
+  },
+  {
+   "key": "nass-2000-mindlessness",
+   "authors": "Nass, C. & Moon, Y.",
+   "year": "2000",
+   "title": "Machines and Mindlessness: Social Responses to Computers",
+   "doi": "10.1111/0022-4537.00153",
+   "design": "narrative-review",
+   "n": "not reported",
+   "strength": "indicative",
+   "strength_why": "",
+   "strength_basis": "",
+   "themes": [
+    "mechanism",
+    "social-response",
+    "mindlessness"
+   ],
+   "appraised": false
+  }
+ ],
+ "clips": [
+  {
+   "id": "boge-2025-01",
+   "key": "boge-2025-dice-delusions",
+   "section": "e1-what",
+   "order": 10,
+   "essay": "1",
+   "kind": "quote",
+   "locator": "p. 2",
+   "tags": [
+    "definition",
+    "delusions"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "B\u00f6ge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N.",
+   "year": "2025",
+   "title": "Feasibility, acceptability and preliminary clinical outcomes of a brief coping-focused intervention for delusions blended with smartphone-based ecological momentary assessment and intervention in persons with schizophrenia spectrum disorders: A pilot single-arm trial",
+   "doi": "10.1016/j.invent.2025.100804",
+   "design": "single-arm-trial",
+   "n": "10",
+   "themes": [
+    "delusions",
+    "cbtp",
+    "coping",
+    "ema",
+    "treatment"
+   ],
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bokhari-2026-07",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e1-what",
+   "order": 20,
+   "essay": "1",
+   "kind": "quote",
+   "locator": "Diagnostic and Therapeutic Implications",
+   "tags": [
+    "definition",
+    "dsm",
+    "bizarreness"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-06",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e1-continuum",
+   "order": 10,
+   "essay": "1",
+   "kind": "quote",
+   "locator": "Introduction, para 3",
+   "tags": [
+    "continuum",
+    "transdiagnostic"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "bokhari-2026-08",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e1-continuum",
+   "order": 20,
+   "essay": "1",
+   "kind": "quote",
+   "locator": "Neurocognitive and Sociocultural Mechanisms",
+   "tags": [
+    "continuum",
+    "paranoia"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-14",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e1-prodrome",
+   "order": 10,
+   "essay": "1",
+   "kind": "quote",
+   "locator": "Introduction, para 3",
+   "tags": [
+    "prodrome",
+    "onset"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "boge-2025-02",
+   "key": "boge-2025-dice-delusions",
+   "section": "e1-predispose",
+   "order": 10,
+   "essay": "1",
+   "kind": "quote",
+   "locator": "p. 2",
+   "tags": [
+    "stress-vulnerability",
+    "coping"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "B\u00f6ge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N.",
+   "year": "2025",
+   "title": "Feasibility, acceptability and preliminary clinical outcomes of a brief coping-focused intervention for delusions blended with smartphone-based ecological momentary assessment and intervention in persons with schizophrenia spectrum disorders: A pilot single-arm trial",
+   "doi": "10.1016/j.invent.2025.100804",
+   "design": "single-arm-trial",
+   "n": "10",
+   "themes": [
+    "delusions",
+    "cbtp",
+    "coping",
+    "ema",
+    "treatment"
+   ],
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-15",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e1-predispose",
+   "order": 20,
+   "essay": "1",
+   "kind": "quote",
+   "locator": "Introduction, para 3",
+   "tags": [
+    "digital-media",
+    "problematic-use"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "bokhari-2026-06",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e1-predispose",
+   "order": 30,
+   "essay": "1",
+   "kind": "datum",
+   "locator": "Results, Historical Evolution and Table 1",
+   "tags": [
+    "loneliness",
+    "digital-literacy"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-16",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e1-assess",
+   "order": 10,
+   "essay": "1",
+   "kind": "quote",
+   "locator": "Methods, Measures",
+   "tags": [
+    "pq-b",
+    "screening"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "boge-2025-03",
+   "key": "boge-2025-dice-delusions",
+   "section": "e1-treat",
+   "order": 10,
+   "essay": "1",
+   "kind": "quote",
+   "locator": "p. 2",
+   "tags": [
+    "cbtp",
+    "efficacy"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "B\u00f6ge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N.",
+   "year": "2025",
+   "title": "Feasibility, acceptability and preliminary clinical outcomes of a brief coping-focused intervention for delusions blended with smartphone-based ecological momentary assessment and intervention in persons with schizophrenia spectrum disorders: A pilot single-arm trial",
+   "doi": "10.1016/j.invent.2025.100804",
+   "design": "single-arm-trial",
+   "n": "10",
+   "themes": [
+    "delusions",
+    "cbtp",
+    "coping",
+    "ema",
+    "treatment"
+   ],
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "boge-2025-04",
+   "key": "boge-2025-dice-delusions",
+   "section": "e1-coping",
+   "order": 10,
+   "essay": "1",
+   "kind": "quote",
+   "locator": "p. 2",
+   "tags": [
+    "coping",
+    "exacerbation"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "B\u00f6ge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N.",
+   "year": "2025",
+   "title": "Feasibility, acceptability and preliminary clinical outcomes of a brief coping-focused intervention for delusions blended with smartphone-based ecological momentary assessment and intervention in persons with schizophrenia spectrum disorders: A pilot single-arm trial",
+   "doi": "10.1016/j.invent.2025.100804",
+   "design": "single-arm-trial",
+   "n": "10",
+   "themes": [
+    "delusions",
+    "cbtp",
+    "coping",
+    "ema",
+    "treatment"
+   ],
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "boge-2025-05",
+   "key": "boge-2025-dice-delusions",
+   "section": "e1-coping",
+   "order": 20,
+   "essay": "1",
+   "kind": "datum",
+   "locator": "pp. 1, 8",
+   "tags": [
+    "dice",
+    "feasibility"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "B\u00f6ge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N.",
+   "year": "2025",
+   "title": "Feasibility, acceptability and preliminary clinical outcomes of a brief coping-focused intervention for delusions blended with smartphone-based ecological momentary assessment and intervention in persons with schizophrenia spectrum disorders: A pilot single-arm trial",
+   "doi": "10.1016/j.invent.2025.100804",
+   "design": "single-arm-trial",
+   "n": "10",
+   "themes": [
+    "delusions",
+    "cbtp",
+    "coping",
+    "ema",
+    "treatment"
+   ],
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "boge-2025-06",
+   "key": "boge-2025-dice-delusions",
+   "section": "e1-coping",
+   "order": 30,
+   "essay": "1",
+   "kind": "mine",
+   "locator": "pp. 4, 1",
+   "tags": [
+    "appraisal",
+    "inference"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "B\u00f6ge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N.",
+   "year": "2025",
+   "title": "Feasibility, acceptability and preliminary clinical outcomes of a brief coping-focused intervention for delusions blended with smartphone-based ecological momentary assessment and intervention in persons with schizophrenia spectrum disorders: A pilot single-arm trial",
+   "doi": "10.1016/j.invent.2025.100804",
+   "design": "single-arm-trial",
+   "n": "10",
+   "themes": [
+    "delusions",
+    "cbtp",
+    "coping",
+    "ema",
+    "treatment"
+   ],
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-17",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-vignette",
+   "order": 10,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Introduction, para 4",
+   "tags": [
+    "cases",
+    "popular-press"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "bick-2025-01",
+   "key": "bick-2025-genai-adoption",
+   "section": "e2-scale",
+   "order": 10,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Abstract, p. 2",
+   "tags": [
+    "adoption",
+    "comparison"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bick, A., Blandin, A. & Deming, D. J.",
+   "year": "2025",
+   "title": "The Rapid Adoption of Generative AI",
+   "doi": "10.3386/w32966",
+   "design": "cross-sectional",
+   "n": "not reported",
+   "themes": [
+    "adoption",
+    "scale"
+   ],
+   "strength": "indicative",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-01",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-scale",
+   "order": 20,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Introduction, para 1",
+   "tags": [
+    "adoption"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "bergson-2026-05",
+   "key": "bergson-2026-ai-psychosis-ehr",
+   "section": "e2-scale",
+   "order": 30,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Discussion",
+   "tags": [
+    "prevalence",
+    "industry"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M.",
+   "year": "2026",
+   "title": "Characterizing Artificial Intelligence Psychosis in a Large Medical Setting",
+   "doi": "10.1001/jamapsychiatry.2026.2923",
+   "design": "cohort",
+   "n": "73",
+   "themes": [
+    "prevalence",
+    "first-episode",
+    "typology",
+    "sycophancy",
+    "clinical-practice"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bokhari-2026-01",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e2-history",
+   "order": 10,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Introduction",
+   "tags": [
+    "pathoplasticity",
+    "history"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bokhari-2026-02",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e2-history",
+   "order": 20,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Results, Historical Evolution",
+   "tags": [
+    "air-loom",
+    "matthews",
+    "tausk"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bokhari-2026-03",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e2-history",
+   "order": 30,
+   "essay": "2",
+   "kind": "datum",
+   "locator": "Results, Historical Evolution and Table 1",
+   "tags": [
+    "longitudinal",
+    "pathoplasticity"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bokhari-2026-04",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e2-history",
+   "order": 40,
+   "essay": "2",
+   "kind": "datum",
+   "locator": "Results, Historical Evolution and Table 1",
+   "tags": [
+    "prevalence",
+    "burns-cohort"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bokhari-2026-10",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e2-definition",
+   "order": 10,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Discussion, Algorithmic and AI-Mediated Delusions",
+   "tags": [
+    "definition",
+    "not-diagnostic"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "chamarthi-2025-01",
+   "key": "chamarthi-2025-adolescent-stressor",
+   "section": "e2-definition",
+   "order": 20,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "abstract",
+   "tags": [
+    "definition"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Chamarthi, V. S., Das, P. & Kashyap, R.",
+   "year": "2025",
+   "title": "AI as a Novel Digital Stressor in Adolescent Psychosis: Clinical and Ethical Implications.",
+   "doi": "10.1177/00912174251392768",
+   "design": "narrative-review",
+   "n": "not reported",
+   "themes": [
+    "definition",
+    "adolescence",
+    "neurodevelopment",
+    "screening",
+    "clinical-practice"
+   ],
+   "strength": "indicative",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bokhari-2026-05",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e2-mechanism",
+   "order": 10,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Discussion, Summary of Findings",
+   "tags": [
+    "mechanism",
+    "form-vs-content"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "nass-2000-01",
+   "key": "nass-2000-mindlessness",
+   "section": "e2-mechanism",
+   "order": 20,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "abstract",
+   "tags": [
+    "mechanism",
+    "social-response"
+   ],
+   "verified": false,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Nass, C. & Moon, Y.",
+   "year": "2000",
+   "title": "Machines and Mindlessness: Social Responses to Computers",
+   "doi": "10.1111/0022-4537.00153",
+   "design": "narrative-review",
+   "n": "not reported",
+   "themes": [
+    "mechanism",
+    "social-response",
+    "mindlessness"
+   ],
+   "strength": "indicative",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-04",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-mechanism",
+   "order": 30,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Introduction, para 2",
+   "tags": [
+    "sycophancy"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "buck-2026-10",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-mechanism",
+   "order": 40,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Discussion, Principal Findings",
+   "tags": [
+    "anthropomorphism",
+    "loneliness"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "basaran-2026-02",
+   "key": "basaran-2026-llm-case",
+   "section": "e2-mechanism",
+   "order": 50,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "p. 4",
+   "tags": [
+    "referentiality",
+    "salience"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Basaran, A. S. & Cosar, B.",
+   "year": "2026",
+   "title": "Psychotic episode concurrent with interaction with a large language model (LLM): a case report",
+   "doi": "10.1186/s12888-026-08288-3",
+   "design": "case-report",
+   "n": "1",
+   "themes": [
+    "clinical-practice",
+    "referentiality",
+    "assessment"
+   ],
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bergson-2026-03",
+   "key": "bergson-2026-ai-psychosis-ehr",
+   "section": "e2-mechanism",
+   "order": 60,
+   "essay": "2",
+   "kind": "datum",
+   "locator": "Results, typology",
+   "tags": [
+    "typology",
+    "amplifier"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M.",
+   "year": "2026",
+   "title": "Characterizing Artificial Intelligence Psychosis in a Large Medical Setting",
+   "doi": "10.1001/jamapsychiatry.2026.2923",
+   "design": "cohort",
+   "n": "73",
+   "themes": [
+    "prevalence",
+    "first-episode",
+    "typology",
+    "sycophancy",
+    "clinical-practice"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-05",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-mechanism",
+   "order": 70,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Introduction, para 2",
+   "tags": [
+    "harm",
+    "case"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "bergson-2026-04",
+   "key": "bergson-2026-ai-psychosis-ehr",
+   "section": "e2-mechanism",
+   "order": 80,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Discussion",
+   "tags": [
+    "sycophancy",
+    "model-version"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M.",
+   "year": "2026",
+   "title": "Characterizing Artificial Intelligence Psychosis in a Large Medical Setting",
+   "doi": "10.1001/jamapsychiatry.2026.2923",
+   "design": "cohort",
+   "n": "73",
+   "themes": [
+    "prevalence",
+    "first-episode",
+    "typology",
+    "sycophancy",
+    "clinical-practice"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bokhari-2026-09",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e2-mechanism",
+   "order": 90,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Discussion, Algorithmic and AI-Mediated Delusions",
+   "tags": [
+    "chatbots",
+    "agency",
+    "salience"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bergson-2026-01",
+   "key": "bergson-2026-ai-psychosis-ehr",
+   "section": "e2-evidence",
+   "order": 10,
+   "essay": "2",
+   "kind": "datum",
+   "locator": "Results",
+   "tags": [
+    "prevalence",
+    "denominator"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M.",
+   "year": "2026",
+   "title": "Characterizing Artificial Intelligence Psychosis in a Large Medical Setting",
+   "doi": "10.1001/jamapsychiatry.2026.2923",
+   "design": "cohort",
+   "n": "73",
+   "themes": [
+    "prevalence",
+    "first-episode",
+    "typology",
+    "sycophancy",
+    "clinical-practice"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bergson-2026-06",
+   "key": "bergson-2026-ai-psychosis-ehr",
+   "section": "e2-evidence",
+   "order": 20,
+   "essay": "2",
+   "kind": "mine",
+   "locator": "Table, clinical history rows",
+   "tags": [
+    "appraisal",
+    "null-result"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M.",
+   "year": "2026",
+   "title": "Characterizing Artificial Intelligence Psychosis in a Large Medical Setting",
+   "doi": "10.1001/jamapsychiatry.2026.2923",
+   "design": "cohort",
+   "n": "73",
+   "themes": [
+    "prevalence",
+    "first-episode",
+    "typology",
+    "sycophancy",
+    "clinical-practice"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-07",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-evidence",
+   "order": 30,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Abstract, Results",
+   "tags": [
+    "findings",
+    "odds-ratio"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "buck-2026-18",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-evidence",
+   "order": 40,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Methods, Measures",
+   "tags": [
+    "gaates",
+    "instrument"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "buck-2026-11",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-evidence",
+   "order": 50,
+   "essay": "2",
+   "kind": "datum",
+   "locator": "Results, Table 2",
+   "tags": [
+    "relationships",
+    "odds-ratio"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "buck-2026-12",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-evidence",
+   "order": 60,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Results, Delusion-Like Experiences",
+   "tags": [
+    "delusions",
+    "endorsement"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "buck-2026-13",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-evidence",
+   "order": 70,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Limitations",
+   "tags": [
+    "cross-sectional",
+    "directionality"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "mine-01",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-evidence",
+   "order": 80,
+   "essay": "2",
+   "kind": "mine",
+   "locator": "Table 1 against Abstract, Results",
+   "tags": [
+    "appraisal",
+    "discrepancy"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "mine-02",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-evidence",
+   "order": 90,
+   "essay": "2",
+   "kind": "mine",
+   "locator": "Abstract, Methods against Results and Table 1",
+   "tags": [
+    "appraisal",
+    "discrepancy"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "basaran-2026-03",
+   "key": "basaran-2026-llm-case",
+   "section": "e2-evidence",
+   "order": 100,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "p. 5",
+   "tags": [
+    "limitations",
+    "confounding"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Basaran, A. S. & Cosar, B.",
+   "year": "2026",
+   "title": "Psychotic episode concurrent with interaction with a large language model (LLM): a case report",
+   "doi": "10.1186/s12888-026-08288-3",
+   "design": "case-report",
+   "n": "1",
+   "themes": [
+    "clinical-practice",
+    "referentiality",
+    "assessment"
+   ],
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bokhari-2026-12",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e2-evidence",
+   "order": 110,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Strengths and Limitations",
+   "tags": [
+    "appraisal",
+    "circularity"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "bergson-2026-02",
+   "key": "bergson-2026-ai-psychosis-ehr",
+   "section": "e2-window",
+   "order": 10,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Results",
+   "tags": [
+    "first-episode",
+    "vulnerability"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M.",
+   "year": "2026",
+   "title": "Characterizing Artificial Intelligence Psychosis in a Large Medical Setting",
+   "doi": "10.1001/jamapsychiatry.2026.2923",
+   "design": "cohort",
+   "n": "73",
+   "themes": [
+    "prevalence",
+    "first-episode",
+    "typology",
+    "sycophancy",
+    "clinical-practice"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-08",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-window",
+   "order": 20,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Introduction, para 3",
+   "tags": [
+    "prodrome",
+    "age"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "chamarthi-2025-02",
+   "key": "chamarthi-2025-adolescent-stressor",
+   "section": "e2-window",
+   "order": 30,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "abstract",
+   "tags": [
+    "neurodevelopment"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Chamarthi, V. S., Das, P. & Kashyap, R.",
+   "year": "2025",
+   "title": "AI as a Novel Digital Stressor in Adolescent Psychosis: Clinical and Ethical Implications.",
+   "doi": "10.1177/00912174251392768",
+   "design": "narrative-review",
+   "n": "not reported",
+   "themes": [
+    "definition",
+    "adolescence",
+    "neurodevelopment",
+    "screening",
+    "clinical-practice"
+   ],
+   "strength": "indicative",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "chamarthi-2025-03",
+   "key": "chamarthi-2025-adolescent-stressor",
+   "section": "e2-window",
+   "order": 40,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "abstract",
+   "tags": [
+    "vulnerability"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Chamarthi, V. S., Das, P. & Kashyap, R.",
+   "year": "2025",
+   "title": "AI as a Novel Digital Stressor in Adolescent Psychosis: Clinical and Ethical Implications.",
+   "doi": "10.1177/00912174251392768",
+   "design": "narrative-review",
+   "n": "not reported",
+   "themes": [
+    "definition",
+    "adolescence",
+    "neurodevelopment",
+    "screening",
+    "clinical-practice"
+   ],
+   "strength": "indicative",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "buck-2026-02",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-benefit",
+   "order": 10,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Introduction, para 1",
+   "tags": [
+    "uptake",
+    "waitlist"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "buck-2026-03",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-benefit",
+   "order": 20,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Introduction, para 1",
+   "tags": [
+    "uptake",
+    "clinicians"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "buck-2026-09",
+   "key": "buck-2026-genai-psychosis",
+   "section": "e2-benefit",
+   "order": 30,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Abstract, Background",
+   "tags": [
+    "benefit",
+    "isolation"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Buck, B. & Maheux, A. J.",
+   "year": "2026",
+   "title": "Psychosis Risk and Generative Artificial Intelligence Use Frequency, Motivations, and Delusion-Like Experiences: Cross-Sectional Survey Study.",
+   "doi": "10.2196/85038",
+   "design": "cross-sectional",
+   "n": "1003",
+   "themes": [
+    "adoption",
+    "psychosis-risk",
+    "motivations",
+    "delusion-like-experiences",
+    "sycophancy"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": true
+  },
+  {
+   "id": "bokhari-2026-11",
+   "key": "bokhari-2026-technology-delusions",
+   "section": "e2-practice",
+   "order": 10,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "Implications for Clinical Assessment",
+   "tags": [
+    "assessment",
+    "literacy"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
+   "year": "2026",
+   "title": "Technology-Themed Persecutory and Related Presentations of Delusions in the Digital Age: Narrative Review",
+   "doi": "10.2196/102927",
+   "design": "narrative-review",
+   "n": "43",
+   "themes": [
+    "pathoplasticity",
+    "history",
+    "typology",
+    "mechanism",
+    "assessment",
+    "continuum"
+   ],
+   "strength": "moderate",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "chamarthi-2025-04",
+   "key": "chamarthi-2025-adolescent-stressor",
+   "section": "e2-practice",
+   "order": 20,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "abstract",
+   "tags": [
+    "screening",
+    "intervention"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Chamarthi, V. S., Das, P. & Kashyap, R.",
+   "year": "2025",
+   "title": "AI as a Novel Digital Stressor in Adolescent Psychosis: Clinical and Ethical Implications.",
+   "doi": "10.1177/00912174251392768",
+   "design": "narrative-review",
+   "n": "not reported",
+   "themes": [
+    "definition",
+    "adolescence",
+    "neurodevelopment",
+    "screening",
+    "clinical-practice"
+   ],
+   "strength": "indicative",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "basaran-2026-01",
+   "key": "basaran-2026-llm-case",
+   "section": "e2-practice",
+   "order": 30,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "pp. 4-5",
+   "tags": [
+    "assessment",
+    "referentiality"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Basaran, A. S. & Cosar, B.",
+   "year": "2026",
+   "title": "Psychotic episode concurrent with interaction with a large language model (LLM): a case report",
+   "doi": "10.1186/s12888-026-08288-3",
+   "design": "case-report",
+   "n": "1",
+   "themes": [
+    "clinical-practice",
+    "referentiality",
+    "assessment"
+   ],
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  },
+  {
+   "id": "basaran-2026-04",
+   "key": "basaran-2026-llm-case",
+   "section": "e2-practice",
+   "order": 40,
+   "essay": "2",
+   "kind": "quote",
+   "locator": "p. 5",
+   "tags": [
+    "reframing",
+    "micro-intervention"
+   ],
+   "verified": true,
+   "text": "[quotation withheld \u2014 see README]",
+   "note": "",
+   "authors": "Basaran, A. S. & Cosar, B.",
+   "year": "2026",
+   "title": "Psychotic episode concurrent with interaction with a large language model (LLM): a case report",
+   "doi": "10.1186/s12888-026-08288-3",
+   "design": "case-report",
+   "n": "1",
+   "themes": [
+    "clinical-practice",
+    "referentiality",
+    "assessment"
+   ],
+   "strength": "weak",
+   "strength_why": "",
+   "strength_basis": "",
+   "appraised": false
+  }
+ ]
+}

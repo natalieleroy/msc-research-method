@@ -1,0 +1,565 @@
+<title>Psychosis Clip Board</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: stacked section lanes in spine order, cards wrapping inside each lane.
+   The narrative reads top to bottom, so the board has the shape of the argument. */
+:root{
+  --bg:#f1f4f6; --surface:#fff; --surface-2:#f7f9fa; --ink:#131a20; --muted:#5d6c77;
+  --faint:#8697a3; --rule:#dce3e8; --accent:#0d6b76; --accent-soft:#e2f0f1; --on-accent:#fff;
+  --strong:#1a7a4a; --moderate:#1f6f99; --indicative:#9a6410; --weak:#a9480f; --notcitable:#9d2727;
+  --warn:#9a6410; --warn-soft:#fdf3e0; --danger:#9d2727; --danger-soft:#fbeaea;
+  --shadow:0 1px 2px rgba(19,26,32,.06),0 4px 12px rgba(19,26,32,.05);
+  --display:"Spectral",Georgia,"Times New Roman",serif;
+  --body:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0d1216; --surface:#161d23; --surface-2:#1b242b; --ink:#e7eef3; --muted:#93a3af;
+  --faint:#6f8290; --rule:#263139; --accent:#44b6c2; --accent-soft:#16333a; --on-accent:#07171a;
+  --strong:#4cc188; --moderate:#5aaedd; --indicative:#d8a44a; --weak:#e08a52; --notcitable:#e87070;
+  --warn:#d8a44a; --warn-soft:#2b2415; --danger:#e87070; --danger-soft:#2d1818;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1216; --surface:#161d23; --surface-2:#1b242b; --ink:#e7eef3; --muted:#93a3af;
+  --faint:#6f8290; --rule:#263139; --accent:#44b6c2; --accent-soft:#16333a; --on-accent:#07171a;
+  --strong:#4cc188; --moderate:#5aaedd; --indicative:#d8a44a; --weak:#e08a52; --notcitable:#e87070;
+  --warn:#d8a44a; --warn-soft:#2b2415; --danger:#e87070; --danger-soft:#2d1818;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:14px;line-height:1.5;margin:0}
+.wrap{padding-inline:16px;padding-block:0 56px;max-width:1500px;margin:0 auto}
+h1,h2,h3{margin:0;text-wrap:balance}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+
+/* ---- header ---- */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);
+  border-bottom:1px solid var(--rule);padding-block:14px 10px;margin-bottom:22px}
+.hrow{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:flex-end;justify-content:space-between}
+.title{font-family:var(--display);font-size:25px;font-weight:600;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:12.5px;margin-top:3px}
+.sub b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:6px 11px;
+  cursor:pointer;font-size:12.5px;font-weight:500;white-space:nowrap}
+.btn:hover{border-color:var(--accent)}
+.btn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.seg{display:flex;border:1px solid var(--rule);border-radius:6px;overflow:hidden;background:var(--surface)}
+.seg .btn{border:0;border-radius:0}
+.seg .btn+.btn{border-left:1px solid var(--rule)}
+input[type=search],select{font:inherit;font-size:12.5px;background:var(--surface);color:var(--ink);
+  border:1px solid var(--rule);border-radius:6px;padding:6px 9px;min-width:0}
+input[type=search]{width:170px}
+label.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--muted);white-space:nowrap}
+
+/* ---- lanes ---- */
+.lane{background:var(--surface);border:1px solid var(--rule);border-radius:10px;margin-bottom:16px;
+  overflow:hidden}
+.lane.drop{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.lane-h{display:flex;gap:12px;align-items:baseline;justify-content:space-between;flex-wrap:wrap;
+  padding:12px 14px;background:var(--surface-2);border-bottom:1px solid var(--rule)}
+.lane-n{font-family:var(--mono);font-size:11px;color:var(--faint);margin-right:8px}
+.lane-t{font-family:var(--display);font-size:17px;font-weight:600}
+.lane-i{color:var(--muted);font-size:12.5px;flex:1 1 320px;min-width:0}
+.lane-c{font-family:var(--mono);font-size:11px;color:var(--faint);font-variant-numeric:tabular-nums}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(285px,1fr));gap:12px;padding:14px}
+.empty{padding:16px 14px;margin:14px;border:1px dashed var(--rule);border-radius:8px;
+  color:var(--muted);font-size:12.5px;background:var(--surface-2)}
+.empty b{color:var(--warn)}
+
+/* ---- card ---- */
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:12px 13px 11px;
+  box-shadow:var(--shadow);border-left:3px solid var(--rule);display:flex;flex-direction:column;
+  gap:9px;min-width:0;cursor:grab}
+.card:active{cursor:grabbing}
+.card.dragging{opacity:.4}
+.card.s-strong{border-left-color:var(--strong)} .card.s-moderate{border-left-color:var(--moderate)}
+.card.s-indicative{border-left-color:var(--indicative)} .card.s-weak{border-left-color:var(--weak)}
+.card.s-not-citable{border-left-color:var(--notcitable);background:var(--danger-soft)}
+.src{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}
+.auth{font-weight:600;font-size:12.5px;min-width:0;overflow-wrap:anywhere}
+.yr{font-family:var(--mono);font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.q{font-family:var(--display);font-size:14.5px;line-height:1.52;margin:0;overflow-wrap:anywhere}
+.q.clamp{display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.mine .q{font-family:var(--body);font-size:13.5px;border-left:2px solid var(--accent);padding-left:9px}
+.chips{display:flex;flex-wrap:wrap;gap:4px}
+.chip{font-size:10.5px;font-weight:500;padding:2px 6px;border-radius:999px;border:1px solid var(--rule);
+  color:var(--muted);background:var(--surface-2);white-space:nowrap}
+.chip.g{border-color:color-mix(in srgb,var(--strong) 45%,transparent);color:var(--strong)}
+.chip.b{border-color:color-mix(in srgb,var(--moderate) 45%,transparent);color:var(--moderate)}
+.chip.a{border-color:color-mix(in srgb,var(--indicative) 50%,transparent);color:var(--indicative)}
+.chip.o{border-color:color-mix(in srgb,var(--weak) 50%,transparent);color:var(--weak)}
+.chip.r{border-color:color-mix(in srgb,var(--notcitable) 55%,transparent);color:var(--notcitable);font-weight:600}
+.chip.k{border-color:color-mix(in srgb,var(--accent) 45%,transparent);color:var(--accent)}
+.foot{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;justify-content:space-between;
+  border-top:1px solid var(--rule);padding-top:8px;margin-top:auto}
+.loc{font-family:var(--mono);font-size:10.5px;color:var(--faint);overflow-wrap:anywhere}
+.ok{color:var(--strong);font-weight:600}
+.no{color:var(--warn);font-weight:600}
+.note{font-size:12px;color:var(--muted);line-height:1.45;border-top:1px dotted var(--rule);padding-top:8px}
+.note b{color:var(--warn)}
+.move{display:flex;gap:3px;align-items:center}
+.mbtn{background:var(--surface-2);border:1px solid var(--rule);border-radius:4px;width:22px;height:22px;
+  display:grid;place-items:center;cursor:pointer;font-size:11px;line-height:1;padding:0;color:var(--muted)}
+.mbtn:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
+.mbtn:disabled{opacity:.3;cursor:default}
+.msel{font-size:10.5px;padding:2px 4px;max-width:110px}
+
+/* ---- essay header ---- */
+.ehead{margin:26px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
+.ehead:first-child{margin-top:4px}
+.eno{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:500;
+  text-transform:uppercase;letter-spacing:.08em}
+.etitle{font-family:var(--display);font-size:22px;font-weight:600;margin-top:2px;letter-spacing:-.01em}
+.ecount{font-family:var(--mono);font-size:11px;color:var(--faint);margin-top:4px;
+  font-variant-numeric:tabular-nums}
+
+/* ---- panels ---- */
+.panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-bottom:22px}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:10px;padding:14px}
+.panel h2{font-family:var(--display);font-size:15px;font-weight:600;margin-bottom:10px}
+.srow{display:flex;flex-direction:column;gap:3px;padding:9px 0;border-top:1px solid var(--rule)}
+.srow:first-of-type{border-top:0;padding-top:0}
+.why{font-size:12px;color:var(--muted);line-height:1.45}
+.gap{font-size:12.5px;padding:6px 0;border-top:1px solid var(--rule);color:var(--muted)}
+.gap:first-of-type{border-top:0}
+.gap b{color:var(--ink)}
+.gap.w b{color:var(--warn)} .gap.d b{color:var(--danger)}
+
+/* ---- narrative view ---- */
+.nsec{margin-bottom:30px}
+.nsec h2{font-family:var(--display);font-size:21px;font-weight:600;margin-bottom:4px}
+.nsec .lane-i{margin-bottom:16px;flex:none}
+.nclip{max-width:66ch;margin-bottom:20px}
+.nhead{font-size:12px;color:var(--muted);margin-bottom:5px;display:flex;flex-wrap:wrap;gap:4px 9px;align-items:center}
+.nq{font-family:var(--display);font-size:16px;line-height:1.6;border-left:2px solid var(--accent);
+  padding-left:14px;margin:0 0 6px}
+.nmine .nq{font-family:var(--body);font-size:14.5px;border-left-style:dashed}
+.ncite{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.nnote{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:6px;line-height:1.5}
+.banner{background:var(--danger-soft);border:1px solid color-mix(in srgb,var(--danger) 40%,transparent);
+  color:var(--ink);border-radius:8px;padding:11px 13px;font-size:12.5px;margin-bottom:16px}
+.banner b{color:var(--danger)}
+.status{font-size:12px;color:var(--muted);min-height:16px;margin-bottom:12px;font-variant-numeric:tabular-nums}
+@media (max-width:560px){
+  .cards{grid-template-columns:1fr;padding:12px}
+  .title{font-size:21px} input[type=search]{width:100%}
+  .q.clamp{-webkit-line-clamp:4}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="hrow">
+    <div>
+      <h1 class="title">AI Psychosis Clip Board</h1>
+      <div class="sub" id="sub">Loading the corpus&hellip;</div>
+    </div>
+    <div class="tools">
+      <div class="seg" role="group" aria-label="Essay">
+        <button class="btn" id="eAll" aria-pressed="true">Both essays</button>
+        <button class="btn" id="e1" aria-pressed="false">Essay 1</button>
+        <button class="btn" id="e2" aria-pressed="false">Essay 2</button>
+      </div>
+      <div class="seg" role="group" aria-label="View">
+        <button class="btn" id="vBoard" aria-pressed="true">Board</button>
+        <button class="btn" id="vNarr" aria-pressed="false">Narrative</button>
+      </div>
+      <input type="search" id="q" placeholder="Search clips" aria-label="Search clips">
+      <select id="fSrc" aria-label="Filter by source"><option value="">All sources</option></select>
+      <select id="fStr" aria-label="Filter by strength"><option value="">Any strength</option></select>
+      <label class="chk"><input type="checkbox" id="fUnv"> Needs checking</label>
+      <button class="btn" id="export">Export arrangement</button>
+    </div>
+  </div>
+</header>
+
+<div class="status" id="status"></div>
+<div id="view"></div>
+</div>
+
+<script>
+const S = {data:null, ov:{}, db:null, canWrite:null, view:"board", essay:"", drag:null};
+const el = id => document.getElementById(id);
+const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const STR_CLASS = {strong:"g", moderate:"b", indicative:"a", weak:"o", "not-citable":"r"};
+
+function setStatus(t){ el("status").textContent = t || ""; }
+
+/* Effective position: the file's value, overridden by whatever the board stored. */
+function clips(){
+  return S.data.clips.map(c => {
+    const o = S.ov[c.id] || {};
+    return Object.assign({}, c, {
+      section: o.section || c.section,
+      order: (typeof o.order === "number") ? o.order : c.order,
+      moved: !!(o.section && o.section !== c.section) || (typeof o.order === "number" && o.order !== c.order)
+    });
+  });
+}
+function laneOf(all, sid){
+  return all.filter(c => c.section === sid).sort((a,b) => a.order - b.order || a.id.localeCompare(b.id));
+}
+function passes(c){
+  const q = el("q").value.trim().toLowerCase();
+  if (q && !(c.text + " " + c.note + " " + c.authors + " " + c.tags.join(" ") + " " + c.id).toLowerCase().includes(q)) return false;
+  if (el("fSrc").value && c.key !== el("fSrc").value) return false;
+  if (el("fStr").value && c.strength !== el("fStr").value) return false;
+  if (el("fUnv").checked && c.verified && c.locator && c.locator !== "not reported") return false;
+  return true;
+}
+/* The essay toggle hides whole essays rather than filtering cards, so an empty
+   section in the essay you are reading still shows as a gap. */
+function essays(){
+  return S.data.essays.filter(e => !S.essay || e.no === S.essay);
+}
+
+function card(c, i, n){
+  const d = document.createElement("article");
+  d.className = "card s-" + c.strength + (c.kind === "mine" ? " mine" : "");
+  d.draggable = true; d.dataset.id = c.id;
+  const sc = STR_CLASS[c.strength] || "";
+  const nd = c.n && c.n !== "not reported" && c.n !== "" ? ", n=" + esc(c.n) : "";
+  d.innerHTML =
+    '<div class="src"><span class="auth">' + esc(c.authors) + '</span><span class="yr">' + esc(c.year) + '</span></div>' +
+    '<div class="chips">' +
+      '<span class="chip ' + sc + '">' + esc(c.strength) + '</span>' +
+      '<span class="chip">' + esc(c.design) + nd + '</span>' +
+      (c.kind !== "quote" ? '<span class="chip k">' + esc(c.kind) + '</span>' : "") +
+      (c.themes || []).slice(0, 3).map(t => '<span class="chip">' + esc(t) + '</span>').join("") +
+    '</div>' +
+    '<p class="q clamp" tabindex="0" title="Click to expand">' + esc(c.text) + '</p>' +
+    (c.note ? '<div class="note">' + (c.strength === "not-citable" ? "<b>Do not cite. </b>" : "") + esc(c.note) + '</div>' : "") +
+    '<div class="foot">' +
+      '<span class="loc">' + esc(c.id) + ' &middot; ' + esc(c.locator) + ' &middot; ' +
+        (c.verified ? '<span class="ok">checked</span>' : '<span class="no">unchecked</span>') + '</span>' +
+      '<span class="move"></span>' +
+    '</div>';
+  d.querySelector(".q").addEventListener("click", e => e.currentTarget.classList.toggle("clamp"));
+
+  const mv = d.querySelector(".move");
+  if (S.canWrite !== false) {
+    const up = document.createElement("button");
+    up.className = "mbtn"; up.innerHTML = "&uarr;"; up.title = "Move up"; up.disabled = i === 0;
+    up.setAttribute("aria-label", "Move up within section");
+    up.onclick = e => { e.stopPropagation(); reorder(c.section, c.id, i - 1); };
+    const dn = document.createElement("button");
+    dn.className = "mbtn"; dn.innerHTML = "&darr;"; dn.title = "Move down"; dn.disabled = i === n - 1;
+    dn.setAttribute("aria-label", "Move down within section");
+    dn.onclick = e => { e.stopPropagation(); reorder(c.section, c.id, i + 1); };
+    const sel = document.createElement("select");
+    sel.className = "msel"; sel.setAttribute("aria-label", "Move to section");
+    sel.innerHTML = S.data.essays.map(e =>
+      '<optgroup label="Essay ' + esc(e.no) + '">' + e.sections.map(s =>
+        '<option value="' + esc(s.id) + '"' + (s.id === c.section ? " selected" : "") + '>'
+        + esc(s.title) + '</option>').join("") + '</optgroup>').join("");
+    sel.onclick = e => e.stopPropagation();
+    sel.onchange = e => { if (e.target.value !== c.section) moveTo(c.id, e.target.value); };
+    mv.append(up, dn, sel);
+  }
+  return d;
+}
+
+function renderBoard(){
+  const all = clips(), v = el("view");
+  v.innerHTML = "";
+
+  const nc = all.filter(c => c.strength === "not-citable");
+  if (nc.length) {
+    const b = document.createElement("div");
+    b.className = "banner";
+    b.innerHTML = "<b>" + nc.length + " clip" + (nc.length > 1 ? "s" : "") + " cannot be cited.</b> " +
+      "They come from an unpublished manuscript circulated for peer review. They are kept here because they " +
+      "correct the outline, not because they can go in the report. Find the same point in a published source.";
+    v.appendChild(b);
+  }
+
+  const panels = document.createElement("div");
+  panels.className = "panels";
+  const srcs = S.data.sources.slice().sort((a, b) =>
+    ["strong","moderate","indicative","weak","not-citable"].indexOf(a.strength) -
+    ["strong","moderate","indicative","weak","not-citable"].indexOf(b.strength));
+  panels.innerHTML =
+    '<div class="panel"><h2>Sources, by how much weight they bear</h2>' +
+      srcs.map(s => {
+        const cnt = all.filter(c => c.key === s.key).length;
+        return '<div class="srow"><div class="src">' +
+          '<span class="auth">' + esc(s.authors) + '</span><span class="yr">' + esc(s.year) + '</span></div>' +
+          '<div class="chips"><span class="chip ' + (STR_CLASS[s.strength] || "") + '">' + esc(s.strength) + '</span>' +
+          '<span class="chip">' + esc(s.design) + (s.n && s.n !== "not reported" ? ", n=" + esc(s.n) : "") + '</span>' +
+          '<span class="chip">' + cnt + ' clip' + (cnt === 1 ? "" : "s") + '</span>' +
+          (s.appraised ? '<span class="chip g">appraised</span>' : "") + '</div>' +
+          '<div class="why">' + esc(s.strength_why) + '</div></div>';
+      }).join("") + '</div>' +
+    '<div class="panel"><h2>What is still wrong with the repository</h2>' + gaps(all) + '</div>';
+  v.appendChild(panels);
+
+  essays().forEach(e => {
+    const ec = all.filter(c => c.essay === e.no);
+    const h = document.createElement("div");
+    h.className = "ehead";
+    h.innerHTML = '<div class="eno">Essay ' + esc(e.no) + '</div>' +
+      '<h2 class="etitle">' + esc(e.title) + '</h2>' +
+      '<div class="ecount">' + ec.length + ' clips · ' + e.sections.length + ' sections · ' +
+      ec.filter(c => c.verified).length + ' checked</div>';
+    v.appendChild(h);
+    e.sections.forEach((s, si) => {
+    const lane = laneOf(all, s.id), shown = lane.filter(passes);
+    const d = document.createElement("section");
+    d.className = "lane"; d.dataset.section = s.id;
+    d.innerHTML = '<div class="lane-h">' +
+      '<div style="min-width:0"><span class="lane-n">' + (si + 1) + '</span>' +
+      '<span class="lane-t">' + esc(s.title) + '</span></div>' +
+      '<div class="lane-i">' + esc(s.intent) + '</div>' +
+      '<div class="lane-c">' + lane.length + (shown.length !== lane.length ? " / " + shown.length + " shown" : "") + '</div></div>';
+    if (!lane.length) {
+      d.insertAdjacentHTML("beforeend",
+        '<div class="empty"><b>No clips.</b> This section of the argument has nothing behind it. ' +
+        'Either find a source for it or cut the section from <code>outline.md</code>.</div>');
+    } else if (!shown.length) {
+      d.insertAdjacentHTML("beforeend", '<div class="empty">' + lane.length + ' clip' +
+        (lane.length === 1 ? "" : "s") + ' here, all hidden by the current filter.</div>');
+    } else {
+      const g = document.createElement("div");
+      g.className = "cards";
+      shown.forEach((c, i) => g.appendChild(card(c, lane.indexOf(c), lane.length)));
+      d.appendChild(g);
+    }
+    wireDrop(d, s.id);
+    v.appendChild(d);
+    });
+  });
+}
+
+function gaps(all){
+  const out = [];
+  S.data.essays.forEach(e => {
+    const ec = all.filter(c => c.essay === e.no);
+    const thin = e.sections.filter(s => all.filter(c => c.section === s.id).length < 2);
+    out.push('<div class="gap' + (thin.length ? " w" : "") + '"><b>Essay ' + esc(e.no) +
+      '</b>: ' + ec.length + ' clips, ' + thin.length + ' of ' + e.sections.length +
+      ' sections with fewer than 2 clips' +
+      (thin.length ? " — " + thin.map(s => esc(s.title)).join("; ") : "") + '</div>');
+  });
+  const emptySec = S.data.sections.filter(s => !all.some(c => c.section === s.id));
+  out.push('<div class="gap' + (emptySec.length ? " w" : "") + '"><b>' + emptySec.length +
+    '</b> of ' + S.data.sections.length + ' sections have no clips at all' +
+    (emptySec.length ? ": " + emptySec.map(s => esc(s.title)).join(", ") : " — every section is evidenced") + '</div>');
+  const unv = all.filter(c => !c.verified);
+  out.push('<div class="gap' + (unv.length ? " w" : "") + '"><b>' + unv.length +
+    '</b> clip' + (unv.length === 1 ? "" : "s") + ' not yet checked against the source text' +
+    (unv.length ? ": " + unv.map(c => esc(c.id)).join(", ") : "") + '</div>');
+  const noloc = all.filter(c => !c.locator || c.locator === "not reported");
+  out.push('<div class="gap' + (noloc.length ? " w" : "") + '"><b>' + noloc.length +
+    '</b> clip' + (noloc.length === 1 ? "" : "s") + ' with no page locator' +
+    (noloc.length ? ": " + noloc.map(c => esc(c.id)).join(", ") : "") + '</div>');
+  const nc = S.data.sources.filter(s => s.strength === "not-citable");
+  out.push('<div class="gap' + (nc.length ? " d" : "") + '"><b>' + nc.length +
+    '</b> source' + (nc.length === 1 ? "" : "s") + ' cannot be cited' +
+    (nc.length ? ": " + nc.map(s => esc(s.authors)).join(", ") : "") + '</div>');
+  const un = S.data.sources.filter(s => !all.some(c => c.key === s.key));
+  out.push('<div class="gap' + (un.length ? " w" : "") + '"><b>' + un.length +
+    '</b> source' + (un.length === 1 ? "" : "s") + ' with no clips on the spine' +
+    (un.length ? ": " + un.map(s => esc(s.authors)).join(", ") : "") + '</div>');
+  const ap = S.data.sources.filter(s => s.appraised).length;
+  out.push('<div class="gap"><b>' + ap + '</b> of ' + S.data.sources.length + ' sources formally appraised</div>');
+  const moved = all.filter(c => c.moved).length;
+  out.push('<div class="gap"><b>' + moved + '</b> clip' + (moved === 1 ? "" : "s") +
+    ' moved on the board since the last build' +
+    (moved ? ' — export and run <code>scripts/apply-arrangement.py</code> to put it back in the files' : "") + '</div>');
+  return out.join("");
+}
+
+function renderNarrative(){
+  const all = clips(), v = el("view");
+  v.innerHTML = "";
+  essays().forEach(e => {
+    const h = document.createElement("div");
+    h.className = "ehead";
+    h.innerHTML = '<div class="eno">Essay ' + esc(e.no) + '</div>' +
+      '<h2 class="etitle">' + esc(e.title) + '</h2>';
+    v.appendChild(h);
+    e.sections.forEach((s, si) => {
+    const lane = laneOf(all, s.id).filter(passes);
+    const d = document.createElement("section");
+    d.className = "nsec";
+    d.innerHTML = '<h2>' + esc(e.no) + '.' + (si + 1) + ' ' + esc(s.title) + '</h2>' +
+      '<div class="lane-i">' + esc(s.intent) + '</div>';
+    if (!lane.length) {
+      d.insertAdjacentHTML("beforeend", '<div class="empty"><b>Nothing here.</b> Unevidenced section.</div>');
+    }
+    lane.forEach(c => {
+      const nd = c.n && c.n !== "not reported" && c.n !== "" ? ", n=" + esc(c.n) : "";
+      d.insertAdjacentHTML("beforeend",
+        '<div class="nclip' + (c.kind === "mine" ? " nmine" : "") + '">' +
+        '<div class="nhead"><b>' + esc(c.authors) + ' (' + esc(c.year) + ')</b>' +
+          '<span class="chip ' + (STR_CLASS[c.strength] || "") + '">' + esc(c.strength) + '</span>' +
+          '<span class="chip">' + esc(c.design) + nd + '</span>' +
+          (c.kind !== "quote" ? '<span class="chip k">' + esc(c.kind) + '</span>' : "") +
+          (c.verified ? '' : '<span class="chip a">unchecked</span>') + '</div>' +
+        '<blockquote class="nq">' + esc(c.text) + '</blockquote>' +
+        '<div class="ncite">' + (c.kind === "mine" ? "mine &mdash; from " : "&mdash; ") +
+          esc(c.authors) + ' (' + esc(c.year) + ':' + esc(c.locator) + ') &middot; ' + esc(c.id) + '</div>' +
+        (c.note ? '<div class="nnote">' + esc(c.note) + '</div>' : "") + '</div>');
+    });
+    v.appendChild(d);
+    });
+  });
+}
+
+function render(){
+  const all = clips();
+  const v = all.filter(c => c.verified).length;
+  el("sub").innerHTML = "<b>" + all.length + "</b> clips across <b>" +
+    S.data.essays.length + "</b> essays &middot; <b>" + S.data.sources.length +
+    "</b> sources &middot; <b>" + v + "</b> checked against source text &middot; built <b>" +
+    esc(S.data.generated) + "</b>" +
+    (S.canWrite === false ? " &middot; read-only, arrangement cannot be saved" : "");
+  (S.view === "board" ? renderBoard : renderNarrative)();
+}
+
+/* ---- arrangement, stored in db ---- */
+async function writeOrder(rows){
+  if (!S.db) { setStatus("Moves are not saved: this view has no store. Reorder in the clip files instead."); return; }
+  setStatus("Saving…");
+  try {
+    for (const r of rows) {
+      await S.db.collection("arrangement").doc(r.id).set({section: r.section, order: r.order});
+    }
+    setStatus("Saved. Export the arrangement to push it back into the clip files.");
+  } catch (e) {
+    if (e && e.code === "invalid_argument") { S.canWrite = false; setStatus("You have read-only access, so moves are not saved."); render(); }
+    else setStatus("Could not save that move" + (e && e.code ? " (" + e.code + ")" : "") + ". The clip files are unchanged.");
+  }
+}
+function resequence(sid, ids){
+  const rows = ids.map((id, i) => ({id, section: sid, order: (i + 1) * 10}));
+  rows.forEach(r => { S.ov[r.id] = {section: r.section, order: r.order}; });
+  render();
+  return writeOrder(rows);
+}
+function reorder(sid, id, to){
+  const ids = laneOf(clips(), sid).map(c => c.id);
+  const from = ids.indexOf(id);
+  if (from < 0 || to < 0 || to >= ids.length) return;
+  ids.splice(to, 0, ids.splice(from, 1)[0]);
+  resequence(sid, ids);
+}
+function moveTo(id, sid, index){
+  const all = clips(), from = all.find(c => c.id === id);
+  if (!from) return;
+  const target = laneOf(all, sid).map(c => c.id).filter(x => x !== id);
+  target.splice(index == null ? target.length : index, 0, id);
+  const old = from.section;
+  resequence(sid, target).then(() => {
+    if (old !== sid) {
+      const left = laneOf(clips(), old).map(c => c.id);
+      if (left.length) resequence(old, left);
+    }
+  });
+}
+
+function wireDrop(lane, sid){
+  lane.addEventListener("dragover", e => {
+    if (!S.drag) return;
+    e.preventDefault(); lane.classList.add("drop");
+  });
+  lane.addEventListener("dragleave", e => {
+    if (!lane.contains(e.relatedTarget)) lane.classList.remove("drop");
+  });
+  lane.addEventListener("drop", e => {
+    e.preventDefault(); lane.classList.remove("drop");
+    if (!S.drag) return;
+    const cards = [...lane.querySelectorAll(".card")].filter(c => c.dataset.id !== S.drag);
+    let idx = cards.length;
+    for (let i = 0; i < cards.length; i++) {
+      const r = cards[i].getBoundingClientRect();
+      if (e.clientY < r.top + r.height / 2) { idx = i; break; }
+    }
+    const id = S.drag; S.drag = null;
+    moveTo(id, sid, idx);
+  });
+}
+document.addEventListener("dragstart", e => {
+  const c = e.target.closest && e.target.closest(".card");
+  if (!c || S.canWrite === false) return;
+  S.drag = c.dataset.id; c.classList.add("dragging");
+  e.dataTransfer.effectAllowed = "move";
+  try { e.dataTransfer.setData("text/plain", c.dataset.id); } catch (_) {}
+});
+document.addEventListener("dragend", e => {
+  S.drag = null;
+  document.querySelectorAll(".dragging").forEach(n => n.classList.remove("dragging"));
+  document.querySelectorAll(".drop").forEach(n => n.classList.remove("drop"));
+});
+
+/* ---- boot ---- */
+(async function(){
+  try {
+    S.data = await (await fetch("clips.json")).json();
+  } catch (e) {
+    el("view").innerHTML = '<div class="banner"><b>The corpus did not load.</b> ' +
+      'clips.json could not be read, so there is nothing to arrange.</div>';
+    el("sub").textContent = "";
+    return;
+  }
+  el("fSrc").innerHTML += S.data.sources.map(s =>
+    '<option value="' + esc(s.key) + '">' + esc(s.authors.split(",")[0]) + " " + esc(s.year) + '</option>').join("");
+  el("fStr").innerHTML += (S.data.strengths || []).map(s =>
+    '<option value="' + esc(s) + '">' + esc(s) + '</option>').join("");
+
+  ["q", "fSrc", "fStr", "fUnv"].forEach(id => el(id).addEventListener("input", render));
+  const setEssay = v => {
+    S.essay = v;
+    el("eAll").ariaPressed = String(v === "");
+    el("e1").ariaPressed = String(v === "1");
+    el("e2").ariaPressed = String(v === "2");
+    render();
+  };
+  el("eAll").onclick = () => setEssay("");
+  el("e1").onclick = () => setEssay("1");
+  el("e2").onclick = () => setEssay("2");
+  el("vBoard").onclick = () => { S.view = "board"; el("vBoard").ariaPressed = "true"; el("vNarr").ariaPressed = "false"; render(); };
+  el("vNarr").onclick = () => { S.view = "narrative"; el("vNarr").ariaPressed = "true"; el("vBoard").ariaPressed = "false"; render(); };
+  el("export").onclick = exportArrangement;
+  render();
+
+  const user = await claude.use("user");
+  if (user) { const w = await user.can("data.write"); if (w === false) S.canWrite = false; }
+
+  const db = await claude.use("db");
+  if (!db) {
+    S.canWrite = false;
+    setStatus("No store in this view, so the board shows the arrangement from the files and cannot save moves.");
+    render();
+    return;
+  }
+  S.db = db;
+  db.collection("arrangement").onSnapshot(snap => {
+    const ov = {};
+    snap.docs.forEach(d => { const v = d.data() || {}; ov[d.id] = {section: v.section, order: v.order}; });
+    S.ov = ov;
+    render();
+  }, err => setStatus("Lost the connection to the stored arrangement (" + err.code + "). " +
+      "The board is showing what the files say."));
+})();
+
+async function exportArrangement(){
+  const rows = clips().map(c => ({id: c.id, section: c.section, order: c.order}));
+  const body = JSON.stringify({exported: new Date().toISOString().slice(0, 10),
+    note: "Apply with: python3 scripts/apply-arrangement.py <this file>", clips: rows}, null, 1);
+  const dl = await claude.use("downloads");
+  if (!dl) { setStatus("This view cannot save files. Copy the arrangement from the board instead."); return; }
+  try {
+    await dl.save({filename: "arrangement.json", data: body});
+    setStatus("Exported. Run: python3 scripts/apply-arrangement.py ~/Downloads/arrangement.json");
+  } catch (e) {
+    if (e && e.code === "declined") setStatus("Export cancelled.");
+    else setStatus("Export failed" + (e && e.code ? " (" + e.code + ")" : "") + ".");
+  }
+}
+</script>

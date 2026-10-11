@@ -1,0 +1,5 @@
+# No PDFs, ever. This repository is public.
+*.pdf
+sources/
+.DS_Store
+__pycache__/

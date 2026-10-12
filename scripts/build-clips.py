@@ -229,10 +229,12 @@ def main():
                 flag = "" if c["verified"] else "  ⚠ UNVERIFIED"
                 nd = f", n={c['n']}" if c["n"] and c["n"] != "not reported" else ""
                 out.append(f"\n**{c['authors']} ({c['year']})** · {c['design']}{nd}"
-                           f" · strength: {c['strength']} · `{c['id']}`{flag}\n")
+                           f" · strength: {c['strength']} · `{c['id']}`{flag}  ")
+                out.append(f"*{c['title']}*\n")
                 out.append("\n".join("> " + l for l in c["text"].split("\n")))
                 src = "mine — from " if c["kind"] == "mine" else ""
-                out.append(f"\n— {src}{c['authors']} ({c['year']}:{c['locator']})\n")
+                doi = f" doi:{c['doi']}" if c.get("doi") and c["doi"] != "not reported" else ""
+                out.append(f"\n— {src}{c['authors']} ({c['year']}:{c['locator']}){doi}\n")
                 if c["note"]:
                     out.append(f"*Note: {c['note']}*\n")
     (ROOT / "NARRATIVE.md").write_text("\n".join(out) + "\n")

@@ -82,6 +82,9 @@ label.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--m
 .src{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}
 .auth{font-weight:600;font-size:12.5px;min-width:0;overflow-wrap:anywhere}
 .yr{font-family:var(--mono);font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.c-ttl{font-family:var(--display);font-size:12.5px;line-height:1.38;color:var(--muted);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  margin-top:-4px;overflow-wrap:anywhere}
 .q{font-family:var(--display);font-size:14.5px;line-height:1.52;margin:0;overflow-wrap:anywhere}
 .q.clamp{display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
 .mine .q{font-family:var(--body);font-size:13.5px;border-left:2px solid var(--accent);padding-left:9px}
@@ -135,6 +138,8 @@ table.src-t tr:last-child td{border-bottom:0}
 table.src-t td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
 table.src-t .cite{font-weight:600}
 table.src-t .why{color:var(--muted);font-size:12px;line-height:1.45;max-width:38ch}
+table.src-t .t-ttl{font-family:var(--display);font-size:13px;line-height:1.4;
+  display:block;margin-top:3px;max-width:46ch;overflow-wrap:anywhere}
 table.src-t .hv{font-family:var(--mono);font-size:10.5px;color:var(--faint);max-width:44ch;
   overflow-wrap:anywhere;display:block;margin-top:4px}
 .bar{display:inline-block;width:3px;height:1em;vertical-align:-2px;margin-right:6px;border-radius:2px}
@@ -266,6 +271,7 @@ function card(c, i, n){
   const nd = c.n && c.n !== "not reported" && c.n !== "" ? ", n=" + esc(c.n) : "";
   d.innerHTML =
     '<div class="src"><span class="auth">' + esc(c.authors) + '</span><span class="yr">' + esc(c.year) + '</span></div>' +
+    (c.title ? '<div class="c-ttl">' + esc(c.title) + '</div>' : "") +
     '<div class="chips">' +
       '<span class="chip ' + sc + '">' + esc(c.strength) + '</span>' +
       '<span class="chip">' + esc(c.design) + nd + '</span>' +
@@ -465,7 +471,9 @@ function renderNarrative(){
           (c.verified ? '' : '<span class="chip a">unchecked</span>') + '</div>' +
         '<blockquote class="nq">' + esc(c.text) + '</blockquote>' +
         '<div class="ncite">' + (c.kind === "mine" ? "mine &mdash; from " : "&mdash; ") +
-          esc(c.authors) + ' (' + esc(c.year) + ':' + esc(c.locator) + ') &middot; ' + esc(c.id) + '</div>' +
+          esc(c.authors) + ' (' + esc(c.year) + ':' + esc(c.locator) + ')' +
+          (c.title ? ', <i>' + esc(c.title) + '</i>' : '') +
+          ' &middot; ' + esc(c.id) + '</div>' +
         (c.note ? '<div class="nnote">' + esc(c.note) + '</div>' : "") + '</div>');
     });
     v.appendChild(d);
@@ -489,7 +497,7 @@ function renderSources(){
     'perspective — is what makes agreement between two sources mean something, ' +
     'so a blank is an honest gap rather than a pass.</p>' +
     '<div class="tablewrap"><table class="src-t"><thead><tr>' +
-    '<th>Source</th><th>Design</th><th>n</th><th>Strength &amp; why</th>' +
+    '<th>Source &amp; title</th><th>Design</th><th>n</th><th>Strength &amp; why</th>' +
     '<th>Countries</th><th>WEIRD</th><th>Team / dataset</th><th>Clips</th>' +
     '</tr></thead><tbody>' +
     srcs.map(s => {
@@ -503,6 +511,7 @@ function renderSources(){
       return '<tr><td><span class="bar" style="background:var(--' +
         (s.strength === "not-citable" ? "notcitable" : s.strength) + ')"></span>' +
         '<span class="cite">' + esc(s.authors) + '</span> (' + esc(s.year) + ')' +
+        '<span class="t-ttl">' + esc(s.title || "—") + '</span>' +
         (s.harvard ? '<span class="hv">' + esc(s.harvard) + '</span>'
                    : '<span class="hv no">no Harvard reference yet</span>') + '</td>' +
         '<td>' + esc(s.design) + (s.appraised ? ' <span class="chip g">appraised</span>' : '') + '</td>' +

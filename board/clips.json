@@ -298,6 +298,8 @@
    "key": "arnold-2019-online-engagement",
    "authors": "Arnold, C., Villagonzalo, K.-A., Meyer, D., Farhall, J., Foley, F., Kyrios, M. & Thomas, N.",
    "year": "2019",
+   "pdf": "sources/arnold-2019-online-engagement.pdf",
+   "pdf_bytes": 2388032,
    "team": [
     "Swinburne Centre for Mental Health SMART program"
    ],
@@ -339,6 +341,8 @@
    "key": "bailey-2018-trauma-symptom-severity",
    "authors": "Bailey, T., Alvarez-Jimenez, M., Garcia-Sanchez, A. M., Hulbert, C., Barlow, E. & Bendall, S.",
    "year": "2018",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Orygen / University of Melbourne (Bailey",
     "Bendall",
@@ -376,6 +380,8 @@
    "key": "basaran-2026-llm-case",
    "authors": "Basaran, A. S. & Cosar, B.",
    "year": "2026",
+   "pdf": "sources/basaran-2026-llm-case.pdf",
+   "pdf_bytes": 621194,
    "team": [
     "Unye State Hospital psychiatry",
     "Gazi University psychiatry"
@@ -411,6 +417,8 @@
    "key": "bergson-2026-ai-psychosis-ehr",
    "authors": "Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M.",
    "year": "2026",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Vanderbilt University Medical Center psychosis group"
    ],
@@ -447,6 +455,8 @@
    "key": "bick-2025-genai-adoption",
    "authors": "Bick, A., Blandin, A. & Deming, D. J.",
    "year": "2025",
+   "pdf": "sources/bick-2025-genai-adoption.pdf",
+   "pdf_bytes": 576317,
    "team": [
     "St Louis Fed - Vanderbilt - Harvard economics group"
    ],
@@ -481,6 +491,8 @@
    "key": "birdsey-2021-social-graces",
    "authors": "Birdsey, N. & Kustner, C.",
    "year": "2021",
+   "pdf": "sources/birdsey-2021-social-graces.pdf",
+   "pdf_bytes": 342296,
    "team": [
     "University of Bath / Cardiff (Birdsey",
     "Kustner)"
@@ -514,6 +526,8 @@
    "key": "boge-2025-dice-delusions",
    "authors": "B\u00f6ge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N.",
    "year": "2025",
+   "pdf": "sources/boge-2025-dice-delusions.pdf",
+   "pdf_bytes": 1936884,
    "team": [
     "Charite Universitatsmedizin Berlin psychosis group",
     "Swinburne Centre for Mental Health"
@@ -554,6 +568,8 @@
    "key": "bokhari-2026-technology-delusions",
    "authors": "Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F.",
    "year": "2026",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Al Amal Psychiatric Hospital Dubai",
     "United Arab Emirates University psychiatry"
@@ -600,6 +616,8 @@
    "key": "buck-2026-genai-psychosis",
    "authors": "Buck, B. & Maheux, A. J.",
    "year": "2026",
+   "pdf": "sources/buck-2026-genai-psychosis.pdf",
+   "pdf_bytes": 142835,
    "team": [
     "UNC Chapel Hill psychosis and digital mental health group"
    ],
@@ -636,6 +654,8 @@
    "key": "burns-2025-technology-delusions",
    "authors": "Burns, A. V., Nelson, K., Wang, H., Hegarty, E. M. & Cohn, A. B.",
    "year": "2025",
+   "pdf": "sources/burns-2025-technology-delusions.pdf",
+   "pdf_bytes": 272727,
    "team": [
     "UCLA Thought Disorders Intensive Outpatient Program"
    ],
@@ -676,6 +696,8 @@
    "key": "cannon-2012-delusion-content",
    "authors": "Cannon, B. J. & Kramer, L. M.",
    "year": "2012",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Marywood University psychology and counseling"
    ],
@@ -711,6 +733,8 @@
    "key": "cantorgraae-2005-migration-meta",
    "authors": "Cantor-Graae, E. & Selten, J. P.",
    "year": "2005",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Lund / Utrecht migration-psychosis group (Cantor-Graae",
     "Selten)"
@@ -744,6 +768,8 @@
    "key": "ceraso-2020-maintenance-antipsychotics",
    "authors": "Ceraso, A., Lin, J. J., Schneider-Thoma, J., Siafis, S., Tardy, M., Komossa, K., Heres, S., Kissling, W., Davis, J. M. & Leucht, S.",
    "year": "2020",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Technische Universit\u00e4t M\u00fcnchen (Leucht group) with Brescia",
     "Hong Kong",
@@ -784,6 +810,8 @@
    "key": "chadwick-2003-formulation-impact",
    "authors": "Chadwick, P., Williams, C. & Mackenzie, J.",
    "year": "2003",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "University of Southampton / Royal South Hants Hospital (Chadwick)"
    ],
@@ -820,6 +848,8 @@
    "key": "chamarthi-2025-adolescent-stressor",
    "authors": "Chamarthi, V. S., Das, P. & Kashyap, R.",
    "year": "2025",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Valley Childrens - Gundersen - WellSpan authors"
    ],
@@ -855,6 +885,8 @@
    "key": "correll-2018-early-intervention-services",
    "authors": "Correll, C. U., Galling, B., Pawar, A., Krivko, A., Bonetto, C., Ruggeri, M., Craig, T. J., Nordentoft, M. et al.",
    "year": "2018",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Zucker Hillside Hospital / Northwell Health",
     "New York (Correll",
@@ -910,6 +942,8 @@
    "key": "davies-2020-prenatal-perinatal",
    "authors": "Davies, C., Segre, G., Estrad\u00e9, A., Radua, J., De Micheli, A., Provenzani, U., Oliver, D., Salazar de Pablo, G., Ramella-Cravaro, V., Besozzi, M., Dazzan, P., Miele, M., Caputo, G., Spallarossa, C., Crossland, G., Ilyas, A., Spada, G., Politi, P., Murray, R. M., McGuire, P. & Fusar-Poli, P.",
    "year": "2020",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "KCL / Pavia early-psychosis group (Fusar-Poli",
     "McGuire",
@@ -944,6 +978,8 @@
    "key": "diforti-2019-cannabis-potency",
    "authors": "Di Forti, M., Quattrone, D., Freeman, T. P., Tripoli, G., Gayer-Anderson, C., Quigley, H., Rodriguez, V., Jongsma, H. E., Ferraro, L., La Cascia, C., La Barbera, D., Tarricone, I., Berardi, D., Sz\u00f6ke, A., Arango, C., Tortelli, A., Velthorst, E., Bernardo, M., Del-Ben, C. M., Menezes, P. R., Selten, J. P., Jones, P. B., Kirkbride, J. B., Rutten, B. P., de Haan, L., Sham, P. C., van Os, J., Lewis, C. M., Lynskey, M., Morgan, C. & Murray, R. M.",
    "year": "2019",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "EU-GEI WP2 (KCL-led",
     "Di Forti",
@@ -998,6 +1034,8 @@
    "key": "fisher-2010-cognitive-training-durability",
    "authors": "Fisher, M., Holland, C., Subramaniam, K. & Vinogradov, S.",
    "year": "2010",
+   "pdf": "sources/fisher-2010-cognitive-training-durability.pdf",
+   "pdf_bytes": 174953,
    "team": [
     "Vinogradov group",
     "University of California San Francisco"
@@ -1031,6 +1069,8 @@
    "key": "fisher-2013-cognitive-interventions-chr",
    "authors": "Fisher, M., Loewy, R., Hardy, K., Schlosser, D. & Vinogradov, S.",
    "year": "2013",
+   "pdf": "sources/fisher-2013-cognitive-interventions-chr.pdf",
+   "pdf_bytes": 558419,
    "team": [
     "Vinogradov group",
     "University of California San Francisco"
@@ -1064,6 +1104,8 @@
    "key": "fitzsimons-2017-poverty-dynamics-mcs",
    "authors": "Fitzsimons, E., Goodman, A., Kelly, E. & Smith, J. P.",
    "year": "2017",
+   "pdf": "sources/fitzsimons-2017-poverty-dynamics-mcs.pdf",
+   "pdf_bytes": 300043,
    "team": [
     "UCL Institute of Education / Institute for Fiscal Studies",
     "with RAND"
@@ -1099,6 +1141,8 @@
    "key": "flathers-2026-llm-typology",
    "authors": "Flathers, M., Roux, S. & Torous, J.",
    "year": "2026",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Beth Israel Deaconess Division of Digital Psychiatry"
    ],
@@ -1134,6 +1178,8 @@
    "key": "freeman-2005-paranoia-structure",
    "authors": "Freeman, D., Garety, P. A., Bebbington, P. E., Smith, B., Rollinson, R., Fowler, D., Kuipers, E., Ray, K. & Dunn, G.",
    "year": "2005",
+   "pdf": "sources/freeman-2005-paranoia-structure.pdf",
+   "pdf_bytes": 215824,
    "team": [
     "Institute of Psychiatry London paranoia group"
    ],
@@ -1173,6 +1219,8 @@
    "key": "gao-2026-schizophrenia-aggression",
    "authors": "Gao, Q., Zhu, P. & Hu, H.",
    "year": "2026",
+   "pdf": "sources/gao-2026-schizophrenia-aggression.pdf",
+   "pdf_bytes": 1768919,
    "team": [
     "Hangzhou Medical College School of Public Health (Hu)"
    ],
@@ -1207,6 +1255,8 @@
    "key": "hakamata-2022-early-life-adversity",
    "authors": "Hakamata, Y., Suzuki, Y., Kobashikawa, H. & Hori, H.",
    "year": "2022",
+   "pdf": "sources/hakamata-2022-early-life-adversity.pdf",
+   "pdf_bytes": 2286632,
    "team": [
     "Hakamata / Hori group",
     "National Center of Neurology and Psychiatry",
@@ -1243,6 +1293,8 @@
    "key": "hjorthoj-2023-cannabis-sex-difference",
    "authors": "Hjorth\u00f8j, C., Compton, W., Starzer, M., Nordholm, D., Einstein, E., Erlangsen, A., Nordentoft, M., Volkow, N. D. & Han, B.",
    "year": "2023",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Copenhagen Research Centre for Mental Health / US National Institute on Drug Abuse (Hjorth\u00f8j",
     "Nordentoft",
@@ -1281,6 +1333,8 @@
    "key": "hudon-2025-ai-psychosis",
    "authors": "Hudon, A. & Stip, E.",
    "year": "2025",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Universite de Montreal psychiatry"
    ],
@@ -1317,6 +1371,8 @@
    "key": "iheed-2026-m6w4-teaching-deck",
    "authors": "iheed / University of Warwick, MSc Neuroscience and Psychology of Mental Health",
    "year": "2026",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [],
    "affiliations": [
     "iheed",
@@ -1345,6 +1401,8 @@
    "key": "jahshan-2017-enhancing-neuroplasticity",
    "authors": "Jahshan, C., Rassovsky, Y. & Green, M. F.",
    "year": "2017",
+   "pdf": "sources/jahshan-2017-enhancing-neuroplasticity.pdf",
+   "pdf_bytes": 213811,
    "team": [
     "Green group",
     "VA Greater Los Angeles / UCLA"
@@ -1378,6 +1436,8 @@
    "key": "jauhar-2014-cbtp-meta-analysis",
    "authors": "Jauhar, S., McKenna, P. J., Radua, J., Fung, E., Salvador, R. & Laws, K. R.",
    "year": "2014",
+   "pdf": "sources/jauhar-2014-cbtp-meta-analysis.pdf",
+   "pdf_bytes": 195641,
    "team": [
     "Jauhar / McKenna / Laws - IoP London",
     "FIDMAG Barcelona",
@@ -1429,6 +1489,8 @@
    "key": "jauhar-2019-cbtp-critical-viewpoint",
    "authors": "Jauhar, S., Laws, K. R. & McKenna, P. J.",
    "year": "2019",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Jauhar / Laws / McKenna"
    ],
@@ -1472,6 +1534,8 @@
    "key": "jones-2018-cbtp-cochrane",
    "authors": "Jones, C., Hacker, D., Meaden, A., Cormac, I., Irving, C. B., Xia, J., Zhao, S., Shi, C. & Chen, J.",
    "year": "2018",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Cochrane Schizophrenia Group - Jones / Hacker / Meaden"
    ],
@@ -1506,6 +1570,8 @@
    "key": "jongsma-2019-international-incidence",
    "authors": "Jongsma, H. E., Turner, C., Kirkbride, J. B. & Jones, P. B.",
    "year": "2019",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Cambridge / UCL PsyLife (Kirkbride",
     "Jones)"
@@ -1539,6 +1605,8 @@
    "key": "keshavan-2015-dysplasticity",
    "authors": "Keshavan, M. S., Mehta, U. M., Padmanabhan, J. L. & Shah, J. L.",
    "year": "2015",
+   "pdf": "sources/keshavan-2015-dysplasticity.pdf",
+   "pdf_bytes": 1302455,
    "team": [
     "Keshavan group",
     "Beth Israel Deaconess / Harvard"
@@ -1575,6 +1643,8 @@
    "key": "kessler-2010-childhood-adversities-wmh",
    "authors": "Kessler, R. C., McLaughlin, K. A., Green, J. G., Gruber, M. J., Sampson, N. A., Zaslavsky, A. M., Aguilar-Gaxiola, S., Alhamzawi, A. O., Alonso, J., Angermeyer, M., Benjet, C., Bromet, E., Chatterji, S., de Girolamo, G., Demyttenaere, K., Fayyad, J., Florescu, S., Gal, G., Gureje, O., Haro, J. M., Hu, C., Karam, E. G., Kawakami, N., Lee, S., Lepine, J., Ormel, J., Posada-Villa, J., Sagar, R., Tsang, A., Ustun, T. B., Vassilev, S., Viana, M. C. & Williams, D. R.",
    "year": "2010",
+   "pdf": "sources/kessler-2010-childhood-adversities-wmh.pdf",
+   "pdf_bytes": 160486,
    "team": [
     "WHO World Mental Health Survey Consortium (Kessler)"
    ],
@@ -1629,6 +1699,8 @@
    "key": "kirkbride-2014-deprivation-east-london",
    "authors": "Kirkbride, J. B., Jones, P. B., Ullrich, S. & Coid, J. W.",
    "year": "2014",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Cambridge / UCL PsyLife (Kirkbride",
     "Jones) with Queen Mary / Institute of Psychiatry (Coid",
@@ -1665,6 +1737,8 @@
    "key": "kumar-2017-india-public-health-strategy",
    "authors": "Kumar, C. N., Thirthalli, J., Suresha, K. K., Venkatesh, B. K., Arunachala, U. & Gangadhar, B. N.",
    "year": "2017",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "NIMHANS Bengaluru (Thirthalli",
     "Gangadhar) Thirthahalli community cohort"
@@ -1705,6 +1779,8 @@
    "key": "leepow-2023-cannabis-global-south",
    "authors": "Lee Pow, J., Donald, C., di Forti, M., Roberts, T., Weiss, H. A., Ayinde, O., John, S., Olley, B., Ojagbemi, A., Esponda, G. M., Lam, J., Poornachandrika, P., Dazzan, P., Gaughran, F., Kannan, P. P., Sudhakar, S., Burns, J., Chiliza, B., Cohen, A., Gureje, O., Thara, R., Murray, R. M., Morgan, C. & Hutchinson, G.",
    "year": "2023",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "INTREPID II (KCL",
     "with University of the West Indies",
@@ -1751,6 +1827,8 @@
    "key": "lewisfernandez-2017-cultural-formulation-interview",
    "authors": "Lewis-Fern\u00e1ndez, R., Aggarwal, N. K., Lam, P. C., Galfalvy, H., Weiss, M. G., Kirmayer, L. J., Paralikar, V., Deshpande, S. N. et al.",
    "year": "2017",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Columbia / New York State Psychiatric Institute (Lewis-Fern\u00e1ndez",
     "Aggarwal) with McGill (Kirmayer)",
@@ -1800,6 +1878,8 @@
    "key": "lincoln-2017-psychosen",
    "authors": "Lincoln, T. & Heibach, E.",
    "year": "2017",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Lincoln (Hamburg) & Heibach"
    ],
@@ -1830,6 +1910,8 @@
    "key": "lincoln-2019-symptom-specific-cbtp",
    "authors": "Lincoln, T. M. & Peters, E.",
    "year": "2019",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Lincoln (Hamburg) & Peters (KCL/PICuP)"
    ],
@@ -1875,6 +1957,8 @@
    "key": "lobuglio-2024-chrp-bpd",
    "authors": "Lo Buglio, G., Boldrini, T., Polari, A., Fiorentino, F., Nelson, B., Solmi, M., Lingiardi, V. & Tanzilli, A.",
    "year": "2024",
+   "pdf": "sources/lobuglio-2024-chrp-bpd.pdf",
+   "pdf_bytes": 2422694,
    "team": [
     "Sapienza University of Rome dynamic & clinical psychology group (Lingiardi",
     "Tanzilli)",
@@ -1924,6 +2008,8 @@
    "key": "louise-2018-mindfulness-psychosis-meta",
    "authors": "Louise, S., Fitzpatrick, M., Strauss, C., Rossell, S. L. & Thomas, N.",
    "year": "2018",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Louise / Thomas / Rossell - Swinburne University of Technology and Monash Alfred Psychiatry Research Centre",
     "Melbourne",
@@ -1969,6 +2055,8 @@
    "key": "lowe-2024-persistent-symptoms",
    "authors": "L\u00f6we, B., Toussaint, A., Rosmalen, J. G. M., Huang, W.-L., Burton, C., Weigel, A., Levenson, J. L. & Henningsen, P.",
    "year": "2024",
+   "pdf": "sources/lowe-2024-persistent-symptoms.pdf",
+   "pdf_bytes": 548449,
    "team": [
     "Hamburg-Eppendorf psychosomatic medicine group"
    ],
@@ -2003,6 +2091,8 @@
    "key": "macaulay-2013-coping-neurocognition",
    "authors": "MacAulay, R. & Cohen, A. S.",
    "year": "2013",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "MacAulay & Cohen - Louisiana State University"
    ],
@@ -2041,6 +2131,8 @@
    "key": "macneil-2012-case-formulation",
    "authors": "Macneil, C. A., Hasty, M. K., Conus, P. & Berk, M.",
    "year": "2012",
+   "pdf": "sources/macneil-2012-case-formulation.pdf",
+   "pdf_bytes": 296823,
    "team": [
     "EPPIC / Orygen Youth Health",
     "Melbourne (Macneil",
@@ -2080,6 +2172,8 @@
    "key": "marconi-2016-cannabis-dose-response",
    "authors": "Marconi, A., Di Forti, M., Lewis, C. M., Murray, R. M. & Vassos, E.",
    "year": "2016",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "KCL Social",
     "Genetic and Developmental Psychiatry / Psychosis Studies (Murray",
@@ -2113,6 +2207,8 @@
    "key": "marek-2022-bwas-reproducibility",
    "authors": "Marek, S., Tervo-Clemmens, B., Calabro, F. J., Montez, D. F., Kay, B. P., Hatoum, A. S., Donohue, M. R., Foran, W., Miller, R. L., Hendrickson, T. J., Malone, S. M., Kandala, S., Feczko, E., Miranda-Dominguez, O., Graham, A. M., Earl, E. A., Perrone, A. J., Cordova, M., Doyle, O., Moore, L. A., Conan, G. M., Uriarte, J., Snider, K., Lynch, B. J., Wilgenbusch, J. C., Pengo, T., Tam, A., Chen, J., Newbold, D. J., Zheng, A., Seider, N. A., Van, A. N., Metoki, A., Chauvin, R. J., Laumann, T. O., Greene, D. J., Petersen, S. E., Garavan, H., Thompson, W. K., Nichols, T. E., Yeo, B. T. T., Barch, D. M., Luna, B., Fair, D. A. & Dosenbach, N. U. F.",
    "year": "2022",
+   "pdf": "sources/marek-2022-bwas-reproducibility.pdf",
+   "pdf_bytes": 9584613,
    "team": [
     "Marek & Tervo-Clemmens / Fair & Dosenbach group",
     "Washington University in St Louis and University of Minnesota"
@@ -2165,6 +2261,8 @@
    "key": "mccrone-2013-early-intervention-economics",
    "authors": "McCrone, P., Singh, S. P., Knapp, M., Smith, J., Clark, M., Shiers, D. & Tiffin, P. A.",
    "year": "2013",
+   "pdf": "sources/mccrone-2013-early-intervention-economics.pdf",
+   "pdf_bytes": 418923,
    "team": [
     "King's College London / LSE health economics group with Warwick Medical School and Durham"
    ],
@@ -2207,6 +2305,8 @@
    "key": "mcgrath-2016-psychotic-experiences-onset",
    "authors": "McGrath, J. J., Saha, S., Al-Hamzawi, A. O., Alonso, J., Andrade, L., Borges, G., Bromet, E. J., Oakley Browne, M., Bruffaerts, R., Caldas de Almeida, J. M., Fayyad, J., Florescu, S., de Girolamo, G., Gureje, O., Hu, C., de Jonge, P., Kovess-Masfety, V., Lepine, J. P., Lim, C. C. W., Navarro-Mateu, F., Piazza, M., Sampson, N., Posada-Villa, J., Kendler, K. S. & Kessler, R. C.",
    "year": "2016",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "WHO World Mental Health Survey Consortium (Kessler",
     "McGrath)"
@@ -2242,6 +2342,8 @@
    "key": "mcgrath-2017-adversity-cross-national",
    "authors": "McGrath, J. J., McLaughlin, K. A., Saha, S., Aguilar-Gaxiola, S., Al-Hamzawi, A., Alonso, J., Bruffaerts, R., de Girolamo, G., de Jonge, P., Esan, O., Florescu, S., Gureje, O., Haro, J. M., Hu, C., Karam, E. G., Kovess-Masfety, V., Lee, S., Lepine, J. P., Lim, C. C. W., Medina-Mora, M. E., Mneimneh, Z., Pennell, B. E., Piazza, M., Posada-Villa, J., Sampson, N., Viana, M. C., Xavier, M., Bromet, E. J., Kendler, K. S. & Kessler, R. C.",
    "year": "2017",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "WHO World Mental Health Survey Consortium (Kessler",
     "McGrath)"
@@ -2296,6 +2398,8 @@
    "key": "michalskadarocha-2018-loneliness",
    "authors": "Michalska da Rocha, B., Rhodes, S., Vasilopoulou, E. & Hutton, P.",
    "year": "2018",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "University of Edinburgh / Edinburgh Napier (Hutton)"
    ],
@@ -2331,6 +2435,8 @@
    "key": "morgan-2023-intrepid-incidence",
    "authors": "Morgan, C., Cohen, A., Esponda, G. M., Roberts, T., John, S., Pow, J. L., Donald, C., Olley, B., Ayinde, O., Lam, J., Poornachandrika, P., Dazzan, P., Gaughran, F., Kannan, P. P., Sudhakar, S., Burns, J., Chiliza, B., Susser, E., Weiss, H. A., Murray, R. M., Rangaswamy, T., Gureje, O. & Hutchinson, G.",
    "year": "2023",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "INTREPID II (KCL Health Service & Population Research",
     "with SCARF Chennai",
@@ -2381,6 +2487,8 @@
    "key": "morrin-2026-ai-delusions-safeguards",
    "authors": "Morrin, H., Nicholls, L., Levin, M., Yiend, J., Iyengar, U., DelGuidice, F., Bhattacharya, S., Tognin, S., MacCabe, J., Twumasi, R., Alderson-Day, B. & Pollak, T. A.",
    "year": "2026",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "KCL Institute of Psychiatry",
     "Psychology & Neuroscience",
@@ -2427,6 +2535,8 @@
    "key": "nass-2000-mindlessness",
    "authors": "Nass, C. & Moon, Y.",
    "year": "2000",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [],
    "affiliations": [],
    "countries": [],
@@ -2454,6 +2564,8 @@
    "key": "nice-2014-cg178-psychosis-adults",
    "authors": "National Institute for Health and Care Excellence",
    "year": "2014",
+   "pdf": "sources/nice-2014-cg178-psychosis-adults.pdf",
+   "pdf_bytes": 207868,
    "team": [
     "National Institute for Health and Care Excellence (NICE) guideline committee"
    ],
@@ -2488,6 +2600,8 @@
    "key": "nice-2020-ng181-rehabilitation-psychosis",
    "authors": "National Institute for Health and Care Excellence",
    "year": "2020",
+   "pdf": "sources/nice-2020-ng181-rehabilitation-psychosis.pdf",
+   "pdf_bytes": 412974,
    "team": [
     "National Institute for Health and Care Excellence (NICE) guideline committee"
    ],
@@ -2521,6 +2635,8 @@
    "key": "panayi-2026-cptsd-psychosis-neuroanatomy",
    "authors": "Panayi, P., Varese, F., Peters, E., Bentall, R., Hardy, A., Berry, K., Sellwood, W., Underwood, R., Steel, C., Mason, L. & Elliott, R.",
    "year": "2026",
+   "pdf": "sources/panayi-2026-cptsd-psychosis-neuroanatomy.pdf",
+   "pdf_bytes": 2867164,
    "team": [
     "Manchester Complex Trauma and Resilience Research Unit (Panayi",
     "Varese",
@@ -2570,6 +2686,8 @@
    "key": "penney-2022-metacognitive-training",
    "authors": "Penney, D., Sauv\u00e9, G., Mendelson, D., Thibaudeau, \u00c9., Moritz, S. & Lepage, M.",
    "year": "2022",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Douglas Mental Health University Institute / McGill",
     "Montr\u00e9al (Penney",
@@ -2609,6 +2727,8 @@
    "key": "pharoah-2010-family-intervention",
    "authors": "Pharoah, F., Mari, J., Rathbone, J. & Wong, W.",
    "year": "2010",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Cochrane Schizophrenia Group (Pharoah",
     "Rathbone) with Universidade Federal de S\u00e3o Paulo (Mari)"
@@ -2644,6 +2764,8 @@
    "key": "reiss-2013-socioeconomic-youth-mental-health",
    "authors": "Reiss, F.",
    "year": "2013",
+   "pdf": "sources/reiss-2013-socioeconomic-youth-mental-health.pdf",
+   "pdf_bytes": 370134,
    "team": [
     "Reiss",
     "University Medical Center Hamburg-Eppendorf"
@@ -2673,6 +2795,8 @@
    "key": "salazardepablo-2021-chr-transition",
    "authors": "Salazar de Pablo, G., Radua, J., Pereira, J., Bonoldi, I., Arienti, V., Besana, F., Soardo, L., Cabras, A., Fortea, L., Catalan, A., Vaquerizo-Serrano, J., Coronelli, F., Kaur, S., Da Silva, J., Shin, J. I., Solmi, M., Brondino, N., Politi, P., McGuire, P. & Fusar-Poli, P.",
    "year": "2021",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "KCL / Pavia early-psychosis group (Fusar-Poli",
     "McGuire)"
@@ -2711,6 +2835,8 @@
    "key": "schlier-2020-coping-mechanism",
    "authors": "Schlier, B., Ludwig, L., Wiesjahn, M., Jung, E. & Lincoln, T. M.",
    "year": "2020",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Lincoln group - Universit\u00e4t Hamburg",
     "with Philipps-University Marburg"
@@ -2756,6 +2882,8 @@
    "key": "sinha-2008-chronic-stress-addiction",
    "authors": "Sinha, R.",
    "year": "2008",
+   "pdf": "sources/sinha-2008-chronic-stress-addiction.pdf",
+   "pdf_bytes": 413005,
    "team": [
     "Sinha stress and addiction group",
     "Yale University School of Medicine"
@@ -2787,6 +2915,8 @@
    "key": "skodlar-2008-delusion-content",
    "authors": "\u0160kodlar, B., Dernov\u0161ek, M. Z. & Kocmur, M.",
    "year": "2008",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "University Psychiatric Hospital Ljubljana"
    ],
@@ -2822,6 +2952,8 @@
    "key": "song-2024-twin-prs-concordance",
    "authors": "Song, J., Pasman, J. A., Johansson, V., Kuja-Halkola, R., Harder, A., Karlsson, R., Lu, Y., Kowalec, K., Pedersen, N. L., Cannon, T. D., Hultman, C. M. & Sullivan, P. F.",
    "year": "2024",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Karolinska Institutet / UNC psychiatric genetics (Sullivan",
     "Hultman)"
@@ -2859,6 +2991,8 @@
    "key": "strous-2005-coping-exacerbation",
    "authors": "Strous, R. D., Ratner, Y., Gibel, A., Ponizovsky, A. & Ritsner, M.",
    "year": "2005",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Strous / Ritsner - Beer Yaakov and Sha'ar Menashe",
     "Israel"
@@ -2895,6 +3029,8 @@
    "key": "taylor-2025-cognitive-remediation",
    "authors": "Taylor, R., Cella, M. & Wykes, T.",
    "year": "2025",
+   "pdf": "sources/taylor-2025-cognitive-remediation.pdf",
+   "pdf_bytes": 614349,
    "team": [
     "Wykes / Cella group",
     "King's College London and South London and Maudsley NHS Foundation Trust"
@@ -2929,6 +3065,8 @@
    "key": "teferra-2012-ethiopia-outcome",
    "authors": "Teferra, S., Shibre, T., Fekadu, A., Medhin, G., Wakwoya, A., Alem, A. & Jacobsson, L.",
    "year": "2012",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Addis Ababa University Butajira group (Teferra",
     "Shibre",
@@ -2965,6 +3103,8 @@
    "key": "torresrodriguez-2018-pipatic",
    "authors": "Torres-Rodr\u00edguez, A., Griffiths, M. D. & Carbonell, X.",
    "year": "2018",
+   "pdf": "sources/torresrodriguez-2018-pipatic.pdf",
+   "pdf_bytes": 11120312,
    "team": [
     "Torres-Rodr\u00edguez / Carbonell group",
     "Ramon Llull University Barcelona",
@@ -3002,6 +3142,8 @@
    "key": "trubetskoy-2022-schizophrenia-gwas",
    "authors": "Trubetskoy, V., Pardi\u00f1as, A. F., Qi, T. and 300 further authors, Schizophrenia Working Group of the Psychiatric Genomics Consortium",
    "year": "2022",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Schizophrenia Working Group",
     "Psychiatric Genomics Consortium"
@@ -3038,6 +3180,8 @@
    "key": "varese-2012-childhood-adversity",
    "authors": "Varese, F., Smeets, F., Drukker, M., Lieverse, R., Lataster, T., Viechtbauer, W., Read, J., van Os, J. & Bentall, R. P.",
    "year": "2012",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Maastricht / Liverpool psychosis group (van Os",
     "Bentall",
@@ -3072,6 +3216,8 @@
    "key": "vassos-2012-urbanicity",
    "authors": "Vassos, E., Pedersen, C. B., Murray, R. M., Collier, D. A. & Lewis, C. M.",
    "year": "2012",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "KCL Social",
     "Genetic and Developmental Psychiatry (Vassos",
@@ -3108,6 +3254,8 @@
    "key": "vinogradov-2023-critical-period-plasticity",
    "authors": "Vinogradov, S., Chafee, M. V., Lee, E. & Morishita, H.",
    "year": "2023",
+   "pdf": "sources/vinogradov-2023-critical-period-plasticity.pdf",
+   "pdf_bytes": 1183183,
    "team": [
     "Vinogradov / Morishita plasticity group",
     "Minnesota and Mount Sinai"
@@ -3141,6 +3289,8 @@
    "key": "weyandt-2020-youth-neuroplasticity-interventions",
    "authors": "Weyandt, L. L., Clarkin, C. M., Holding, E. Z., May, S. E., Marraccini, M. E., Gudmundsdottir, B. G., Shepard, E. & Thompson, L.",
    "year": "2020",
+   "pdf": "sources/weyandt-2020-youth-neuroplasticity-interventions.pdf",
+   "pdf_bytes": 501895,
    "team": [
     "Weyandt group",
     "University of Rhode Island and collaborators"
@@ -3171,6 +3321,8 @@
    "key": "who-2019-icd11-delusions",
    "authors": "World Health Organization",
    "year": "2019",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "World Health Organization"
    ],
@@ -3204,6 +3356,8 @@
    "key": "wunderink-2013-dose-reduction",
    "authors": "Wunderink, L., Nieboer, R. M., Wiersma, D., Sytema, S. & Nienhuis, F. J.",
    "year": "2013",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Friesland Mental Health Services / University Medical Center Groningen (Wunderink)"
    ],
@@ -3240,6 +3394,8 @@
    "key": "xia-2011-psychoeducation",
    "authors": "Xia, J., Merinder, L. B. & Belgamwar, M. R.",
    "year": "2011",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Cochrane Schizophrenia Group",
     "University of Nottingham (Xia",
@@ -3275,6 +3431,8 @@
    "key": "yang-2026-chatbot-digital-stress",
    "authors": "Yang, Q., Wu, H., Du, X., Sun, Q. & Ren, Z.",
    "year": "2026",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Central China Normal University",
     "Wuhan (Yang",
@@ -3316,6 +3474,8 @@
    "key": "zhu-2017-fep-antipsychotics",
    "authors": "Zhu, Y., Krause, M., Huhn, M., Rothe, P., Schneider-Thoma, J., Chaimani, A., Li, C., Davis, J. M. & Leucht, S.",
    "year": "2017",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Technische Universit\u00e4t M\u00fcnchen (Leucht group)",
     "with Shanghai Jiao Tong",
@@ -3358,6 +3518,8 @@
    "key": "zubin-1977-vulnerability",
    "authors": "Zubin, J. & Spring, B.",
    "year": "1977",
+   "pdf": "",
+   "pdf_bytes": 0,
    "team": [
     "Zubin & Spring"
    ],
@@ -6315,6 +6477,8 @@
    "key": "arnold-2019-online-engagement",
    "authors": "Arnold, C., Villagonzalo, K.-A., Meyer, D., Farhall, J., Foley, F., Kyrios, M. & Thomas, N.",
    "year": "2019",
+   "pdf": "sources/arnold-2019-online-engagement.pdf",
+   "pdf_bytes": 2388032,
    "title": "Predicting engagement with an online psychosocial intervention for psychosis: Exploring individual- and intervention-level predictors",
    "design": "cohort",
    "n": "98",
@@ -6336,6 +6500,8 @@
    "key": "bailey-2018-trauma-symptom-severity",
    "authors": "Bailey, T., Alvarez-Jimenez, M., Garcia-Sanchez, A. M., Hulbert, C., Barlow, E. & Bendall, S.",
    "year": "2018",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Childhood trauma is associated with severity of hallucinations and delusions in psychotic disorders: a systematic review and meta-analysis.",
    "design": "meta-analysis",
    "n": "4680",
@@ -6355,6 +6521,8 @@
    "key": "birdsey-2021-social-graces",
    "authors": "Birdsey, N. & Kustner, C.",
    "year": "2021",
+   "pdf": "sources/birdsey-2021-social-graces.pdf",
+   "pdf_bytes": 342296,
    "title": "Reviewing the Social GRACES: What do they add and limit in systemic thinking and practice?",
    "design": "narrative-review",
    "n": "not reported",
@@ -6376,6 +6544,8 @@
    "key": "burns-2025-technology-delusions",
    "authors": "Burns, A. V., Nelson, K., Wang, H., Hegarty, E. M. & Cohn, A. B.",
    "year": "2025",
+   "pdf": "sources/burns-2025-technology-delusions.pdf",
+   "pdf_bytes": 272727,
    "title": "'The algorithm is hacked': analysis of technology delusions in a modern-day cohort",
    "design": "cohort",
    "n": "228",
@@ -6398,6 +6568,8 @@
    "key": "cannon-2012-delusion-content",
    "authors": "Cannon, B. J. & Kramer, L. M.",
    "year": "2012",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Delusion content across the 20th century in an American psychiatric hospital",
    "design": "cross-sectional",
    "n": "102",
@@ -6419,6 +6591,8 @@
    "key": "cantorgraae-2005-migration-meta",
    "authors": "Cantor-Graae, E. & Selten, J. P.",
    "year": "2005",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Schizophrenia and migration: a meta-analysis and review.",
    "design": "meta-analysis",
    "n": "50",
@@ -6438,6 +6612,8 @@
    "key": "ceraso-2020-maintenance-antipsychotics",
    "authors": "Ceraso, A., Lin, J. J., Schneider-Thoma, J., Siafis, S., Tardy, M., Komossa, K., Heres, S., Kissling, W., Davis, J. M. & Leucht, S.",
    "year": "2020",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Maintenance treatment with antipsychotic drugs for schizophrenia.",
    "design": "systematic-review",
    "n": "9145",
@@ -6457,6 +6633,8 @@
    "key": "chadwick-2003-formulation-impact",
    "authors": "Chadwick, P., Williams, C. & Mackenzie, J.",
    "year": "2003",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Impact of case formulation in cognitive behaviour therapy for psychosis.",
    "design": "single-arm-trial",
    "n": "not reported",
@@ -6478,6 +6656,8 @@
    "key": "correll-2018-early-intervention-services",
    "authors": "Correll, C. U., Galling, B., Pawar, A., Krivko, A., Bonetto, C., Ruggeri, M., Craig, T. J., Nordentoft, M. et al.",
    "year": "2018",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Comparison of early intervention services vs treatment as usual for early-phase psychosis: a systematic review, meta-analysis, and meta-regression.",
    "design": "meta-analysis",
    "n": "2176",
@@ -6497,6 +6677,8 @@
    "key": "davies-2020-prenatal-perinatal",
    "authors": "Davies, C., Segre, G., Estrad\u00e9, A., Radua, J., De Micheli, A., Provenzani, U., Oliver, D., Salazar de Pablo, G., Ramella-Cravaro, V., Besozzi, M., Dazzan, P., Miele, M., Caputo, G., Spallarossa, C., Crossland, G., Ilyas, A., Spada, G., Politi, P., Murray, R. M., McGuire, P. & Fusar-Poli, P.",
    "year": "2020",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Prenatal and perinatal risk and protective factors for psychosis: a systematic review and meta-analysis.",
    "design": "meta-analysis",
    "n": "152",
@@ -6516,6 +6698,8 @@
    "key": "diforti-2019-cannabis-potency",
    "authors": "Di Forti, M., Quattrone, D., Freeman, T. P., Tripoli, G., Gayer-Anderson, C., Quigley, H., Rodriguez, V., Jongsma, H. E., Ferraro, L., La Cascia, C., La Barbera, D., Tarricone, I., Berardi, D., Sz\u00f6ke, A., Arango, C., Tortelli, A., Velthorst, E., Bernardo, M., Del-Ben, C. M., Menezes, P. R., Selten, J. P., Jones, P. B., Kirkbride, J. B., Rutten, B. P., de Haan, L., Sham, P. C., van Os, J., Lewis, C. M., Lynskey, M., Morgan, C. & Murray, R. M.",
    "year": "2019",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "The contribution of cannabis use to variation in the incidence of psychotic disorder across Europe (EU-GEI): a multicentre case-control study.",
    "design": "case-control",
    "n": "2138",
@@ -6542,6 +6726,8 @@
    "key": "fisher-2010-cognitive-training-durability",
    "authors": "Fisher, M., Holland, C., Subramaniam, K. & Vinogradov, S.",
    "year": "2010",
+   "pdf": "sources/fisher-2010-cognitive-training-durability.pdf",
+   "pdf_bytes": 174953,
    "title": "Neuroplasticity-based cognitive training in schizophrenia: An interim report on the effects 6 months later.",
    "design": "RCT",
    "n": "32",
@@ -6561,6 +6747,8 @@
    "key": "fisher-2013-cognitive-interventions-chr",
    "authors": "Fisher, M., Loewy, R., Hardy, K., Schlosser, D. & Vinogradov, S.",
    "year": "2013",
+   "pdf": "sources/fisher-2013-cognitive-interventions-chr.pdf",
+   "pdf_bytes": 558419,
    "title": "Cognitive interventions targeting brain plasticity in the prodromal and early phases of schizophrenia.",
    "design": "narrative-review",
    "n": "not reported",
@@ -6580,6 +6768,8 @@
    "key": "fitzsimons-2017-poverty-dynamics-mcs",
    "authors": "Fitzsimons, E., Goodman, A., Kelly, E. & Smith, J. P.",
    "year": "2017",
+   "pdf": "sources/fitzsimons-2017-poverty-dynamics-mcs.pdf",
+   "pdf_bytes": 300043,
    "title": "Poverty dynamics and parental mental health: Determinants of childhood mental health in the UK.",
    "design": "cohort",
    "n": "18827",
@@ -6599,6 +6789,8 @@
    "key": "flathers-2026-llm-typology",
    "authors": "Flathers, M., Roux, S. & Torous, J.",
    "year": "2026",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Beyond artificial intelligence psychosis: a functional typology of large language model-associated psychotic phenomena",
    "design": "narrative-review",
    "n": "not reported",
@@ -6618,6 +6810,8 @@
    "key": "freeman-2005-paranoia-structure",
    "authors": "Freeman, D., Garety, P. A., Bebbington, P. E., Smith, B., Rollinson, R., Fowler, D., Kuipers, E., Ray, K. & Dunn, G.",
    "year": "2005",
+   "pdf": "sources/freeman-2005-paranoia-structure.pdf",
+   "pdf_bytes": 215824,
    "title": "Psychological investigation of the structure of paranoia in a non-clinical population",
    "design": "cross-sectional",
    "n": "1202",
@@ -6639,6 +6833,8 @@
    "key": "gao-2026-schizophrenia-aggression",
    "authors": "Gao, Q., Zhu, P. & Hu, H.",
    "year": "2026",
+   "pdf": "sources/gao-2026-schizophrenia-aggression.pdf",
+   "pdf_bytes": 1768919,
    "title": "Factors associated with aggressive behavior in patients with schizophrenia: a systematic review and meta-analysis.",
    "design": "meta-analysis",
    "n": "5096",
@@ -6658,6 +6854,8 @@
    "key": "hakamata-2022-early-life-adversity",
    "authors": "Hakamata, Y., Suzuki, Y., Kobashikawa, H. & Hori, H.",
    "year": "2022",
+   "pdf": "sources/hakamata-2022-early-life-adversity.pdf",
+   "pdf_bytes": 2286632,
    "title": "Neurobiology of early life adversity: A systematic review of meta-analyses towards an integrative account of its neurobiological trajectories to mental disorders.",
    "design": "systematic-review",
    "n": "27",
@@ -6677,6 +6875,8 @@
    "key": "hjorthoj-2023-cannabis-sex-difference",
    "authors": "Hjorth\u00f8j, C., Compton, W., Starzer, M., Nordholm, D., Einstein, E., Erlangsen, A., Nordentoft, M., Volkow, N. D. & Han, B.",
    "year": "2023",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Association between cannabis use disorder and schizophrenia stronger in young males than in females.",
    "design": "cohort",
    "n": "6907859",
@@ -6698,6 +6898,8 @@
    "key": "iheed-2026-m6w4-teaching-deck",
    "authors": "iheed / University of Warwick, MSc Neuroscience and Psychology of Mental Health",
    "year": "2026",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "M6W4 \u2013 Evidence-Based Treatments for Complex Mental Health Conditions",
    "design": "teaching-material",
    "n": "not reported",
@@ -6715,6 +6917,8 @@
    "key": "jahshan-2017-enhancing-neuroplasticity",
    "authors": "Jahshan, C., Rassovsky, Y. & Green, M. F.",
    "year": "2017",
+   "pdf": "sources/jahshan-2017-enhancing-neuroplasticity.pdf",
+   "pdf_bytes": 213811,
    "title": "Enhancing neuroplasticity to augment cognitive remediation in schizophrenia.",
    "design": "narrative-review",
    "n": "not reported",
@@ -6732,6 +6936,8 @@
    "key": "jauhar-2014-cbtp-meta-analysis",
    "authors": "Jauhar, S., McKenna, P. J., Radua, J., Fung, E., Salvador, R. & Laws, K. R.",
    "year": "2014",
+   "pdf": "sources/jauhar-2014-cbtp-meta-analysis.pdf",
+   "pdf_bytes": 195641,
    "title": "Cognitive-behavioural therapy for the symptoms of schizophrenia: systematic review and meta-analysis with examination of potential bias",
    "design": "meta-analysis",
    "n": "52",
@@ -6749,6 +6955,8 @@
    "key": "jauhar-2019-cbtp-critical-viewpoint",
    "authors": "Jauhar, S., Laws, K. R. & McKenna, P. J.",
    "year": "2019",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "CBT for schizophrenia: a critical viewpoint",
    "design": "narrative-review",
    "n": "not reported",
@@ -6766,6 +6974,8 @@
    "key": "jones-2018-cbtp-cochrane",
    "authors": "Jones, C., Hacker, D., Meaden, A., Cormac, I., Irving, C. B., Xia, J., Zhao, S., Shi, C. & Chen, J.",
    "year": "2018",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Cognitive behavioural therapy plus standard care versus standard care plus other psychosocial treatments for people with schizophrenia",
    "design": "systematic-review",
    "n": "36",
@@ -6783,6 +6993,8 @@
    "key": "jongsma-2019-international-incidence",
    "authors": "Jongsma, H. E., Turner, C., Kirkbride, J. B. & Jones, P. B.",
    "year": "2019",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "International incidence of psychotic disorders, 2002-17: a systematic review and meta-analysis.",
    "design": "meta-analysis",
    "n": "177",
@@ -6802,6 +7014,8 @@
    "key": "keshavan-2015-dysplasticity",
    "authors": "Keshavan, M. S., Mehta, U. M., Padmanabhan, J. L. & Shah, J. L.",
    "year": "2015",
+   "pdf": "sources/keshavan-2015-dysplasticity.pdf",
+   "pdf_bytes": 1302455,
    "title": "Dysplasticity, metaplasticity, and schizophrenia: Implications for risk, illness, and novel interventions.",
    "design": "narrative-review",
    "n": "not reported",
@@ -6821,6 +7035,8 @@
    "key": "kessler-2010-childhood-adversities-wmh",
    "authors": "Kessler, R. C., McLaughlin, K. A., Green, J. G., Gruber, M. J., Sampson, N. A., Zaslavsky, A. M., Aguilar-Gaxiola, S., Alhamzawi, A. O., Alonso, J., Angermeyer, M., Benjet, C., Bromet, E., Chatterji, S., de Girolamo, G., Demyttenaere, K., Fayyad, J., Florescu, S., Gal, G., Gureje, O., Haro, J. M., Hu, C., Karam, E. G., Kawakami, N., Lee, S., Lepine, J., Ormel, J., Posada-Villa, J., Sagar, R., Tsang, A., Ustun, T. B., Vassilev, S., Viana, M. C. & Williams, D. R.",
    "year": "2010",
+   "pdf": "sources/kessler-2010-childhood-adversities-wmh.pdf",
+   "pdf_bytes": 160486,
    "title": "Childhood adversities and adult psychopathology in the WHO World Mental Health Surveys.",
    "design": "cross-sectional",
    "n": "51945",
@@ -6863,6 +7079,8 @@
    "key": "kirkbride-2014-deprivation-east-london",
    "authors": "Kirkbride, J. B., Jones, P. B., Ullrich, S. & Coid, J. W.",
    "year": "2014",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Social deprivation, inequality, and the neighborhood-level incidence of psychotic syndromes in East London.",
    "design": "cohort",
    "n": "427",
@@ -6884,6 +7102,8 @@
    "key": "kumar-2017-india-public-health-strategy",
    "authors": "Kumar, C. N., Thirthalli, J., Suresha, K. K., Venkatesh, B. K., Arunachala, U. & Gangadhar, B. N.",
    "year": "2017",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Antipsychotic treatment, psychoeducation & regular follow up as a public health strategy for schizophrenia: results from a prospective study.",
    "design": "cohort",
    "n": "201",
@@ -6906,6 +7126,8 @@
    "key": "leepow-2023-cannabis-global-south",
    "authors": "Lee Pow, J., Donald, C., di Forti, M., Roberts, T., Weiss, H. A., Ayinde, O., John, S., Olley, B., Ojagbemi, A., Esponda, G. M., Lam, J., Poornachandrika, P., Dazzan, P., Gaughran, F., Kannan, P. P., Sudhakar, S., Burns, J., Chiliza, B., Cohen, A., Gureje, O., Thara, R., Murray, R. M., Morgan, C. & Hutchinson, G.",
    "year": "2023",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Cannabis use and psychotic disorders in diverse settings in the Global South: findings from INTREPID II.",
    "design": "case-control",
    "n": "646",
@@ -6930,6 +7152,8 @@
    "key": "lewisfernandez-2017-cultural-formulation-interview",
    "authors": "Lewis-Fern\u00e1ndez, R., Aggarwal, N. K., Lam, P. C., Galfalvy, H., Weiss, M. G., Kirmayer, L. J., Paralikar, V., Deshpande, S. N. et al.",
    "year": "2017",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Feasibility, acceptability and clinical utility of the Cultural Formulation Interview: mixed-methods results from the DSM-5 international field trial.",
    "design": "qualitative",
    "n": "393",
@@ -6956,6 +7180,8 @@
    "key": "lincoln-2017-psychosen",
    "authors": "Lincoln, T. & Heibach, E.",
    "year": "2017",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Psychosen",
    "design": "narrative-review",
    "n": "not reported",
@@ -6973,6 +7199,8 @@
    "key": "lincoln-2019-symptom-specific-cbtp",
    "authors": "Lincoln, T. M. & Peters, E.",
    "year": "2019",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "A systematic review and discussion of symptom specific cognitive behavioural approaches to delusions and hallucinations",
    "design": "systematic-review",
    "n": "12",
@@ -6990,6 +7218,8 @@
    "key": "lobuglio-2024-chrp-bpd",
    "authors": "Lo Buglio, G., Boldrini, T., Polari, A., Fiorentino, F., Nelson, B., Solmi, M., Lingiardi, V. & Tanzilli, A.",
    "year": "2024",
+   "pdf": "sources/lobuglio-2024-chrp-bpd.pdf",
+   "pdf_bytes": 2422694,
    "title": "Harmonizing early intervention strategies: scoping review of clinical high risk for psychosis and borderline personality disorder.",
    "design": "systematic-review",
    "n": "33",
@@ -7016,6 +7246,8 @@
    "key": "louise-2018-mindfulness-psychosis-meta",
    "authors": "Louise, S., Fitzpatrick, M., Strauss, C., Rossell, S. L. & Thomas, N.",
    "year": "2018",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Mindfulness- and acceptance-based interventions for psychosis: our current understanding and a meta-analysis.",
    "design": "meta-analysis",
    "n": "10",
@@ -7035,6 +7267,8 @@
    "key": "lowe-2024-persistent-symptoms",
    "authors": "L\u00f6we, B., Toussaint, A., Rosmalen, J. G. M., Huang, W.-L., Burton, C., Weigel, A., Levenson, J. L. & Henningsen, P.",
    "year": "2024",
+   "pdf": "sources/lowe-2024-persistent-symptoms.pdf",
+   "pdf_bytes": 548449,
    "title": "Persistent physical symptoms: definition, genesis, and management",
    "design": "narrative-review",
    "n": "not reported",
@@ -7052,6 +7286,8 @@
    "key": "macaulay-2013-coping-neurocognition",
    "authors": "MacAulay, R. & Cohen, A. S.",
    "year": "2013",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Affecting coping: does neurocognition predict approach and avoidant coping strategies within schizophrenia spectrum disorders?",
    "design": "cross-sectional",
    "n": "142",
@@ -7071,6 +7307,8 @@
    "key": "macneil-2012-case-formulation",
    "authors": "Macneil, C. A., Hasty, M. K., Conus, P. & Berk, M.",
    "year": "2012",
+   "pdf": "sources/macneil-2012-case-formulation.pdf",
+   "pdf_bytes": 296823,
    "title": "Is diagnosis enough to guide interventions in mental health? Using case formulation in clinical practice.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7090,6 +7328,8 @@
    "key": "marconi-2016-cannabis-dose-response",
    "authors": "Marconi, A., Di Forti, M., Lewis, C. M., Murray, R. M. & Vassos, E.",
    "year": "2016",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Meta-analysis of the Association Between the Level of Cannabis Use and Risk of Psychosis.",
    "design": "meta-analysis",
    "n": "66816",
@@ -7109,6 +7349,8 @@
    "key": "marek-2022-bwas-reproducibility",
    "authors": "Marek, S., Tervo-Clemmens, B., Calabro, F. J., Montez, D. F., Kay, B. P., Hatoum, A. S., Donohue, M. R., Foran, W., Miller, R. L., Hendrickson, T. J., Malone, S. M., Kandala, S., Feczko, E., Miranda-Dominguez, O., Graham, A. M., Earl, E. A., Perrone, A. J., Cordova, M., Doyle, O., Moore, L. A., Conan, G. M., Uriarte, J., Snider, K., Lynch, B. J., Wilgenbusch, J. C., Pengo, T., Tam, A., Chen, J., Newbold, D. J., Zheng, A., Seider, N. A., Van, A. N., Metoki, A., Chauvin, R. J., Laumann, T. O., Greene, D. J., Petersen, S. E., Garavan, H., Thompson, W. K., Nichols, T. E., Yeo, B. T. T., Barch, D. M., Luna, B., Fair, D. A. & Dosenbach, N. U. F.",
    "year": "2022",
+   "pdf": "sources/marek-2022-bwas-reproducibility.pdf",
+   "pdf_bytes": 9584613,
    "title": "Reproducible brain-wide association studies require thousands of individuals",
    "design": "cross-sectional",
    "n": "50000",
@@ -7132,6 +7374,8 @@
    "key": "mccrone-2013-early-intervention-economics",
    "authors": "McCrone, P., Singh, S. P., Knapp, M., Smith, J., Clark, M., Shiers, D. & Tiffin, P. A.",
    "year": "2013",
+   "pdf": "sources/mccrone-2013-early-intervention-economics.pdf",
+   "pdf_bytes": 418923,
    "title": "The economic impact of early intervention in psychosis services for children and adolescents.",
    "design": "economic-model",
    "n": "not reported",
@@ -7153,6 +7397,8 @@
    "key": "mcgrath-2016-psychotic-experiences-onset",
    "authors": "McGrath, J. J., Saha, S., Al-Hamzawi, A. O., Alonso, J., Andrade, L., Borges, G., Bromet, E. J., Oakley Browne, M., Bruffaerts, R., Caldas de Almeida, J. M., Fayyad, J., Florescu, S., de Girolamo, G., Gureje, O., Hu, C., de Jonge, P., Kovess-Masfety, V., Lepine, J. P., Lim, C. C. W., Navarro-Mateu, F., Piazza, M., Sampson, N., Posada-Villa, J., Kendler, K. S. & Kessler, R. C.",
    "year": "2016",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Age of Onset and Lifetime Projected Risk of Psychotic Experiences: Cross-National Data From the World Mental Health Survey.",
    "design": "cross-sectional",
    "n": "31261",
@@ -7173,6 +7419,8 @@
    "key": "mcgrath-2017-adversity-cross-national",
    "authors": "McGrath, J. J., McLaughlin, K. A., Saha, S., Aguilar-Gaxiola, S., Al-Hamzawi, A., Alonso, J., Bruffaerts, R., de Girolamo, G., de Jonge, P., Esan, O., Florescu, S., Gureje, O., Haro, J. M., Hu, C., Karam, E. G., Kovess-Masfety, V., Lee, S., Lepine, J. P., Lim, C. C. W., Medina-Mora, M. E., Mneimneh, Z., Pennell, B. E., Piazza, M., Posada-Villa, J., Sampson, N., Viana, M. C., Xavier, M., Bromet, E. J., Kendler, K. S. & Kessler, R. C.",
    "year": "2017",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "The association between childhood adversities and subsequent first onset of psychotic experiences: a cross-national analysis of 23 998 respondents from 17 countries.",
    "design": "cross-sectional",
    "n": "23998",
@@ -7210,6 +7458,8 @@
    "key": "michalskadarocha-2018-loneliness",
    "authors": "Michalska da Rocha, B., Rhodes, S., Vasilopoulou, E. & Hutton, P.",
    "year": "2018",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Loneliness in psychosis: a meta-analytical review.",
    "design": "meta-analysis",
    "n": "15647",
@@ -7230,6 +7480,8 @@
    "key": "morgan-2023-intrepid-incidence",
    "authors": "Morgan, C., Cohen, A., Esponda, G. M., Roberts, T., John, S., Pow, J. L., Donald, C., Olley, B., Ayinde, O., Lam, J., Poornachandrika, P., Dazzan, P., Gaughran, F., Kannan, P. P., Sudhakar, S., Burns, J., Chiliza, B., Susser, E., Weiss, H. A., Murray, R. M., Rangaswamy, T., Gureje, O. & Hutchinson, G.",
    "year": "2023",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Epidemiology of Untreated Psychoses in 3 Diverse Settings in the Global South: The International Research Program on Psychotic Disorders in Diverse Settings (INTREPID II).",
    "design": "cohort",
    "n": "1038",
@@ -7254,6 +7506,8 @@
    "key": "morrin-2026-ai-delusions-safeguards",
    "authors": "Morrin, H., Nicholls, L., Levin, M., Yiend, J., Iyengar, U., DelGuidice, F., Bhattacharya, S., Tognin, S., MacCabe, J., Twumasi, R., Alderson-Day, B. & Pollak, T. A.",
    "year": "2026",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Artificial intelligence-associated delusions and large language models: risks, mechanisms of delusion co-creation, and safeguarding strategies.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7275,6 +7529,8 @@
    "key": "nice-2014-cg178-psychosis-adults",
    "authors": "National Institute for Health and Care Excellence",
    "year": "2014",
+   "pdf": "sources/nice-2014-cg178-psychosis-adults.pdf",
+   "pdf_bytes": 207868,
    "title": "Psychosis and schizophrenia in adults: prevention and management. NICE clinical guideline CG178.",
    "design": "guideline",
    "n": "not reported",
@@ -7297,6 +7553,8 @@
    "key": "nice-2020-ng181-rehabilitation-psychosis",
    "authors": "National Institute for Health and Care Excellence",
    "year": "2020",
+   "pdf": "sources/nice-2020-ng181-rehabilitation-psychosis.pdf",
+   "pdf_bytes": 412974,
    "title": "Rehabilitation for adults with complex psychosis. NICE guideline NG181.",
    "design": "guideline",
    "n": "not reported",
@@ -7318,6 +7576,8 @@
    "key": "panayi-2026-cptsd-psychosis-neuroanatomy",
    "authors": "Panayi, P., Varese, F., Peters, E., Bentall, R., Hardy, A., Berry, K., Sellwood, W., Underwood, R., Steel, C., Mason, L. & Elliott, R.",
    "year": "2026",
+   "pdf": "sources/panayi-2026-cptsd-psychosis-neuroanatomy.pdf",
+   "pdf_bytes": 2867164,
    "title": "Investigating the neuroanatomical underpinnings of complex PTSD in people with psychosis.",
    "design": "cross-sectional",
    "n": "108",
@@ -7340,6 +7600,8 @@
    "key": "penney-2022-metacognitive-training",
    "authors": "Penney, D., Sauv\u00e9, G., Mendelson, D., Thibaudeau, \u00c9., Moritz, S. & Lepage, M.",
    "year": "2022",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Immediate and sustained outcomes and moderators associated with metacognitive training for psychosis: a systematic review and meta-analysis.",
    "design": "meta-analysis",
    "n": "1816",
@@ -7359,6 +7621,8 @@
    "key": "pharoah-2010-family-intervention",
    "authors": "Pharoah, F., Mari, J., Rathbone, J. & Wong, W.",
    "year": "2010",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Family intervention for schizophrenia.",
    "design": "systematic-review",
    "n": "53",
@@ -7378,6 +7642,8 @@
    "key": "reiss-2013-socioeconomic-youth-mental-health",
    "authors": "Reiss, F.",
    "year": "2013",
+   "pdf": "sources/reiss-2013-socioeconomic-youth-mental-health.pdf",
+   "pdf_bytes": 370134,
    "title": "Socioeconomic inequalities and mental health problems in children and adolescents: A systematic review.",
    "design": "systematic-review",
    "n": "55",
@@ -7395,6 +7661,8 @@
    "key": "salazardepablo-2021-chr-transition",
    "authors": "Salazar de Pablo, G., Radua, J., Pereira, J., Bonoldi, I., Arienti, V., Besana, F., Soardo, L., Cabras, A., Fortea, L., Catalan, A., Vaquerizo-Serrano, J., Coronelli, F., Kaur, S., Da Silva, J., Shin, J. I., Solmi, M., Brondino, N., Politi, P., McGuire, P. & Fusar-Poli, P.",
    "year": "2021",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Probability of Transition to Psychosis in Individuals at Clinical High Risk: An Updated Meta-analysis.",
    "design": "meta-analysis",
    "n": "9222",
@@ -7415,6 +7683,8 @@
    "key": "schlier-2020-coping-mechanism",
    "authors": "Schlier, B., Ludwig, L., Wiesjahn, M., Jung, E. & Lincoln, T. M.",
    "year": "2020",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Fostering coping as a mechanism of symptom change in cognitive behavioural therapy for psychosis",
    "design": "single-arm-trial",
    "n": "57",
@@ -7434,6 +7704,8 @@
    "key": "sinha-2008-chronic-stress-addiction",
    "authors": "Sinha, R.",
    "year": "2008",
+   "pdf": "sources/sinha-2008-chronic-stress-addiction.pdf",
+   "pdf_bytes": 413005,
    "title": "Chronic stress, drug use, and vulnerability to addiction.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7453,6 +7725,8 @@
    "key": "skodlar-2008-delusion-content",
    "authors": "\u0160kodlar, B., Dernov\u0161ek, M. Z. & Kocmur, M.",
    "year": "2008",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Psychopathology of schizophrenia in Ljubljana (Slovenia) from 1881 to 2000: changes in the content of delusions in schizophrenia patients related to various sociopolitical, technical and scientific changes",
    "design": "cross-sectional",
    "n": "120",
@@ -7474,6 +7748,8 @@
    "key": "song-2024-twin-prs-concordance",
    "authors": "Song, J., Pasman, J. A., Johansson, V., Kuja-Halkola, R., Harder, A., Karlsson, R., Lu, Y., Kowalec, K., Pedersen, N. L., Cannon, T. D., Hultman, C. M. & Sullivan, P. F.",
    "year": "2024",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Polygenic Risk Scores and Twin Concordance for Schizophrenia and Bipolar Disorder.",
    "design": "case-control",
    "n": "292",
@@ -7495,6 +7771,8 @@
    "key": "strous-2005-coping-exacerbation",
    "authors": "Strous, R. D., Ratner, Y., Gibel, A., Ponizovsky, A. & Ritsner, M.",
    "year": "2005",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Longitudinal assessment of coping abilities at exacerbation and stabilization in schizophrenia",
    "design": "cohort",
    "n": "237",
@@ -7514,6 +7792,8 @@
    "key": "taylor-2025-cognitive-remediation",
    "authors": "Taylor, R., Cella, M. & Wykes, T.",
    "year": "2025",
+   "pdf": "sources/taylor-2025-cognitive-remediation.pdf",
+   "pdf_bytes": 614349,
    "title": "Cognitive Remediation Is an Evidence-Based Psychological Therapy: Isn't It Time It Was Treated Like One?",
    "design": "narrative-review",
    "n": "not reported",
@@ -7531,6 +7811,8 @@
    "key": "teferra-2012-ethiopia-outcome",
    "authors": "Teferra, S., Shibre, T., Fekadu, A., Medhin, G., Wakwoya, A., Alem, A. & Jacobsson, L.",
    "year": "2012",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Five-year clinical course and outcome of schizophrenia in Ethiopia.",
    "design": "cohort",
    "n": "321",
@@ -7552,6 +7834,8 @@
    "key": "torresrodriguez-2018-pipatic",
    "authors": "Torres-Rodr\u00edguez, A., Griffiths, M. D. & Carbonell, X.",
    "year": "2018",
+   "pdf": "sources/torresrodriguez-2018-pipatic.pdf",
+   "pdf_bytes": 11120312,
    "title": "The treatment of Internet Gaming Disorder: a brief overview of the PIPATIC program.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7573,6 +7857,8 @@
    "key": "trubetskoy-2022-schizophrenia-gwas",
    "authors": "Trubetskoy, V., Pardi\u00f1as, A. F., Qi, T. and 300 further authors, Schizophrenia Working Group of the Psychiatric Genomics Consortium",
    "year": "2022",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Mapping genomic loci implicates genes and synaptic biology in schizophrenia.",
    "design": "case-control",
    "n": "320404",
@@ -7592,6 +7878,8 @@
    "key": "varese-2012-childhood-adversity",
    "authors": "Varese, F., Smeets, F., Drukker, M., Lieverse, R., Lataster, T., Viechtbauer, W., Read, J., van Os, J. & Bentall, R. P.",
    "year": "2012",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Childhood adversities increase the risk of psychosis: a meta-analysis of patient-control, prospective- and cross-sectional cohort studies.",
    "design": "meta-analysis",
    "n": "41",
@@ -7611,6 +7899,8 @@
    "key": "vassos-2012-urbanicity",
    "authors": "Vassos, E., Pedersen, C. B., Murray, R. M., Collier, D. A. & Lewis, C. M.",
    "year": "2012",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Meta-analysis of the association of urbanicity with schizophrenia.",
    "design": "meta-analysis",
    "n": "not reported",
@@ -7630,6 +7920,8 @@
    "key": "vinogradov-2023-critical-period-plasticity",
    "authors": "Vinogradov, S., Chafee, M. V., Lee, E. & Morishita, H.",
    "year": "2023",
+   "pdf": "sources/vinogradov-2023-critical-period-plasticity.pdf",
+   "pdf_bytes": 1183183,
    "title": "Psychosis spectrum illnesses as disorders of prefrontal critical period plasticity.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7649,6 +7941,8 @@
    "key": "weyandt-2020-youth-neuroplasticity-interventions",
    "authors": "Weyandt, L. L., Clarkin, C. M., Holding, E. Z., May, S. E., Marraccini, M. E., Gudmundsdottir, B. G., Shepard, E. & Thompson, L.",
    "year": "2020",
+   "pdf": "sources/weyandt-2020-youth-neuroplasticity-interventions.pdf",
+   "pdf_bytes": 501895,
    "title": "Neuroplasticity in children and adolescents in response to treatment intervention: A systematic review of the literature.",
    "design": "systematic-review",
    "n": "28",
@@ -7668,6 +7962,8 @@
    "key": "who-2019-icd11-delusions",
    "authors": "World Health Organization",
    "year": "2019",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "International classification of diseases for mortality and morbidity statistics. 11th revision (ICD-11)",
    "design": "narrative-review",
    "n": "not reported",
@@ -7685,6 +7981,8 @@
    "key": "wunderink-2013-dose-reduction",
    "authors": "Wunderink, L., Nieboer, R. M., Wiersma, D., Sytema, S. & Nienhuis, F. J.",
    "year": "2013",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Recovery in remitted first-episode psychosis at 7 years of follow-up of an early dose reduction/discontinuation or maintenance treatment strategy: long-term follow-up of a 2-year randomized clinical trial.",
    "design": "RCT",
    "n": "103",
@@ -7706,6 +8004,8 @@
    "key": "xia-2011-psychoeducation",
    "authors": "Xia, J., Merinder, L. B. & Belgamwar, M. R.",
    "year": "2011",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Psychoeducation for schizophrenia.",
    "design": "systematic-review",
    "n": "5142",
@@ -7725,6 +8025,8 @@
    "key": "yang-2026-chatbot-digital-stress",
    "authors": "Yang, Q., Wu, H., Du, X., Sun, Q. & Ren, Z.",
    "year": "2026",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Emotional support or problem-solving? A randomized controlled trial of function-specific AI chatbots for digital stress in college students.",
    "design": "RCT",
    "n": "99",
@@ -7747,6 +8049,8 @@
    "key": "zhu-2017-fep-antipsychotics",
    "authors": "Zhu, Y., Krause, M., Huhn, M., Rothe, P., Schneider-Thoma, J., Chaimani, A., Li, C., Davis, J. M. & Leucht, S.",
    "year": "2017",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Antipsychotic drugs for the acute treatment of patients with a first episode of schizophrenia: a systematic review with pairwise and network meta-analyses.",
    "design": "meta-analysis",
    "n": "2669",
@@ -7766,6 +8070,8 @@
    "key": "zubin-1977-vulnerability",
    "authors": "Zubin, J. & Spring, B.",
    "year": "1977",
+   "pdf": "",
+   "pdf_bytes": 0,
    "title": "Vulnerability: a new view of schizophrenia",
    "design": "narrative-review",
    "n": "not reported",

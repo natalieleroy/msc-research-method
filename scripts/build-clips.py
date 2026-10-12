@@ -95,6 +95,11 @@ def section_dict(sid, title, intent, words, claims):
     return dict(id=sid, title=title, intent=intent, words=words, claim=claim,
                 claim_by=("natalie" if claim else ""), claim_date=date)
 
+def pdf_for(key):
+    """Local PDF for a source, if we hold one. Returns (relative path, bytes)."""
+    p = ROOT / "sources" / f"{key}.pdf"
+    return (f"sources/{key}.pdf", p.stat().st_size) if p.exists() else ("", 0)
+
 def main():
     errors, warnings = [], []
     essays, sections = read_outline()
@@ -249,6 +254,7 @@ def main():
         sections=[section_dict(s, t2, i, w, claims) for s, t2, i, w in sections],
         strengths=STRENGTHS,
         sources=[dict(key=k, authors=v.get("authors"), year=str(v.get("year")),
+                      pdf=pdf_for(k)[0], pdf_bytes=pdf_for(k)[1],
                       **{f: (v.get(f) or []) for f in INDEP_LIST},
                       **{f: (True if v.get(f) in ("true", "True") else
                              False if v.get(f) in ("false", "False") else
@@ -262,6 +268,7 @@ def main():
                  for k, v in sorted(srcs.items())],
         clips=clips,
         unplaced=[dict(key=k, authors=v.get("authors"), year=str(v.get("year")),
+                       pdf=pdf_for(k)[0], pdf_bytes=pdf_for(k)[1],
                        title=v.get("title"), design=v.get("design"),
                        n=str(v.get("n", "")), strength=v.get("strength", "ungraded"),
                        strength_why=v.get("strength_why", ""),
@@ -283,7 +290,8 @@ def main():
         print(f"  essay {no}  {sum(1 for c in clips if c['essay'] == no):>3} clips  {et}")
     unplaced = [k for k in srcs if not any(c["key"] == k for c in clips)]
     assigned = [k for k in unplaced if srcs[k].get("serves")]
-    print(f"board/clips.json  {len(srcs)} sources")
+    held = sum(1 for k in srcs if pdf_for(k)[0])
+    print(f"board/clips.json  {len(srcs)} sources, {held} with a local PDF")
     print(f"shelf            {len(unplaced)} sources read but not yet placed in the "
           f"argument, {len(assigned)} of them with a `serves` section named")
     open_gates = [s for s, _, _, _ in sections if s in claims]

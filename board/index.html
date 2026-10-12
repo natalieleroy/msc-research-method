@@ -111,6 +111,18 @@ label.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--m
 .mbtn:disabled{opacity:.3;cursor:default}
 .msel{font-size:10.5px;padding:2px 4px;max-width:110px}
 
+/* ---- full-text row ---- */
+.ft{display:flex;flex-wrap:wrap;gap:5px 8px;align-items:center;margin-top:8px}
+.pdfbtn{background:color-mix(in srgb,var(--strong) 12%,transparent);
+  border:1px solid color-mix(in srgb,var(--strong) 45%,transparent);color:var(--strong);
+  border-radius:999px;padding:2px 9px;font-size:10.5px;font-weight:600;cursor:pointer;
+  white-space:nowrap;font-family:var(--body)}
+.pdfbtn:hover{background:color-mix(in srgb,var(--strong) 22%,transparent)}
+.ft .path{font-family:var(--mono);font-size:10px;color:var(--faint);overflow-wrap:anywhere}
+a.ext{font-family:var(--mono);font-size:10.5px;color:var(--accent);text-decoration:none;
+  border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent);overflow-wrap:anywhere}
+a.ext:hover{border-bottom-color:var(--accent)}
+
 /* ---- shelf ---- */
 .shelf-sec{margin-bottom:22px}
 .shelf-h{font-family:var(--display);font-size:16px;font-weight:600;padding-bottom:7px;
@@ -232,6 +244,33 @@ const S = {data:null, ov:{}, db:null, canWrite:null, view:"board", essay:"", dra
 const el = id => document.getElementById(id);
 const esc = s => String(s==null?"":s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const STR_CLASS = {strong:"g", moderate:"b", indicative:"a", weak:"o", "not-citable":"r"};
+const kb = n => n >= 1048576 ? (n/1048576).toFixed(1) + " MB" : Math.round(n/1024) + " KB";
+
+/* The PDFs stay on Natalie's machine: this board is shared by link and they are
+   publisher copyright. So the board says what she holds and where, and links out
+   to the publisher for the rest. */
+function fulltext(s){
+  const doi = s.doi && s.doi !== "not reported"
+    ? '<a class="ext" href="https://doi.org/' + esc(s.doi) + '" target="_blank" rel="noopener">doi.org/' + esc(s.doi) + '</a>' : "";
+  if (s.pdf) {
+    return '<div class="ft"><button class="pdfbtn" data-path="' + esc(s.pdf) + '" ' +
+      'title="Copy the path">PDF held · ' + kb(s.pdf_bytes) + '</button>' +
+      '<code class="path">' + esc(s.pdf) + '</code>' + doi + '</div>';
+  }
+  return '<div class="ft"><span class="chip a">no PDF yet</span>' + doi + '</div>';
+}
+document.addEventListener("click", async e => {
+  const b = e.target.closest && e.target.closest(".pdfbtn");
+  if (!b) return;
+  const full = "~/Github/msc-research/" + b.dataset.path;
+  try { await navigator.clipboard.writeText(full); b.textContent = "path copied"; }
+  catch (_) {
+    const r = document.createRange(); r.selectNodeContents(b.parentNode.querySelector(".path"));
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    b.textContent = "path selected — copy it";
+  }
+  setTimeout(() => { b.textContent = "PDF held"; }, 2200);
+});
 
 function setStatus(t){ el("status").textContent = t || ""; }
 
@@ -429,6 +468,10 @@ function gaps(all){
   out.push('<div class="gap' + (un.length ? " w" : "") + '"><b>' + un.length +
     '</b> source' + (un.length === 1 ? "" : "s") + ' with no clips on the spine' +
     (un.length ? ": " + un.map(s => esc(s.authors)).join(", ") : "") + '</div>');
+  const held = S.data.sources.filter(s => s.pdf).length;
+  out.push('<div class="gap' + (held < S.data.sources.length ? " w" : "") + '"><b>' + held +
+    '</b> of ' + S.data.sources.length + ' sources have the full text saved locally in ' +
+    '<code>sources/</code> — the rest are abstract-level or need a library login</div>');
   const shelf = (S.data.unplaced || []).length;
   out.push('<div class="gap"><b>' + shelf + '</b> of ' + S.data.sources.length +
     ' sources are read but not yet placed in the argument — see the Shelf view</div>');
@@ -495,10 +538,13 @@ function renderSources(){
     '<b>' + coded + '</b> have a coded participant country; <b>' + weirdTrue +
     '</b> are WEIRD samples. Independence on three axes — team, culture, ' +
     'perspective — is what makes agreement between two sources mean something, ' +
-    'so a blank is an honest gap rather than a pass.</p>' +
+    'so a blank is an honest gap rather than a pass. ' +
+    '<b>The PDFs are deliberately not on this page.</b> This board is shared by ' +
+    'link and they are publisher copyright, so it shows what is held and where, ' +
+    'and links out for the rest.</p>' +
     '<div class="tablewrap"><table class="src-t"><thead><tr>' +
     '<th>Source &amp; title</th><th>Design</th><th>n</th><th>Strength &amp; why</th>' +
-    '<th>Countries</th><th>WEIRD</th><th>Team / dataset</th><th>Clips</th>' +
+    '<th>Full text</th><th>Countries</th><th>WEIRD</th><th>Team / dataset</th><th>Clips</th>' +
     '</tr></thead><tbody>' +
     srcs.map(s => {
       const mine = all.filter(c => c.key === s.key);
@@ -518,6 +564,7 @@ function renderSources(){
         '<td class="num">' + (s.n && s.n !== "not reported" ? esc(s.n) : "—") + '</td>' +
         '<td><span class="chip ' + (STR_CLASS[s.strength]||"") + '">' + esc(s.strength) + '</span>' +
           '<div class="why">' + esc(s.strength_why || "—") + '</div></td>' +
+        '<td>' + fulltext(s) + '</td>' +
         '<td>' + ctry + '</td><td>' + w + '</td><td>' + team + '</td>' +
         '<td class="num">' + (mine.length || '<span class="no">0</span>') + '</td></tr>';
     }).join("") + '</tbody></table></div>';
@@ -553,7 +600,8 @@ function renderShelf(){
         esc((s.countries||[]).join(", ")) + '</span>' : "") +
       (s.status ? '<span class="chip r">' + esc(s.status) + '</span>' : "") +
     '</div>' +
-    (s.strength_why ? '<div class="why">' + esc(s.strength_why) + '</div>' : "") + '</div>';
+    (s.strength_why ? '<div class="why">' + esc(s.strength_why) + '</div>' : "") +
+    fulltext(s) + '</div>';
 
   S.data.essays.forEach(e => {
     if (S.essay && e.no !== S.essay) return;

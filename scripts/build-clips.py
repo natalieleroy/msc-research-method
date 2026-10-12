@@ -95,6 +95,20 @@ def section_dict(sid, title, intent, words, claims):
     return dict(id=sid, title=title, intent=intent, words=words, claim=claim,
                 claim_by=("natalie" if claim else ""), claim_date=date)
 
+NO_PARTICIPANTS_MARKER = "no recruited participants"
+
+def recruited_nobody(key):
+    """True when the note itself states the source recruited no participants.
+
+    Read from the note body rather than the `population` frontmatter, because
+    that field records the population a source is ABOUT: a narrative review of
+    adolescents recruited nobody but reasonably says "adolescents". Conflating
+    the two is how `countries: []` came to look like pending work on sources
+    where no reading could ever fill it.
+    """
+    p = NOTES / f"{key}.md"
+    return p.exists() and NO_PARTICIPANTS_MARKER in p.read_text()
+
 def pdf_for(key):
     """Local PDF for a source, if we hold one. Returns (relative path, bytes)."""
     p = ROOT / "sources" / f"{key}.pdf"
@@ -255,6 +269,7 @@ def main():
         strengths=STRENGTHS,
         sources=[dict(key=k, authors=v.get("authors"), year=str(v.get("year")),
                       pdf=pdf_for(k)[0], pdf_bytes=pdf_for(k)[1],
+                      recruited_nobody=recruited_nobody(k),
                       **{f: (v.get(f) or []) for f in INDEP_LIST},
                       **{f: (True if v.get(f) in ("true", "True") else
                              False if v.get(f) in ("false", "False") else
@@ -269,6 +284,7 @@ def main():
         clips=clips,
         unplaced=[dict(key=k, authors=v.get("authors"), year=str(v.get("year")),
                        pdf=pdf_for(k)[0], pdf_bytes=pdf_for(k)[1],
+                       recruited_nobody=recruited_nobody(k),
                        title=v.get("title"), design=v.get("design"),
                        n=str(v.get("n", "")), strength=v.get("strength", "ungraded"),
                        strength_why=v.get("strength_why", ""),

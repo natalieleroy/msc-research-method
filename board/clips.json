@@ -300,8 +300,10 @@
    "year": "2019",
    "pdf": "sources/arnold-2019-online-engagement.pdf",
    "pdf_bytes": 2388032,
+   "recruited_nobody": false,
    "team": [
-    "Swinburne Centre for Mental Health SMART program"
+    "Swinburne Centre for Mental Health",
+    "SMART programme (Thomas)"
    ],
    "affiliations": [
     "Swinburne University of Technology - Melbourne - Australia",
@@ -344,6 +346,7 @@
    "year": "2018",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Orygen / University of Melbourne (Bailey",
     "Bendall",
@@ -384,6 +387,7 @@
    "year": "2026",
    "pdf": "sources/basaran-2026-llm-case.pdf",
    "pdf_bytes": 621194,
+   "recruited_nobody": false,
    "team": [
     "Unye State Hospital psychiatry",
     "Gazi University psychiatry"
@@ -422,6 +426,7 @@
    "year": "2026",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Vanderbilt University Medical Center psychosis group"
    ],
@@ -461,6 +466,7 @@
    "year": "2025",
    "pdf": "sources/bick-2025-genai-adoption.pdf",
    "pdf_bytes": 576317,
+   "recruited_nobody": false,
    "team": [
     "St Louis Fed - Vanderbilt - Harvard economics group"
    ],
@@ -498,6 +504,7 @@
    "year": "2021",
    "pdf": "sources/birdsey-2021-social-graces.pdf",
    "pdf_bytes": 342296,
+   "recruited_nobody": false,
    "team": [
     "University of Bath / Cardiff (Birdsey",
     "Kustner)"
@@ -534,9 +541,9 @@
    "year": "2025",
    "pdf": "sources/boge-2025-dice-delusions.pdf",
    "pdf_bytes": 1936884,
+   "recruited_nobody": false,
    "team": [
-    "Charite Universitatsmedizin Berlin psychosis group",
-    "Swinburne Centre for Mental Health"
+    "Charit\u00e9 Universit\u00e4tsmedizin Berlin psychosis group with Swinburne Centre for Mental Health (Thomas)"
    ],
    "affiliations": [
     "Charite - Universitatsmedizin Berlin - Germany",
@@ -577,6 +584,7 @@
    "year": "2026",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Al Amal Psychiatric Hospital Dubai",
     "United Arab Emirates University psychiatry"
@@ -626,6 +634,7 @@
    "year": "2026",
    "pdf": "sources/buck-2026-genai-psychosis.pdf",
    "pdf_bytes": 142835,
+   "recruited_nobody": false,
    "team": [
     "UNC Chapel Hill psychosis and digital mental health group"
    ],
@@ -665,6 +674,7 @@
    "year": "2025",
    "pdf": "sources/burns-2025-technology-delusions.pdf",
    "pdf_bytes": 272727,
+   "recruited_nobody": false,
    "team": [
     "UCLA Thought Disorders Intensive Outpatient Program"
    ],
@@ -708,6 +718,7 @@
    "year": "2012",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Marywood University psychology and counseling"
    ],
@@ -746,6 +757,7 @@
    "year": "2005",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Lund / Utrecht migration-psychosis group (Cantor-Graae",
     "Selten)"
@@ -782,10 +794,9 @@
    "year": "2020",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "Technische Universit\u00e4t M\u00fcnchen (Leucht group) with Brescia",
-    "Hong Kong",
-    "Basel and Maryland"
+    "Technische Universit\u00e4t M\u00fcnchen (Leucht group) with Davis and Schneider-Thoma"
    ],
    "affiliations": [
     "University of Brescia",
@@ -807,7 +818,7 @@
    "population": "9145 participants in 75 randomised controlled trials comparing maintenance antipsychotic medication with placebo in schizophrenia or schizophrenia-like psychoses; trials published 1959 to 2017, size 14 to 420 participants",
    "weird": "",
    "perspective": "psychopharmacology / Cochrane systematic review with random-effects meta-analysis and GRADE",
-   "dataset": "Cochrane Schizophrenia Group Study-Based Register of Trials",
+   "dataset": "",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9702459/",
    "title": "Maintenance treatment with antipsychotic drugs for schizophrenia.",
    "doi": "10.1002/14651858.CD008016.pub3",
@@ -825,6 +836,7 @@
    "year": "2003",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "University of Southampton / Royal South Hants Hospital (Chadwick)"
    ],
@@ -864,6 +876,7 @@
    "year": "2025",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "team": [
     "Valley Childrens - Gundersen - WellSpan authors"
    ],
@@ -902,6 +915,7 @@
    "year": "2018",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Zucker Hillside Hospital / Northwell Health",
     "New York (Correll",
@@ -960,10 +974,9 @@
    "year": "2020",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "KCL / Pavia early-psychosis group (Fusar-Poli",
-    "McGuire",
-    "Murray)"
+    "KCL - Fusar-Poli / McGuire KCL-Pavia early-psychosis group"
    ],
    "affiliations": [
     "King's College London",
@@ -997,11 +1010,13 @@
    "year": "2019",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "EU-GEI WP2 (KCL-led",
+    "KCL - Social",
+    "Genetic and Developmental Psychiatry / Psychosis Studies (Murray",
     "Di Forti",
-    "Murray",
-    "Morgan)"
+    "Lewis",
+    "Vassos)"
    ],
    "affiliations": [
     "King's College London",
@@ -1054,9 +1069,10 @@
    "year": "2010",
    "pdf": "sources/fisher-2010-cognitive-training-durability.pdf",
    "pdf_bytes": 174953,
+   "recruited_nobody": false,
    "team": [
-    "Vinogradov group",
-    "University of California San Francisco"
+    "Vinogradov lineage (UCSF",
+    "later Minnesota) with Fisher and Morishita"
    ],
    "affiliations": [
     "University of California San Francisco",
@@ -1090,9 +1106,10 @@
    "year": "2013",
    "pdf": "sources/fisher-2013-cognitive-interventions-chr.pdf",
    "pdf_bytes": 558419,
+   "recruited_nobody": true,
    "team": [
-    "Vinogradov group",
-    "University of California San Francisco"
+    "Vinogradov lineage (UCSF",
+    "later Minnesota) with Fisher and Morishita"
    ],
    "affiliations": [
     "University of California San Francisco",
@@ -1126,6 +1143,7 @@
    "year": "2017",
    "pdf": "sources/fitzsimons-2017-poverty-dynamics-mcs.pdf",
    "pdf_bytes": 300043,
+   "recruited_nobody": false,
    "team": [
     "UCL Institute of Education / Institute for Fiscal Studies",
     "with RAND"
@@ -1164,6 +1182,7 @@
    "year": "2026",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "team": [
     "Beth Israel Deaconess Division of Digital Psychiatry"
    ],
@@ -1202,6 +1221,7 @@
    "year": "2005",
    "pdf": "sources/freeman-2005-paranoia-structure.pdf",
    "pdf_bytes": 215824,
+   "recruited_nobody": false,
    "team": [
     "Institute of Psychiatry London paranoia group"
    ],
@@ -1244,6 +1264,7 @@
    "year": "2026",
    "pdf": "sources/gao-2026-schizophrenia-aggression.pdf",
    "pdf_bytes": 1768919,
+   "recruited_nobody": false,
    "team": [
     "Hangzhou Medical College School of Public Health (Hu)"
    ],
@@ -1281,6 +1302,7 @@
    "year": "2022",
    "pdf": "sources/hakamata-2022-early-life-adversity.pdf",
    "pdf_bytes": 2286632,
+   "recruited_nobody": false,
    "team": [
     "Hakamata / Hori group",
     "National Center of Neurology and Psychiatry",
@@ -1320,6 +1342,7 @@
    "year": "2023",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Copenhagen Research Centre for Mental Health / US National Institute on Drug Abuse (Hjorth\u00f8j",
     "Nordentoft",
@@ -1361,6 +1384,7 @@
    "year": "2025",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "team": [
     "Universite de Montreal psychiatry"
    ],
@@ -1400,7 +1424,10 @@
    "year": "2026",
    "pdf": "",
    "pdf_bytes": 0,
-   "team": [],
+   "recruited_nobody": true,
+   "team": [
+    "IHEED / University of Warwick MSc teaching team"
+   ],
    "affiliations": [
     "iheed",
     "Ireland",
@@ -1431,6 +1458,7 @@
    "year": "2017",
    "pdf": "sources/jahshan-2017-enhancing-neuroplasticity.pdf",
    "pdf_bytes": 213811,
+   "recruited_nobody": true,
    "team": [
     "Green group",
     "VA Greater Los Angeles / UCLA"
@@ -1467,10 +1495,10 @@
    "year": "2014",
    "pdf": "sources/jauhar-2014-cbtp-meta-analysis.pdf",
    "pdf_bytes": 195641,
+   "recruited_nobody": false,
    "team": [
-    "Jauhar / McKenna / Laws - IoP London",
-    "FIDMAG Barcelona",
-    "Hertfordshire"
+    "KCL - Jauhar / McKenna / Laws",
+    "with FIDMAG Barcelona and Hertfordshire"
    ],
    "affiliations": [
     "Department of Psychosis Studies",
@@ -1521,8 +1549,10 @@
    "year": "2019",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "team": [
-    "Jauhar / Laws / McKenna"
+    "KCL - Jauhar / McKenna / Laws",
+    "with FIDMAG Barcelona and Hertfordshire"
    ],
    "affiliations": [
     "Institute of Psychiatry",
@@ -1567,6 +1597,7 @@
    "year": "2018",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Cochrane Schizophrenia Group - Jones / Hacker / Meaden"
    ],
@@ -1581,7 +1612,7 @@
    "population": "3542 participants with schizophrenia across 36 randomised controlled trials; trial countries not extracted",
    "weird": "",
    "perspective": "clinical psychology / Cochrane systematic review and meta-analysis with GRADE",
-   "dataset": "Cochrane Schizophrenia Group Study-Based Register of Trials (to 6 March 2017)",
+   "dataset": "",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6516879/",
    "title": "Cognitive behavioural therapy plus standard care versus standard care plus other psychosocial treatments for people with schizophrenia",
    "doi": "10.1002/14651858.CD008712.pub3",
@@ -1604,6 +1635,7 @@
    "year": "2019",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Cambridge / UCL PsyLife (Kirkbride",
     "Jones)"
@@ -1620,7 +1652,7 @@
    ],
    "harvard": "Jongsma, H. E., Turner, C., Kirkbride, J. B. & Jones, P. B. (2019) International incidence of psychotic disorders, 2002-17: a systematic review and meta-analysis. *Lancet Public Health*, 4 (5): e229-e244. Available from: https://doi.org/10.1016/S2468-2667(19)30056-8 (Accessed 12 October 2026).",
    "population": "177 included studies of the incidence of non-organic adult-onset psychotic disorder, published 2002-2017",
-   "weird": "",
+   "weird": "partial",
    "perspective": "psychiatric epidemiology / systematic review and meta-regression of incidence studies",
    "dataset": "",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6693560/",
@@ -1640,6 +1672,7 @@
    "year": "2015",
    "pdf": "sources/keshavan-2015-dysplasticity.pdf",
    "pdf_bytes": 1302455,
+   "recruited_nobody": true,
    "team": [
     "Keshavan group",
     "Beth Israel Deaconess / Harvard"
@@ -1679,8 +1712,11 @@
    "year": "2010",
    "pdf": "sources/kessler-2010-childhood-adversities-wmh.pdf",
    "pdf_bytes": 160486,
+   "recruited_nobody": false,
    "team": [
-    "WHO World Mental Health Survey Consortium (Kessler)"
+    "WHO World Mental Health Survey Consortium (Kessler",
+    "McGrath",
+    "Sampson)"
    ],
    "affiliations": [
     "Harvard Medical School",
@@ -1736,10 +1772,10 @@
    "year": "2014",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Cambridge / UCL PsyLife (Kirkbride",
-    "Jones) with Queen Mary / Institute of Psychiatry (Coid",
-    "Ullrich)"
+    "Jones)"
    ],
    "affiliations": [
     "University of Cambridge",
@@ -1775,6 +1811,7 @@
    "year": "2017",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "NIMHANS Bengaluru (Thirthalli",
     "Gangadhar) Thirthahalli community cohort"
@@ -1818,11 +1855,13 @@
    "year": "2023",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "INTREPID II (KCL",
-    "with University of the West Indies",
-    "SCARF Chennai",
-    "University of Ibadan)"
+    "KCL - INTREPID II (Morgan",
+    "Murray",
+    "Hutchinson) with SCARF Chennai",
+    "Ibadan",
+    "West Indies"
    ],
    "affiliations": [
     "University of the West Indies",
@@ -1867,6 +1906,7 @@
    "year": "2017",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Columbia / New York State Psychiatric Institute (Lewis-Fern\u00e1ndez",
     "Aggarwal) with McGill (Kirmayer)",
@@ -1919,8 +1959,10 @@
    "year": "2017",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "team": [
-    "Lincoln (Hamburg) & Heibach"
+    "Lincoln group",
+    "Universit\u00e4t Hamburg (Tania Lincoln)"
    ],
    "affiliations": [],
    "countries": [],
@@ -1952,8 +1994,10 @@
    "year": "2019",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "Lincoln (Hamburg) & Peters (KCL/PICuP)"
+    "Lincoln group",
+    "Universit\u00e4t Hamburg (Tania Lincoln)"
    ],
    "affiliations": [
     "Department of Clinical Psychology and Psychotherapy",
@@ -2000,6 +2044,7 @@
    "year": "2024",
    "pdf": "sources/lobuglio-2024-chrp-bpd.pdf",
    "pdf_bytes": 2422694,
+   "recruited_nobody": false,
    "team": [
     "Sapienza University of Rome dynamic & clinical psychology group (Lingiardi",
     "Tanzilli)",
@@ -2052,6 +2097,7 @@
    "year": "2018",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Louise / Thomas / Rossell - Swinburne University of Technology and Monash Alfred Psychiatry Research Centre",
     "Melbourne",
@@ -2100,6 +2146,7 @@
    "year": "2024",
    "pdf": "sources/lowe-2024-persistent-symptoms.pdf",
    "pdf_bytes": 548449,
+   "recruited_nobody": true,
    "team": [
     "Hamburg-Eppendorf psychosomatic medicine group"
    ],
@@ -2137,6 +2184,7 @@
    "year": "2013",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "MacAulay & Cohen - Louisiana State University"
    ],
@@ -2178,6 +2226,7 @@
    "year": "2012",
    "pdf": "sources/macneil-2012-case-formulation.pdf",
    "pdf_bytes": 296823,
+   "recruited_nobody": true,
    "team": [
     "EPPIC / Orygen Youth Health",
     "Melbourne (Macneil",
@@ -2220,10 +2269,12 @@
    "year": "2016",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "KCL Social",
+    "KCL - Social",
     "Genetic and Developmental Psychiatry / Psychosis Studies (Murray",
     "Di Forti",
+    "Lewis",
     "Vassos)"
    ],
    "affiliations": [
@@ -2256,6 +2307,7 @@
    "year": "2022",
    "pdf": "sources/marek-2022-bwas-reproducibility.pdf",
    "pdf_bytes": 9584613,
+   "recruited_nobody": false,
    "team": [
     "Marek & Tervo-Clemmens / Fair & Dosenbach group",
     "Washington University in St Louis and University of Minnesota"
@@ -2311,6 +2363,7 @@
    "year": "2013",
    "pdf": "sources/mccrone-2013-early-intervention-economics.pdf",
    "pdf_bytes": 418923,
+   "recruited_nobody": false,
    "team": [
     "King's College London / LSE health economics group with Warwick Medical School and Durham"
    ],
@@ -2356,9 +2409,11 @@
    "year": "2016",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "WHO World Mental Health Survey Consortium (Kessler",
-    "McGrath)"
+    "McGrath",
+    "Sampson)"
    ],
    "affiliations": [
     "University of Queensland",
@@ -2394,9 +2449,11 @@
    "year": "2017",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "WHO World Mental Health Survey Consortium (Kessler",
-    "McGrath)"
+    "McGrath",
+    "Sampson)"
    ],
    "affiliations": [
     "University of Queensland",
@@ -2451,6 +2508,7 @@
    "year": "2018",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "University of Edinburgh / Edinburgh Napier (Hutton)"
    ],
@@ -2489,11 +2547,13 @@
    "year": "2023",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "INTREPID II (KCL Health Service & Population Research",
-    "with SCARF Chennai",
-    "University of Ibadan",
-    "University of the West Indies)"
+    "KCL - INTREPID II (Morgan",
+    "Murray",
+    "Hutchinson) with SCARF Chennai",
+    "Ibadan",
+    "West Indies"
    ],
    "affiliations": [
     "King's College London",
@@ -2542,12 +2602,12 @@
    "year": "2026",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "team": [
-    "KCL Institute of Psychiatry",
+    "KCL - Institute of Psychiatry",
     "Psychology & Neuroscience",
-    "Department of Psychosis Studies (Morrin",
-    "Pollak) with Durham",
-    "CUNY and Tufts"
+    "Psychosis Studies (Morrin",
+    "Pollak)"
    ],
    "affiliations": [
     "King's College London",
@@ -2591,6 +2651,7 @@
    "year": "2000",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [],
    "affiliations": [],
    "countries": [],
@@ -2621,6 +2682,7 @@
    "year": "2014",
    "pdf": "sources/nice-2014-cg178-psychosis-adults.pdf",
    "pdf_bytes": 207868,
+   "recruited_nobody": false,
    "team": [
     "National Institute for Health and Care Excellence (NICE) guideline committee"
    ],
@@ -2658,6 +2720,7 @@
    "year": "2020",
    "pdf": "sources/nice-2020-ng181-rehabilitation-psychosis.pdf",
    "pdf_bytes": 412974,
+   "recruited_nobody": false,
    "team": [
     "National Institute for Health and Care Excellence (NICE) guideline committee"
    ],
@@ -2694,12 +2757,11 @@
    "year": "2026",
    "pdf": "sources/panayi-2026-cptsd-psychosis-neuroanatomy.pdf",
    "pdf_bytes": 2867164,
+   "recruited_nobody": false,
    "team": [
-    "Manchester Complex Trauma and Resilience Research Unit (Panayi",
-    "Varese",
-    "Berry",
-    "Elliott) with KCL (Peters",
-    "Hardy)"
+    "Manchester Complex Trauma and Resilience Research Unit (Varese",
+    "Bentall",
+    "Elliott) with KCL"
    ],
    "affiliations": [
     "University of Manchester",
@@ -2741,11 +2803,71 @@
    "appraised": false
   },
   {
+   "key": "paquin-2024-adolescent-media-trajectories",
+   "authors": "Paquin, V., Ferrari, M., Rej, S., Boivin, M., Ouellet-Morin, I., Geoffroy, M. C. & Shah, J. L.",
+   "year": "2024",
+   "pdf": "",
+   "pdf_bytes": 0,
+   "recruited_nobody": false,
+   "team": [
+    "McGill / Douglas Mental Health University Institute",
+    "Montreal (Paquin",
+    "Geoffroy",
+    "Shah) with Laval and Universite de Montreal"
+   ],
+   "affiliations": [
+    "Department of Psychiatry",
+    "McGill University",
+    "Montreal",
+    "Canada",
+    "Douglas Mental Health University Institute",
+    "Montreal",
+    "Canada",
+    "Lady Davis Research Institute",
+    "Jewish General Hospital",
+    "Montreal",
+    "Canada",
+    "School of Psychology",
+    "Laval University",
+    "Quebec City",
+    "Canada",
+    "School of Criminology",
+    "University of Montreal",
+    "Canada",
+    "Research Center of the Montreal Mental Health University Institute",
+    "Canada"
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "serves": [
+    "e2-evidence",
+    "e1-predispose",
+    "e1-limits"
+   ],
+   "harvard": "Paquin, V., Ferrari, M., Rej, S., Boivin, M., Ouellet-Morin, I., Geoffroy, M. C. & Shah, J. L. (2024) Trajectories of adolescent media use and their associations with psychotic experiences. *JAMA Psychiatry*, 81 (7): 708-716. Available from: https://doi.org/10.1001/jamapsychiatry.2024.0384 (Accessed 12 October 2026).",
+   "population": "1226 participants of the Quebec Longitudinal Study of Child Development, born in Quebec, Canada and followed annually or biennially from age 5 months to 23 years; 713 (58.2%) female, 513 (41.8%) male",
+   "weird": true,
+   "perspective": "developmental psychiatry and epidemiology / prospective population birth cohort with latent class mixed modelling of exposure trajectories",
+   "dataset": "Quebec Longitudinal Study of Child Development (QLSCD), 1998-2021",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11007660/",
+   "title": "Trajectories of Adolescent Media Use and Their Associations With Psychotic Experiences.",
+   "doi": "10.1001/jamapsychiatry.2024.0384",
+   "design": "cohort",
+   "n": "1226",
+   "strength": "strong",
+   "strength_why": "The only genuinely prospective source in this corpus on digital media use and psychotic experiences: a population birth cohort followed from 5 months to 23 years, with exposure reported at ages 12, 13, 15 and 17 and the outcome measured at 23, so the temporal order is fixed by design rather than by recall, and with adjustment for sociodemographic, genetic, family and childhood covariables measured between 5 months and 12 years. It can establish that adolescent media-use trajectories are at most MODESTLY associated with psychotic experiences in young adulthood, and - more usefully - that part of what looks like an effect is confounding by prior mental health: higher video gaming 'was preceded by higher levels of mental health and interpersonal problems at age 12 years', and adjusting for those 'mitigated the association'. It CANNOT support any claim about generative AI, smartphones or social media: the four exposures are television viewing, video gaming, computer use and reading, reported in a cohort born 1997-1998, so the exposure window is roughly 2010 to 2015 and predates the technology Essay 2 is about. Only ONE association survived adjustment - a curved trajectory of computer use, n=189 - and the authors' own conclusion attributes the findings 'likely' to shared risk factors. Strong on design; the fit to an AI claim is poor and must be stated.",
+   "strength_basis": "design-only",
+   "themes": [],
+   "appraised": false
+  },
+  {
    "key": "penney-2022-metacognitive-training",
    "authors": "Penney, D., Sauv\u00e9, G., Mendelson, D., Thibaudeau, \u00c9., Moritz, S. & Lepage, M.",
    "year": "2022",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Douglas Mental Health University Institute / McGill",
     "Montr\u00e9al (Penney",
@@ -2788,6 +2910,7 @@
    "year": "2010",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Cochrane Schizophrenia Group (Pharoah",
     "Rathbone) with Universidade Federal de S\u00e3o Paulo (Mari)"
@@ -2808,7 +2931,7 @@
    "population": "53 randomised or quasi-randomised controlled trials of community-oriented family-based psychosocial intervention for people with schizophrenia or schizoaffective disorder; largest single analysis n = 2981 across 32 RCTs",
    "weird": "",
    "perspective": "psychiatry and psychosocial intervention research / Cochrane systematic review with meta-analysis",
-   "dataset": "Cochrane Schizophrenia Group Trials Register",
+   "dataset": "",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4204509/",
    "title": "Family intervention for schizophrenia.",
    "doi": "10.1002/14651858.CD000088.pub2",
@@ -2826,6 +2949,7 @@
    "year": "2013",
    "pdf": "sources/reiss-2013-socioeconomic-youth-mental-health.pdf",
    "pdf_bytes": 370134,
+   "recruited_nobody": false,
    "team": [
     "Reiss",
     "University Medical Center Hamburg-Eppendorf"
@@ -2858,9 +2982,9 @@
    "year": "2021",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "KCL / Pavia early-psychosis group (Fusar-Poli",
-    "McGuire)"
+    "KCL - Fusar-Poli / McGuire KCL-Pavia early-psychosis group"
    ],
    "affiliations": [
     "King's College London",
@@ -2899,9 +3023,10 @@
    "year": "2020",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "Lincoln group - Universit\u00e4t Hamburg",
-    "with Philipps-University Marburg"
+    "Lincoln group",
+    "Universit\u00e4t Hamburg (Tania Lincoln)"
    ],
    "affiliations": [
     "Universit\u00e4t Hamburg",
@@ -2947,6 +3072,7 @@
    "year": "2008",
    "pdf": "sources/sinha-2008-chronic-stress-addiction.pdf",
    "pdf_bytes": 413005,
+   "recruited_nobody": true,
    "team": [
     "Sinha stress and addiction group",
     "Yale University School of Medicine"
@@ -2981,6 +3107,7 @@
    "year": "2008",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "University Psychiatric Hospital Ljubljana"
    ],
@@ -3019,6 +3146,7 @@
    "year": "2024",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Karolinska Institutet / UNC psychiatric genetics (Sullivan",
     "Hultman)"
@@ -3059,6 +3187,7 @@
    "year": "2005",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Strous / Ritsner - Beer Yaakov and Sha'ar Menashe",
     "Israel"
@@ -3098,6 +3227,7 @@
    "year": "2025",
    "pdf": "sources/taylor-2025-cognitive-remediation.pdf",
    "pdf_bytes": 614349,
+   "recruited_nobody": true,
    "team": [
     "Wykes / Cella group",
     "King's College London and South London and Maudsley NHS Foundation Trust"
@@ -3135,6 +3265,7 @@
    "year": "2012",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Addis Ababa University Butajira group (Teferra",
     "Shibre",
@@ -3174,6 +3305,7 @@
    "year": "2018",
    "pdf": "sources/torresrodriguez-2018-pipatic.pdf",
    "pdf_bytes": 11120312,
+   "recruited_nobody": false,
    "team": [
     "Torres-Rodr\u00edguez / Carbonell group",
     "Ramon Llull University Barcelona",
@@ -3214,6 +3346,7 @@
    "year": "2022",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Schizophrenia Working Group",
     "Psychiatric Genomics Consortium"
@@ -3253,8 +3386,10 @@
    "year": "2012",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "Maastricht / Liverpool psychosis group (van Os",
+    "Maastricht / Liverpool psychosis group (Varese",
+    "van Os",
     "Bentall",
     "Read)"
    ],
@@ -3290,12 +3425,13 @@
    "year": "2012",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "KCL Social",
-    "Genetic and Developmental Psychiatry (Vassos",
-    "Murray",
-    "Lewis)",
-    "with Aarhus (Pedersen)"
+    "KCL - Social",
+    "Genetic and Developmental Psychiatry / Psychosis Studies (Murray",
+    "Di Forti",
+    "Lewis",
+    "Vassos)"
    ],
    "affiliations": [
     "King's College London",
@@ -3329,9 +3465,10 @@
    "year": "2023",
    "pdf": "sources/vinogradov-2023-critical-period-plasticity.pdf",
    "pdf_bytes": 1183183,
+   "recruited_nobody": true,
    "team": [
-    "Vinogradov / Morishita plasticity group",
-    "Minnesota and Mount Sinai"
+    "Vinogradov lineage (UCSF",
+    "later Minnesota) with Fisher and Morishita"
    ],
    "affiliations": [
     "University of Minnesota Medical School",
@@ -3365,6 +3502,7 @@
    "year": "2020",
    "pdf": "sources/weyandt-2020-youth-neuroplasticity-interventions.pdf",
    "pdf_bytes": 501895,
+   "recruited_nobody": false,
    "team": [
     "Weyandt group",
     "University of Rhode Island and collaborators"
@@ -3372,13 +3510,24 @@
    "affiliations": [
     "not transcribed in full from the PDF read"
    ],
-   "countries": [],
+   "countries": [
+    "United States",
+    "Canada",
+    "United Kingdom",
+    "Netherlands",
+    "Germany",
+    "Switzerland",
+    "Spain",
+    "Iran",
+    "Israel",
+    "Japan"
+   ],
    "serves": [
     "e1-predispose"
    ],
    "harvard": "Weyandt, L. L., Clarkin, C. M., Holding, E. Z., May, S. E., Marraccini, M. E., Gudmundsdottir, B. G., Shepard, E. & Thompson, L. (2020) Neuroplasticity in children and adolescents in response to treatment intervention: a systematic review of the literature. *Clinical and Translational Neuroscience*, 4 (2): 1-21. Available from: https://doi.org/10.1177/2514183X20974231 (Accessed 12 October 2026).",
    "population": "28 neuroimaging studies of children and adolescents in neurotypical and clinical populations; 871 participants reported by sex (463 male / 408 female), mean of mean ages 9.43 years, range of mean ages 0.59 to 17.3 years",
-   "weird": "",
+   "weird": "partial",
    "perspective": "school and clinical psychology / PRISMA systematic review of neuroimaging studies",
    "dataset": "",
    "url": "",
@@ -3398,6 +3547,7 @@
    "year": "2019",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "team": [
     "World Health Organization"
    ],
@@ -3410,7 +3560,7 @@
    "serves": [],
    "harvard": "World Health Organization. (2019) *International classification of diseases for mortality and morbidity statistics. 11th revision (ICD-11)*. Available from: https://icd.who.int/browse/2025-01/mms/en (Accessed 12 October 2026). Geneva: World Health Organization.",
    "population": "no participants; international diagnostic classification standard",
-   "weird": false,
+   "weird": "",
    "perspective": "international public health / consensus diagnostic classification",
    "dataset": "",
    "url": "https://icd.who.int/browse11/l-m/en",
@@ -3434,6 +3584,7 @@
    "year": "2013",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Friesland Mental Health Services / University Medical Center Groningen (Wunderink)"
    ],
@@ -3473,6 +3624,7 @@
    "year": "2011",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Cochrane Schizophrenia Group",
     "University of Nottingham (Xia",
@@ -3493,7 +3645,7 @@
    "population": "5142 participants, mostly inpatients, in 44 randomised trials conducted between 1988 and 2009; median study duration approximately 12 weeks",
    "weird": "",
    "perspective": "psychiatry and psychosocial intervention research / Cochrane systematic review with meta-analysis",
-   "dataset": "Cochrane Schizophrenia Group Trials Register",
+   "dataset": "",
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4170907/",
    "title": "Psychoeducation for schizophrenia.",
    "doi": "10.1002/14651858.CD002831.pub2",
@@ -3511,6 +3663,7 @@
    "year": "2026",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
     "Central China Normal University",
     "Wuhan (Yang",
@@ -3555,10 +3708,9 @@
    "year": "2017",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "team": [
-    "Technische Universit\u00e4t M\u00fcnchen (Leucht group)",
-    "with Shanghai Jiao Tong",
-    "Paris Descartes / Cochrane France and Illinois"
+    "Technische Universit\u00e4t M\u00fcnchen (Leucht group) with Davis and Schneider-Thoma"
    ],
    "affiliations": [
     "Technische Universit\u00e4t M\u00fcnchen",
@@ -3600,6 +3752,7 @@
    "year": "1977",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "team": [
     "Zubin & Spring"
    ],
@@ -3749,8 +3902,7 @@
    "essay": "1",
    "stance": "",
    "team": [
-    "Charite Universitatsmedizin Berlin psychosis group",
-    "Swinburne Centre for Mental Health"
+    "Charit\u00e9 Universit\u00e4tsmedizin Berlin psychosis group with Swinburne Centre for Mental Health (Thomas)"
    ],
    "affiliations": [
     "Charite - Universitatsmedizin Berlin - Germany",
@@ -3917,8 +4069,7 @@
    "essay": "1",
    "stance": "",
    "team": [
-    "Charite Universitatsmedizin Berlin psychosis group",
-    "Swinburne Centre for Mental Health"
+    "Charit\u00e9 Universit\u00e4tsmedizin Berlin psychosis group with Swinburne Centre for Mental Health (Thomas)"
    ],
    "affiliations": [
     "Charite - Universitatsmedizin Berlin - Germany",
@@ -5832,8 +5983,7 @@
    "essay": "2",
    "stance": "",
    "team": [
-    "Charite Universitatsmedizin Berlin psychosis group",
-    "Swinburne Centre for Mental Health"
+    "Charit\u00e9 Universit\u00e4tsmedizin Berlin psychosis group with Swinburne Centre for Mental Health (Thomas)"
    ],
    "affiliations": [
     "Charite - Universitatsmedizin Berlin - Germany",
@@ -5887,8 +6037,7 @@
    "essay": "2",
    "stance": "",
    "team": [
-    "Charite Universitatsmedizin Berlin psychosis group",
-    "Swinburne Centre for Mental Health"
+    "Charit\u00e9 Universit\u00e4tsmedizin Berlin psychosis group with Swinburne Centre for Mental Health (Thomas)"
    ],
    "affiliations": [
     "Charite - Universitatsmedizin Berlin - Germany",
@@ -5942,8 +6091,7 @@
    "essay": "2",
    "stance": "",
    "team": [
-    "Charite Universitatsmedizin Berlin psychosis group",
-    "Swinburne Centre for Mental Health"
+    "Charit\u00e9 Universit\u00e4tsmedizin Berlin psychosis group with Swinburne Centre for Mental Health (Thomas)"
    ],
    "affiliations": [
     "Charite - Universitatsmedizin Berlin - Germany",
@@ -5997,8 +6145,7 @@
    "essay": "2",
    "stance": "",
    "team": [
-    "Charite Universitatsmedizin Berlin psychosis group",
-    "Swinburne Centre for Mental Health"
+    "Charit\u00e9 Universit\u00e4tsmedizin Berlin psychosis group with Swinburne Centre for Mental Health (Thomas)"
    ],
    "affiliations": [
     "Charite - Universitatsmedizin Berlin - Germany",
@@ -6616,6 +6763,7 @@
    "year": "2019",
    "pdf": "sources/arnold-2019-online-engagement.pdf",
    "pdf_bytes": 2388032,
+   "recruited_nobody": false,
    "title": "Predicting engagement with an online psychosocial intervention for psychosis: Exploring individual- and intervention-level predictors",
    "design": "cohort",
    "n": "98",
@@ -6639,6 +6787,7 @@
    "year": "2018",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Childhood trauma is associated with severity of hallucinations and delusions in psychotic disorders: a systematic review and meta-analysis.",
    "design": "meta-analysis",
    "n": "4680",
@@ -6660,6 +6809,7 @@
    "year": "2021",
    "pdf": "sources/birdsey-2021-social-graces.pdf",
    "pdf_bytes": 342296,
+   "recruited_nobody": false,
    "title": "Reviewing the Social GRACES: What do they add and limit in systemic thinking and practice?",
    "design": "narrative-review",
    "n": "not reported",
@@ -6683,6 +6833,7 @@
    "year": "2025",
    "pdf": "sources/burns-2025-technology-delusions.pdf",
    "pdf_bytes": 272727,
+   "recruited_nobody": false,
    "title": "'The algorithm is hacked': analysis of technology delusions in a modern-day cohort",
    "design": "cohort",
    "n": "228",
@@ -6707,6 +6858,7 @@
    "year": "2012",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Delusion content across the 20th century in an American psychiatric hospital",
    "design": "cross-sectional",
    "n": "102",
@@ -6730,6 +6882,7 @@
    "year": "2005",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Schizophrenia and migration: a meta-analysis and review.",
    "design": "meta-analysis",
    "n": "50",
@@ -6751,6 +6904,7 @@
    "year": "2020",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Maintenance treatment with antipsychotic drugs for schizophrenia.",
    "design": "systematic-review",
    "n": "9145",
@@ -6772,6 +6926,7 @@
    "year": "2003",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Impact of case formulation in cognitive behaviour therapy for psychosis.",
    "design": "single-arm-trial",
    "n": "not reported",
@@ -6795,6 +6950,7 @@
    "year": "2018",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Comparison of early intervention services vs treatment as usual for early-phase psychosis: a systematic review, meta-analysis, and meta-regression.",
    "design": "meta-analysis",
    "n": "2176",
@@ -6816,6 +6972,7 @@
    "year": "2020",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Prenatal and perinatal risk and protective factors for psychosis: a systematic review and meta-analysis.",
    "design": "meta-analysis",
    "n": "152",
@@ -6837,6 +6994,7 @@
    "year": "2019",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "The contribution of cannabis use to variation in the incidence of psychotic disorder across Europe (EU-GEI): a multicentre case-control study.",
    "design": "case-control",
    "n": "2138",
@@ -6865,6 +7023,7 @@
    "year": "2010",
    "pdf": "sources/fisher-2010-cognitive-training-durability.pdf",
    "pdf_bytes": 174953,
+   "recruited_nobody": false,
    "title": "Neuroplasticity-based cognitive training in schizophrenia: An interim report on the effects 6 months later.",
    "design": "RCT",
    "n": "32",
@@ -6886,6 +7045,7 @@
    "year": "2013",
    "pdf": "sources/fisher-2013-cognitive-interventions-chr.pdf",
    "pdf_bytes": 558419,
+   "recruited_nobody": true,
    "title": "Cognitive interventions targeting brain plasticity in the prodromal and early phases of schizophrenia.",
    "design": "narrative-review",
    "n": "not reported",
@@ -6907,6 +7067,7 @@
    "year": "2017",
    "pdf": "sources/fitzsimons-2017-poverty-dynamics-mcs.pdf",
    "pdf_bytes": 300043,
+   "recruited_nobody": false,
    "title": "Poverty dynamics and parental mental health: Determinants of childhood mental health in the UK.",
    "design": "cohort",
    "n": "18827",
@@ -6928,6 +7089,7 @@
    "year": "2026",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "title": "Beyond artificial intelligence psychosis: a functional typology of large language model-associated psychotic phenomena",
    "design": "narrative-review",
    "n": "not reported",
@@ -6949,6 +7111,7 @@
    "year": "2005",
    "pdf": "sources/freeman-2005-paranoia-structure.pdf",
    "pdf_bytes": 215824,
+   "recruited_nobody": false,
    "title": "Psychological investigation of the structure of paranoia in a non-clinical population",
    "design": "cross-sectional",
    "n": "1202",
@@ -6972,6 +7135,7 @@
    "year": "2026",
    "pdf": "sources/gao-2026-schizophrenia-aggression.pdf",
    "pdf_bytes": 1768919,
+   "recruited_nobody": false,
    "title": "Factors associated with aggressive behavior in patients with schizophrenia: a systematic review and meta-analysis.",
    "design": "meta-analysis",
    "n": "5096",
@@ -6993,6 +7157,7 @@
    "year": "2022",
    "pdf": "sources/hakamata-2022-early-life-adversity.pdf",
    "pdf_bytes": 2286632,
+   "recruited_nobody": false,
    "title": "Neurobiology of early life adversity: A systematic review of meta-analyses towards an integrative account of its neurobiological trajectories to mental disorders.",
    "design": "systematic-review",
    "n": "27",
@@ -7014,6 +7179,7 @@
    "year": "2023",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Association between cannabis use disorder and schizophrenia stronger in young males than in females.",
    "design": "cohort",
    "n": "6907859",
@@ -7037,6 +7203,7 @@
    "year": "2026",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "title": "M6W4 \u2013 Evidence-Based Treatments for Complex Mental Health Conditions",
    "design": "teaching-material",
    "n": "not reported",
@@ -7056,6 +7223,7 @@
    "year": "2017",
    "pdf": "sources/jahshan-2017-enhancing-neuroplasticity.pdf",
    "pdf_bytes": 213811,
+   "recruited_nobody": true,
    "title": "Enhancing neuroplasticity to augment cognitive remediation in schizophrenia.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7075,6 +7243,7 @@
    "year": "2014",
    "pdf": "sources/jauhar-2014-cbtp-meta-analysis.pdf",
    "pdf_bytes": 195641,
+   "recruited_nobody": false,
    "title": "Cognitive-behavioural therapy for the symptoms of schizophrenia: systematic review and meta-analysis with examination of potential bias",
    "design": "meta-analysis",
    "n": "52",
@@ -7094,6 +7263,7 @@
    "year": "2019",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "title": "CBT for schizophrenia: a critical viewpoint",
    "design": "narrative-review",
    "n": "not reported",
@@ -7113,6 +7283,7 @@
    "year": "2018",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Cognitive behavioural therapy plus standard care versus standard care plus other psychosocial treatments for people with schizophrenia",
    "design": "systematic-review",
    "n": "36",
@@ -7132,6 +7303,7 @@
    "year": "2019",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "International incidence of psychotic disorders, 2002-17: a systematic review and meta-analysis.",
    "design": "meta-analysis",
    "n": "177",
@@ -7142,7 +7314,7 @@
     "e1-limits"
    ],
    "countries": [],
-   "weird": "",
+   "weird": "partial",
    "harvard": "Jongsma, H. E., Turner, C., Kirkbride, J. B. & Jones, P. B. (2019) International incidence of psychotic disorders, 2002-17: a systematic review and meta-analysis. *Lancet Public Health*, 4 (5): e229-e244. Available from: https://doi.org/10.1016/S2468-2667(19)30056-8 (Accessed 12 October 2026).",
    "doi": "10.1016/S2468-2667(19)30056-8",
    "status": ""
@@ -7153,6 +7325,7 @@
    "year": "2015",
    "pdf": "sources/keshavan-2015-dysplasticity.pdf",
    "pdf_bytes": 1302455,
+   "recruited_nobody": true,
    "title": "Dysplasticity, metaplasticity, and schizophrenia: Implications for risk, illness, and novel interventions.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7174,6 +7347,7 @@
    "year": "2010",
    "pdf": "sources/kessler-2010-childhood-adversities-wmh.pdf",
    "pdf_bytes": 160486,
+   "recruited_nobody": false,
    "title": "Childhood adversities and adult psychopathology in the WHO World Mental Health Surveys.",
    "design": "cross-sectional",
    "n": "51945",
@@ -7218,6 +7392,7 @@
    "year": "2014",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Social deprivation, inequality, and the neighborhood-level incidence of psychotic syndromes in East London.",
    "design": "cohort",
    "n": "427",
@@ -7241,6 +7416,7 @@
    "year": "2017",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Antipsychotic treatment, psychoeducation & regular follow up as a public health strategy for schizophrenia: results from a prospective study.",
    "design": "cohort",
    "n": "201",
@@ -7265,6 +7441,7 @@
    "year": "2023",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Cannabis use and psychotic disorders in diverse settings in the Global South: findings from INTREPID II.",
    "design": "case-control",
    "n": "646",
@@ -7291,6 +7468,7 @@
    "year": "2017",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Feasibility, acceptability and clinical utility of the Cultural Formulation Interview: mixed-methods results from the DSM-5 international field trial.",
    "design": "qualitative",
    "n": "393",
@@ -7319,6 +7497,7 @@
    "year": "2017",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "title": "Psychosen",
    "design": "narrative-review",
    "n": "not reported",
@@ -7338,6 +7517,7 @@
    "year": "2019",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "A systematic review and discussion of symptom specific cognitive behavioural approaches to delusions and hallucinations",
    "design": "systematic-review",
    "n": "12",
@@ -7357,6 +7537,7 @@
    "year": "2024",
    "pdf": "sources/lobuglio-2024-chrp-bpd.pdf",
    "pdf_bytes": 2422694,
+   "recruited_nobody": false,
    "title": "Harmonizing early intervention strategies: scoping review of clinical high risk for psychosis and borderline personality disorder.",
    "design": "systematic-review",
    "n": "33",
@@ -7385,6 +7566,7 @@
    "year": "2018",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Mindfulness- and acceptance-based interventions for psychosis: our current understanding and a meta-analysis.",
    "design": "meta-analysis",
    "n": "10",
@@ -7406,6 +7588,7 @@
    "year": "2024",
    "pdf": "sources/lowe-2024-persistent-symptoms.pdf",
    "pdf_bytes": 548449,
+   "recruited_nobody": true,
    "title": "Persistent physical symptoms: definition, genesis, and management",
    "design": "narrative-review",
    "n": "not reported",
@@ -7425,6 +7608,7 @@
    "year": "2013",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Affecting coping: does neurocognition predict approach and avoidant coping strategies within schizophrenia spectrum disorders?",
    "design": "cross-sectional",
    "n": "142",
@@ -7446,6 +7630,7 @@
    "year": "2012",
    "pdf": "sources/macneil-2012-case-formulation.pdf",
    "pdf_bytes": 296823,
+   "recruited_nobody": true,
    "title": "Is diagnosis enough to guide interventions in mental health? Using case formulation in clinical practice.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7467,6 +7652,7 @@
    "year": "2016",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Meta-analysis of the Association Between the Level of Cannabis Use and Risk of Psychosis.",
    "design": "meta-analysis",
    "n": "66816",
@@ -7488,6 +7674,7 @@
    "year": "2022",
    "pdf": "sources/marek-2022-bwas-reproducibility.pdf",
    "pdf_bytes": 9584613,
+   "recruited_nobody": false,
    "title": "Reproducible brain-wide association studies require thousands of individuals",
    "design": "cross-sectional",
    "n": "50000",
@@ -7513,6 +7700,7 @@
    "year": "2013",
    "pdf": "sources/mccrone-2013-early-intervention-economics.pdf",
    "pdf_bytes": 418923,
+   "recruited_nobody": false,
    "title": "The economic impact of early intervention in psychosis services for children and adolescents.",
    "design": "economic-model",
    "n": "not reported",
@@ -7536,6 +7724,7 @@
    "year": "2016",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Age of Onset and Lifetime Projected Risk of Psychotic Experiences: Cross-National Data From the World Mental Health Survey.",
    "design": "cross-sectional",
    "n": "31261",
@@ -7558,6 +7747,7 @@
    "year": "2017",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "The association between childhood adversities and subsequent first onset of psychotic experiences: a cross-national analysis of 23 998 respondents from 17 countries.",
    "design": "cross-sectional",
    "n": "23998",
@@ -7597,6 +7787,7 @@
    "year": "2018",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Loneliness in psychosis: a meta-analytical review.",
    "design": "meta-analysis",
    "n": "15647",
@@ -7619,6 +7810,7 @@
    "year": "2023",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Epidemiology of Untreated Psychoses in 3 Diverse Settings in the Global South: The International Research Program on Psychotic Disorders in Diverse Settings (INTREPID II).",
    "design": "cohort",
    "n": "1038",
@@ -7645,6 +7837,7 @@
    "year": "2026",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "title": "Artificial intelligence-associated delusions and large language models: risks, mechanisms of delusion co-creation, and safeguarding strategies.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7668,6 +7861,7 @@
    "year": "2014",
    "pdf": "sources/nice-2014-cg178-psychosis-adults.pdf",
    "pdf_bytes": 207868,
+   "recruited_nobody": false,
    "title": "Psychosis and schizophrenia in adults: prevention and management. NICE clinical guideline CG178.",
    "design": "guideline",
    "n": "not reported",
@@ -7692,6 +7886,7 @@
    "year": "2020",
    "pdf": "sources/nice-2020-ng181-rehabilitation-psychosis.pdf",
    "pdf_bytes": 412974,
+   "recruited_nobody": false,
    "title": "Rehabilitation for adults with complex psychosis. NICE guideline NG181.",
    "design": "guideline",
    "n": "not reported",
@@ -7715,6 +7910,7 @@
    "year": "2026",
    "pdf": "sources/panayi-2026-cptsd-psychosis-neuroanatomy.pdf",
    "pdf_bytes": 2867164,
+   "recruited_nobody": false,
    "title": "Investigating the neuroanatomical underpinnings of complex PTSD in people with psychosis.",
    "design": "cross-sectional",
    "n": "108",
@@ -7734,11 +7930,38 @@
    "status": ""
   },
   {
+   "key": "paquin-2024-adolescent-media-trajectories",
+   "authors": "Paquin, V., Ferrari, M., Rej, S., Boivin, M., Ouellet-Morin, I., Geoffroy, M. C. & Shah, J. L.",
+   "year": "2024",
+   "pdf": "",
+   "pdf_bytes": 0,
+   "recruited_nobody": false,
+   "title": "Trajectories of Adolescent Media Use and Their Associations With Psychotic Experiences.",
+   "design": "cohort",
+   "n": "1226",
+   "strength": "strong",
+   "strength_why": "The only genuinely prospective source in this corpus on digital media use and psychotic experiences: a population birth cohort followed from 5 months to 23 years, with exposure reported at ages 12, 13, 15 and 17 and the outcome measured at 23, so the temporal order is fixed by design rather than by recall, and with adjustment for sociodemographic, genetic, family and childhood covariables measured between 5 months and 12 years. It can establish that adolescent media-use trajectories are at most MODESTLY associated with psychotic experiences in young adulthood, and - more usefully - that part of what looks like an effect is confounding by prior mental health: higher video gaming 'was preceded by higher levels of mental health and interpersonal problems at age 12 years', and adjusting for those 'mitigated the association'. It CANNOT support any claim about generative AI, smartphones or social media: the four exposures are television viewing, video gaming, computer use and reading, reported in a cohort born 1997-1998, so the exposure window is roughly 2010 to 2015 and predates the technology Essay 2 is about. Only ONE association survived adjustment - a curved trajectory of computer use, n=189 - and the authors' own conclusion attributes the findings 'likely' to shared risk factors. Strong on design; the fit to an AI claim is poor and must be stated.",
+   "strength_basis": "design-only",
+   "serves": [
+    "e2-evidence",
+    "e1-predispose",
+    "e1-limits"
+   ],
+   "countries": [
+    "Canada"
+   ],
+   "weird": true,
+   "harvard": "Paquin, V., Ferrari, M., Rej, S., Boivin, M., Ouellet-Morin, I., Geoffroy, M. C. & Shah, J. L. (2024) Trajectories of adolescent media use and their associations with psychotic experiences. *JAMA Psychiatry*, 81 (7): 708-716. Available from: https://doi.org/10.1001/jamapsychiatry.2024.0384 (Accessed 12 October 2026).",
+   "doi": "10.1001/jamapsychiatry.2024.0384",
+   "status": ""
+  },
+  {
    "key": "penney-2022-metacognitive-training",
    "authors": "Penney, D., Sauv\u00e9, G., Mendelson, D., Thibaudeau, \u00c9., Moritz, S. & Lepage, M.",
    "year": "2022",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Immediate and sustained outcomes and moderators associated with metacognitive training for psychosis: a systematic review and meta-analysis.",
    "design": "meta-analysis",
    "n": "1816",
@@ -7760,6 +7983,7 @@
    "year": "2010",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Family intervention for schizophrenia.",
    "design": "systematic-review",
    "n": "53",
@@ -7781,6 +8005,7 @@
    "year": "2013",
    "pdf": "sources/reiss-2013-socioeconomic-youth-mental-health.pdf",
    "pdf_bytes": 370134,
+   "recruited_nobody": false,
    "title": "Socioeconomic inequalities and mental health problems in children and adolescents: A systematic review.",
    "design": "systematic-review",
    "n": "55",
@@ -7800,6 +8025,7 @@
    "year": "2021",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Probability of Transition to Psychosis in Individuals at Clinical High Risk: An Updated Meta-analysis.",
    "design": "meta-analysis",
    "n": "9222",
@@ -7822,6 +8048,7 @@
    "year": "2020",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Fostering coping as a mechanism of symptom change in cognitive behavioural therapy for psychosis",
    "design": "single-arm-trial",
    "n": "57",
@@ -7843,6 +8070,7 @@
    "year": "2008",
    "pdf": "sources/sinha-2008-chronic-stress-addiction.pdf",
    "pdf_bytes": 413005,
+   "recruited_nobody": true,
    "title": "Chronic stress, drug use, and vulnerability to addiction.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7864,6 +8092,7 @@
    "year": "2008",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Psychopathology of schizophrenia in Ljubljana (Slovenia) from 1881 to 2000: changes in the content of delusions in schizophrenia patients related to various sociopolitical, technical and scientific changes",
    "design": "cross-sectional",
    "n": "120",
@@ -7887,6 +8116,7 @@
    "year": "2024",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Polygenic Risk Scores and Twin Concordance for Schizophrenia and Bipolar Disorder.",
    "design": "case-control",
    "n": "292",
@@ -7910,6 +8140,7 @@
    "year": "2005",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Longitudinal assessment of coping abilities at exacerbation and stabilization in schizophrenia",
    "design": "cohort",
    "n": "237",
@@ -7931,6 +8162,7 @@
    "year": "2025",
    "pdf": "sources/taylor-2025-cognitive-remediation.pdf",
    "pdf_bytes": 614349,
+   "recruited_nobody": true,
    "title": "Cognitive Remediation Is an Evidence-Based Psychological Therapy: Isn't It Time It Was Treated Like One?",
    "design": "narrative-review",
    "n": "not reported",
@@ -7950,6 +8182,7 @@
    "year": "2012",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Five-year clinical course and outcome of schizophrenia in Ethiopia.",
    "design": "cohort",
    "n": "321",
@@ -7973,6 +8206,7 @@
    "year": "2018",
    "pdf": "sources/torresrodriguez-2018-pipatic.pdf",
    "pdf_bytes": 11120312,
+   "recruited_nobody": false,
    "title": "The treatment of Internet Gaming Disorder: a brief overview of the PIPATIC program.",
    "design": "narrative-review",
    "n": "not reported",
@@ -7996,6 +8230,7 @@
    "year": "2022",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Mapping genomic loci implicates genes and synaptic biology in schizophrenia.",
    "design": "case-control",
    "n": "320404",
@@ -8017,6 +8252,7 @@
    "year": "2012",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Childhood adversities increase the risk of psychosis: a meta-analysis of patient-control, prospective- and cross-sectional cohort studies.",
    "design": "meta-analysis",
    "n": "41",
@@ -8038,6 +8274,7 @@
    "year": "2012",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Meta-analysis of the association of urbanicity with schizophrenia.",
    "design": "meta-analysis",
    "n": "not reported",
@@ -8059,6 +8296,7 @@
    "year": "2023",
    "pdf": "sources/vinogradov-2023-critical-period-plasticity.pdf",
    "pdf_bytes": 1183183,
+   "recruited_nobody": true,
    "title": "Psychosis spectrum illnesses as disorders of prefrontal critical period plasticity.",
    "design": "narrative-review",
    "n": "not reported",
@@ -8080,6 +8318,7 @@
    "year": "2020",
    "pdf": "sources/weyandt-2020-youth-neuroplasticity-interventions.pdf",
    "pdf_bytes": 501895,
+   "recruited_nobody": false,
    "title": "Neuroplasticity in children and adolescents in response to treatment intervention: A systematic review of the literature.",
    "design": "systematic-review",
    "n": "28",
@@ -8089,8 +8328,19 @@
    "serves": [
     "e1-predispose"
    ],
-   "countries": [],
-   "weird": "",
+   "countries": [
+    "United States",
+    "Canada",
+    "United Kingdom",
+    "Netherlands",
+    "Germany",
+    "Switzerland",
+    "Spain",
+    "Iran",
+    "Israel",
+    "Japan"
+   ],
+   "weird": "partial",
    "harvard": "Weyandt, L. L., Clarkin, C. M., Holding, E. Z., May, S. E., Marraccini, M. E., Gudmundsdottir, B. G., Shepard, E. & Thompson, L. (2020) Neuroplasticity in children and adolescents in response to treatment intervention: a systematic review of the literature. *Clinical and Translational Neuroscience*, 4 (2): 1-21. Available from: https://doi.org/10.1177/2514183X20974231 (Accessed 12 October 2026).",
    "doi": "10.1177/2514183X20974231",
    "status": ""
@@ -8101,6 +8351,7 @@
    "year": "2019",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "title": "International classification of diseases for mortality and morbidity statistics. 11th revision (ICD-11)",
    "design": "narrative-review",
    "n": "not reported",
@@ -8109,7 +8360,7 @@
    "strength_basis": "publication-status",
    "serves": [],
    "countries": [],
-   "weird": false,
+   "weird": "",
    "harvard": "World Health Organization. (2019) *International classification of diseases for mortality and morbidity statistics. 11th revision (ICD-11)*. Available from: https://icd.who.int/browse/2025-01/mms/en (Accessed 12 October 2026). Geneva: World Health Organization.",
    "doi": "not reported",
    "status": ""
@@ -8120,6 +8371,7 @@
    "year": "2013",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Recovery in remitted first-episode psychosis at 7 years of follow-up of an early dose reduction/discontinuation or maintenance treatment strategy: long-term follow-up of a 2-year randomized clinical trial.",
    "design": "RCT",
    "n": "103",
@@ -8143,6 +8395,7 @@
    "year": "2011",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Psychoeducation for schizophrenia.",
    "design": "systematic-review",
    "n": "5142",
@@ -8164,6 +8417,7 @@
    "year": "2026",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Emotional support or problem-solving? A randomized controlled trial of function-specific AI chatbots for digital stress in college students.",
    "design": "RCT",
    "n": "99",
@@ -8188,6 +8442,7 @@
    "year": "2017",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": false,
    "title": "Antipsychotic drugs for the acute treatment of patients with a first episode of schizophrenia: a systematic review with pairwise and network meta-analyses.",
    "design": "meta-analysis",
    "n": "2669",
@@ -8209,6 +8464,7 @@
    "year": "1977",
    "pdf": "",
    "pdf_bytes": 0,
+   "recruited_nobody": true,
    "title": "Vulnerability: a new view of schizophrenia",
    "design": "narrative-review",
    "n": "not reported",

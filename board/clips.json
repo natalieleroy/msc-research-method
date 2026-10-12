@@ -1314,6 +1314,34 @@
    "appraised": false
   },
   {
+   "key": "iheed-2026-m6w4-teaching-deck",
+   "authors": "iheed / University of Warwick, MSc Neuroscience and Psychology of Mental Health",
+   "year": "2026",
+   "team": [],
+   "affiliations": [
+    "iheed",
+    "Ireland",
+    "University of Warwick",
+    "UK"
+   ],
+   "countries": [],
+   "serves": [],
+   "harvard": "",
+   "population": "not applicable \u2014 course teaching slides, 9 slides",
+   "weird": "",
+   "perspective": "clinical psychiatry teaching / course curriculum",
+   "dataset": "",
+   "title": "M6W4 \u2013 Evidence-Based Treatments for Complex Mental Health Conditions",
+   "doi": "not reported",
+   "design": "teaching-material",
+   "n": "not reported",
+   "strength": "not-citable",
+   "strength_why": "Course teaching slides, unattributed to a named author, not peer reviewed and not publicly retrievable, so it cannot be cited as evidence for any claim in either essay \u2014 citing it would also be citing course notes, which the Module 3 brief explicitly asks students to distinguish from their own ideas and to reference properly. Its value is entirely as a SPECIFICATION of what the marker expects: it fixes the course's own wording of the 5Ps, of holistic formulation and of Verstehen, and it names the psychosis treatment list the assessment assumes. Every substantive point it makes must be re-sourced to a primary or secondary publication before it enters the essay. Tier is not-citable by definition of the venue, not by any defect in the content.",
+   "strength_basis": "full-appraisal",
+   "themes": [],
+   "appraised": false
+  },
+  {
    "key": "jahshan-2017-enhancing-neuroplasticity",
    "authors": "Jahshan, C., Rassovsky, Y. & Green, M. F.",
    "year": "2017",
@@ -2033,6 +2061,58 @@
    "strength": "strong",
    "strength_why": "A systematic review of 571 references down to 18 studies, with 10 pooled by a random-effects method that simulates individual data points from the published summary data in order to fit a dose-response model, across 66,816 individuals. It can establish a graded association between level of cannabis use and psychosis risk, with an odds ratio of 3.90 (95% CI 2.84-5.34) for the heaviest users against non-users. It cannot establish causation and the authors say so explicitly, and the simulation step means the dose-response curve is reconstructed from summary data rather than observed, which is a real inferential cost.",
    "strength_basis": "design-only",
+   "themes": [],
+   "appraised": false
+  },
+  {
+   "key": "marek-2022-bwas-reproducibility",
+   "authors": "Marek, S., Tervo-Clemmens, B., Calabro, F. J., Montez, D. F., Kay, B. P., Hatoum, A. S., Donohue, M. R., Foran, W., Miller, R. L., Hendrickson, T. J., Malone, S. M., Kandala, S., Feczko, E., Miranda-Dominguez, O., Graham, A. M., Earl, E. A., Perrone, A. J., Cordova, M., Doyle, O., Moore, L. A., Conan, G. M., Uriarte, J., Snider, K., Lynch, B. J., Wilgenbusch, J. C., Pengo, T., Tam, A., Chen, J., Newbold, D. J., Zheng, A., Seider, N. A., Van, A. N., Metoki, A., Chauvin, R. J., Laumann, T. O., Greene, D. J., Petersen, S. E., Garavan, H., Thompson, W. K., Nichols, T. E., Yeo, B. T. T., Barch, D. M., Luna, B., Fair, D. A. & Dosenbach, N. U. F.",
+   "year": "2022",
+   "team": [
+    "Marek & Tervo-Clemmens / Fair & Dosenbach group",
+    "Washington University in St Louis and University of Minnesota"
+   ],
+   "affiliations": [
+    "Washington University School of Medicine",
+    "St Louis",
+    "USA",
+    "Massachusetts General Hospital and Harvard Medical School",
+    "USA",
+    "University of Pittsburgh",
+    "USA",
+    "University of Minnesota Medical School",
+    "USA",
+    "Oregon Health and Science University",
+    "USA",
+    "National University of Singapore",
+    "Singapore",
+    "University of Vermont",
+    "USA",
+    "University of California San Diego",
+    "USA",
+    "University of Oxford",
+    "UK"
+   ],
+   "countries": [
+    "United States",
+    "United Kingdom"
+   ],
+   "serves": [
+    "e1-limits",
+    "e1-predispose"
+   ],
+   "harvard": "Marek, S., Tervo-Clemmens, B., Calabro, F. J., Montez, D. F., Kay, B. P., Hatoum, A. S., Donohue, M. R., Foran, W., Miller, R. L., Hendrickson, T. J., Malone, S. M., Kandala, S., Feczko, E., Miranda-Dominguez, O., Graham, A. M., Earl, E. A., Perrone, A. J., Cordova, M., Doyle, O., Moore, L. A., Conan, G. M., Uriarte, J., Snider, K., Lynch, B. J., Wilgenbusch, J. C., Pengo, T., Tam, A., Chen, J., Newbold, D. J., Zheng, A., Seider, N. A., Van, A. N., Metoki, A., Chauvin, R. J., Laumann, T. O., Greene, D. J., Petersen, S. E., Garavan, H., Thompson, W. K., Nichols, T. E., Yeo, B. T. T., Barch, D. M., Luna, B., Fair, D. A. & Dosenbach, N. U. F. (2022) Reproducible brain-wide association studies require thousands of individuals. *Nature*, 603 (7902): 654-660. Available from: https://doi.org/10.1038/s41586-022-04492-9 (Accessed 12 October 2026).",
+   "population": "pooled secondary analysis of three community-recruited neuroimaging cohorts: ABCD (n=11,874 recruited, 3,928 after motion censoring; aged 9-10; 21 US sites), Human Connectome Project (n=1,200 recruited, 900 used; aged 22-35; single US site), UK Biobank (n=35,735 recruited, 32,572 used; aged 40-69; UK)",
+   "weird": true,
+   "perspective": "cognitive neuroscience and statistical methodology / secondary analysis of three large consortium cohorts",
+   "dataset": "ABCD Study (collection 3165, Annual Release 2.0); Human Connectome Project 1200 Subject Release; UK Biobank January 2020 release",
+   "title": "Reproducible brain-wide association studies require thousands of individuals",
+   "doi": "10.1038/s41586-022-04492-9",
+   "design": "cross-sectional",
+   "n": "50000",
+   "strength": "strong",
+   "strength_why": "Peer-reviewed in Nature, open access, with named reviewers, open code and open data, and it uses the three largest neuroimaging datasets in existence (~50,000 people) rather than arguing from theory, so it can establish how large a sample a brain-wide association study needs before its effect sizes stop being inflated. It can establish that median univariate brain-behaviour effects are |r| = 0.01, that the largest effect replicating out of sample was |r| = 0.16, that at n = 25 the 99% confidence interval spans r +/- 0.52, and that at n < 500 replication rates were around 5%. It cannot establish anything about any specific disorder, it is cross-sectional and observational throughout, and the authors are explicit that it does NOT condemn small-sample neuroimaging in general \u2014 within-person, lesion and intervention designs have larger effects and are exempt. Several authors declare a financial interest in NOUS Imaging Inc., disclosed and managed. Tier is strong: adequately powered by construction, directly on the methodological claim, with the authors' own scope limits stated.",
+   "strength_basis": "full-appraisal",
    "themes": [],
    "appraised": false
   },
@@ -6503,6 +6583,23 @@
    "status": ""
   },
   {
+   "key": "iheed-2026-m6w4-teaching-deck",
+   "authors": "iheed / University of Warwick, MSc Neuroscience and Psychology of Mental Health",
+   "year": "2026",
+   "title": "M6W4 \u2013 Evidence-Based Treatments for Complex Mental Health Conditions",
+   "design": "teaching-material",
+   "n": "not reported",
+   "strength": "not-citable",
+   "strength_why": "Course teaching slides, unattributed to a named author, not peer reviewed and not publicly retrievable, so it cannot be cited as evidence for any claim in either essay \u2014 citing it would also be citing course notes, which the Module 3 brief explicitly asks students to distinguish from their own ideas and to reference properly. Its value is entirely as a SPECIFICATION of what the marker expects: it fixes the course's own wording of the 5Ps, of holistic formulation and of Verstehen, and it names the psychosis treatment list the assessment assumes. Every substantive point it makes must be re-sourced to a primary or secondary publication before it enters the essay. Tier is not-citable by definition of the venue, not by any defect in the content.",
+   "strength_basis": "full-appraisal",
+   "serves": [],
+   "countries": [],
+   "weird": "",
+   "harvard": [],
+   "doi": "not reported",
+   "status": "teaching-material"
+  },
+  {
    "key": "jahshan-2017-enhancing-neuroplasticity",
    "authors": "Jahshan, C., Rassovsky, Y. & Green, M. F.",
    "year": "2017",
@@ -6818,7 +6915,7 @@
    "weird": "",
    "harvard": "L\u00f6we, B., Toussaint, A., Rosmalen, J. G. M., Huang, W.-L., Burton, C., Weigel, A., Levenson, J. L. & Henningsen, P. (2024) Persistent physical symptoms: definition, genesis, and management. *The Lancet*, 403 (10444): 2649-2662. Available from: https://doi.org/10.1016/S0140-6736(24)00623-8 (Accessed 12 October 2026).",
    "doi": "10.1016/S0140-6736(24)00623-8",
-   "status": "off-spine"
+   "status": "module-set-reading"
   },
   {
    "key": "macaulay-2013-coping-neurocognition",
@@ -6875,6 +6972,29 @@
    "weird": "",
    "harvard": "Marconi, A., Di Forti, M., Lewis, C. M., Murray, R. M. & Vassos, E. (2016) Meta-analysis of the association between the level of cannabis use and risk of psychosis. *Schizophrenia Bulletin*, 42 (5): 1262-1269. Available from: https://doi.org/10.1093/schbul/sbw003 (Accessed 12 October 2026).",
    "doi": "10.1093/schbul/sbw003",
+   "status": ""
+  },
+  {
+   "key": "marek-2022-bwas-reproducibility",
+   "authors": "Marek, S., Tervo-Clemmens, B., Calabro, F. J., Montez, D. F., Kay, B. P., Hatoum, A. S., Donohue, M. R., Foran, W., Miller, R. L., Hendrickson, T. J., Malone, S. M., Kandala, S., Feczko, E., Miranda-Dominguez, O., Graham, A. M., Earl, E. A., Perrone, A. J., Cordova, M., Doyle, O., Moore, L. A., Conan, G. M., Uriarte, J., Snider, K., Lynch, B. J., Wilgenbusch, J. C., Pengo, T., Tam, A., Chen, J., Newbold, D. J., Zheng, A., Seider, N. A., Van, A. N., Metoki, A., Chauvin, R. J., Laumann, T. O., Greene, D. J., Petersen, S. E., Garavan, H., Thompson, W. K., Nichols, T. E., Yeo, B. T. T., Barch, D. M., Luna, B., Fair, D. A. & Dosenbach, N. U. F.",
+   "year": "2022",
+   "title": "Reproducible brain-wide association studies require thousands of individuals",
+   "design": "cross-sectional",
+   "n": "50000",
+   "strength": "strong",
+   "strength_why": "Peer-reviewed in Nature, open access, with named reviewers, open code and open data, and it uses the three largest neuroimaging datasets in existence (~50,000 people) rather than arguing from theory, so it can establish how large a sample a brain-wide association study needs before its effect sizes stop being inflated. It can establish that median univariate brain-behaviour effects are |r| = 0.01, that the largest effect replicating out of sample was |r| = 0.16, that at n = 25 the 99% confidence interval spans r +/- 0.52, and that at n < 500 replication rates were around 5%. It cannot establish anything about any specific disorder, it is cross-sectional and observational throughout, and the authors are explicit that it does NOT condemn small-sample neuroimaging in general \u2014 within-person, lesion and intervention designs have larger effects and are exempt. Several authors declare a financial interest in NOUS Imaging Inc., disclosed and managed. Tier is strong: adequately powered by construction, directly on the methodological claim, with the authors' own scope limits stated.",
+   "strength_basis": "full-appraisal",
+   "serves": [
+    "e1-limits",
+    "e1-predispose"
+   ],
+   "countries": [
+    "United States",
+    "United Kingdom"
+   ],
+   "weird": true,
+   "harvard": "Marek, S., Tervo-Clemmens, B., Calabro, F. J., Montez, D. F., Kay, B. P., Hatoum, A. S., Donohue, M. R., Foran, W., Miller, R. L., Hendrickson, T. J., Malone, S. M., Kandala, S., Feczko, E., Miranda-Dominguez, O., Graham, A. M., Earl, E. A., Perrone, A. J., Cordova, M., Doyle, O., Moore, L. A., Conan, G. M., Uriarte, J., Snider, K., Lynch, B. J., Wilgenbusch, J. C., Pengo, T., Tam, A., Chen, J., Newbold, D. J., Zheng, A., Seider, N. A., Van, A. N., Metoki, A., Chauvin, R. J., Laumann, T. O., Greene, D. J., Petersen, S. E., Garavan, H., Thompson, W. K., Nichols, T. E., Yeo, B. T. T., Barch, D. M., Luna, B., Fair, D. A. & Dosenbach, N. U. F. (2022) Reproducible brain-wide association studies require thousands of individuals. *Nature*, 603 (7902): 654-660. Available from: https://doi.org/10.1038/s41586-022-04492-9 (Accessed 12 October 2026).",
+   "doi": "10.1038/s41586-022-04492-9",
    "status": ""
   },
   {

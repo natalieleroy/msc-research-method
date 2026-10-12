@@ -23,8 +23,37 @@ STANCES = {"supports", "qualifies", "contradicts", ""}
 # Fields the evidence-scout skill adds to a source and copies onto its clips.
 # Lists are declared so the flat frontmatter parser's [] form round-trips.
 INDEP_LIST = ["team", "affiliations", "countries", "serves"]
-INDEP_STR = ["harvard", "population", "weird", "perspective", "dataset", "url"]
+INDEP_STR = ["harvard", "population", "weird", "perspective", "dataset", "url", "use"]
 STRENGTHS = ["strong", "moderate", "indicative", "weak", "not-citable"]
+
+def split_list(inner):
+    """Split a flat `[a, b]` list on commas that are NOT inside quotes.
+
+    The naive `.split(",")` was a correctness bug on the independence axis, not a
+    cosmetic one: a team label like "Nagata, Department of Pediatrics, UCSF"
+    became three labels, so a bare "Institute of Psychiatry" could match the same
+    bare string on an unrelated source and silently assert a shared team that
+    does not exist. triangulation_check.py treats a shared `team` label as a
+    dependency, so that would have mis-stated a section's status.
+    """
+    out, buf, quote = [], "", None
+    for ch in inner:
+        if quote:
+            if ch == quote:
+                quote = None
+            else:
+                buf += ch
+        elif ch in "\"'":
+            quote = ch
+        elif ch == ",":
+            if buf.strip():
+                out.append(buf.strip())
+            buf = ""
+        else:
+            buf += ch
+    if buf.strip():
+        out.append(buf.strip())
+    return out
 
 def parse_frontmatter(text):
     """Same flat parser as build-index.py. Quoted values keep their inner colons."""
@@ -41,7 +70,7 @@ def parse_frontmatter(text):
         if v in ("[]", ""):
             v = []
         elif v.startswith("[") and v.endswith("]"):
-            v = [x.strip().strip('"') for x in v[1:-1].split(",") if x.strip()]
+            v = split_list(v[1:-1])
         out[k.strip()] = v
     return out, text[m.end():]
 
@@ -108,6 +137,11 @@ def recruited_nobody(key):
     """
     p = NOTES / f"{key}.md"
     return p.exists() and NO_PARTICIPANTS_MARKER in p.read_text()
+
+def fulltext_for(key):
+    """Local open-access full text, if fetched. No pages, so section locators."""
+    p = ROOT / "sources" / "fulltext" / f"{key}.md"
+    return f"sources/fulltext/{key}.md" if p.exists() else ""
 
 def pdf_for(key):
     """Local PDF for a source, if we hold one. Returns (relative path, bytes)."""
@@ -270,6 +304,7 @@ def main():
         sources=[dict(key=k, authors=v.get("authors"), year=str(v.get("year")),
                       pdf=pdf_for(k)[0], pdf_bytes=pdf_for(k)[1],
                       recruited_nobody=recruited_nobody(k),
+                      fulltext=fulltext_for(k),
                       **{f: (v.get(f) or []) for f in INDEP_LIST},
                       **{f: (True if v.get(f) in ("true", "True") else
                              False if v.get(f) in ("false", "False") else
@@ -285,6 +320,7 @@ def main():
         unplaced=[dict(key=k, authors=v.get("authors"), year=str(v.get("year")),
                        pdf=pdf_for(k)[0], pdf_bytes=pdf_for(k)[1],
                        recruited_nobody=recruited_nobody(k),
+                       fulltext=fulltext_for(k),
                        title=v.get("title"), design=v.get("design"),
                        n=str(v.get("n", "")), strength=v.get("strength", "ungraded"),
                        strength_why=v.get("strength_why", ""),
@@ -307,9 +343,14 @@ def main():
     unplaced = [k for k in srcs if not any(c["key"] == k for c in clips)]
     assigned = [k for k in unplaced if srcs[k].get("serves")]
     held = sum(1 for k in srcs if pdf_for(k)[0])
-    print(f"board/clips.json  {len(srcs)} sources, {held} with a local PDF")
+    ft = sum(1 for k in srcs if fulltext_for(k))
+    readable = sum(1 for k in srcs if pdf_for(k)[0] or fulltext_for(k))
+    print(f"board/clips.json  {len(srcs)} sources · {held} PDFs · {ft} full texts "
+          f"· {readable} readable locally")
+    withuse = [k for k in unplaced if srcs[k].get("use")]
     print(f"shelf            {len(unplaced)} sources read but not yet placed in the "
-          f"argument, {len(assigned)} of them with a `serves` section named")
+          f"argument, {len(assigned)} with a `serves` section named, "
+          f"{len(withuse)} with a stated use")
     open_gates = [s for s, _, _, _ in sections if s in claims]
     print(f"claims.md        {len(open_gates)} of {len(sections)} section gates open"
           + (f": {', '.join(open_gates)}" if open_gates

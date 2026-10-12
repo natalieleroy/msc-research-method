@@ -19,6 +19,20 @@ themes: []                        # assigned later, by literature-synthesis-coac
 # from the paper itself, never from where the authors work. Leave a field EMPTY
 # rather than guessing: triangulation_check.py reports "uncoded", which is a
 # true statement, whereas a guess silently changes a section's status.
+use: ""                           # ONE sentence: what this source DOES for the section(s)
+                                  # in `serves`, and why it is worth reading. Distinct from
+                                  # `strength_why`, which is about quality, not usefulness.
+                                  # Distil it from the note's own Reader's note; never invent
+                                  # a use the note does not already argue for. Empty where
+                                  # `serves` is empty: a source with no home has no use —
+                                  # except to say WHY it has none, which is the most useful
+                                  # entry of all, because it stops a paper being opened.
+                                  #
+                                  # A SOURCE SERVING TWO SECTIONS GETS A TWO-CLAUSE SENTENCE.
+                                  # One clause per section, because a sentence written for
+                                  # one placement silently under-describes the source once a
+                                  # second section is added. If `serves` changes, re-read
+                                  # `use` — that is how these two fields drift apart.
 serves: []                        # section ids this source COULD feed, from outline.md.
                                   # A suggestion, not a placement: it puts the source on
                                   # the board's shelf against those sections until a clip

@@ -155,6 +155,11 @@ table.src-t tr:last-child td{border-bottom:0}
 table.src-t td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
 table.src-t .cite{font-weight:600}
 table.src-t .why{color:var(--muted);font-size:12px;line-height:1.45;max-width:38ch}
+.use{font-size:12.5px;line-height:1.5;margin-top:8px;padding:7px 9px;border-radius:6px;
+  background:var(--accent-soft);border-left:2px solid var(--accent)}
+.use b{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.07em;
+  color:var(--accent);display:block;margin-bottom:2px}
+table.src-t .use{max-width:38ch;margin-top:6px}
 table.src-t .t-ttl{font-family:var(--display);font-size:13px;line-height:1.4;
   display:block;margin-top:3px;max-width:46ch;overflow-wrap:anywhere}
 table.src-t .hv{font-family:var(--mono);font-size:10.5px;color:var(--faint);max-width:44ch;
@@ -269,8 +274,12 @@ function fulltext(s){
     bits.push('<button class="pdfbtn" data-copy="~/Github/msc-research/' + esc(s.pdf) + '" ' +
       'title="Copy the path">PDF on disk · ' + kb(s.pdf_bytes) + '</button>');
     bits.push('<code class="path">' + esc(s.pdf) + '</code>');
+  } else if (s.fulltext) {
+    bits.push('<button class="pdfbtn" data-copy="~/Github/msc-research/' + esc(s.fulltext) + '" ' +
+      'title="Copy the path">full text on disk</button>');
+    bits.push('<code class="path">' + esc(s.fulltext) + '</code>');
   } else {
-    bits.push('<span class="chip a">no PDF</span>');
+    bits.push('<span class="chip a">abstract only</span>');
   }
   if (s.url) bits.push(link(s.url, s.url.replace(/^https?:\/\//, "").slice(0, 46), "read"));
   if (s.doi && s.doi !== "not reported")
@@ -486,10 +495,12 @@ function gaps(all){
   out.push('<div class="gap' + (un.length ? " w" : "") + '"><b>' + un.length +
     '</b> source' + (un.length === 1 ? "" : "s") + ' with no clips on the spine' +
     (un.length ? ": " + un.map(s => esc(s.authors)).join(", ") : "") + '</div>');
-  const held = S.data.sources.filter(s => s.pdf).length;
+  const held = S.data.sources.filter(s => s.pdf || s.fulltext).length;
   out.push('<div class="gap' + (held < S.data.sources.length ? " w" : "") + '"><b>' + held +
-    '</b> of ' + S.data.sources.length + ' sources have the full text saved locally in ' +
-    '<code>sources/</code> — the rest are abstract-level or need a library login</div>');
+    '</b> of ' + S.data.sources.length + ' sources are readable on this machine — ' +
+    S.data.sources.filter(s => s.pdf).length + ' as PDFs, ' +
+    S.data.sources.filter(s => !s.pdf && s.fulltext).length + ' as fetched full text; ' +
+    'the rest are abstract-only</div>');
   const shelf = (S.data.unplaced || []).length;
   out.push('<div class="gap"><b>' + shelf + '</b> of ' + S.data.sources.length +
     ' sources are read but not yet placed in the argument — see the Shelf view</div>');
@@ -583,6 +594,7 @@ function renderSources(){
         '<td>' + esc(s.design) + (s.appraised ? ' <span class="chip g">appraised</span>' : '') + '</td>' +
         '<td class="num">' + (s.n && s.n !== "not reported" ? esc(s.n) : "—") + '</td>' +
         '<td><span class="chip ' + (STR_CLASS[s.strength]||"") + '">' + esc(s.strength) + '</span>' +
+          (s.use ? '<div class="use"><b>Use</b> ' + esc(s.use) + '</div>' : '') +
           '<div class="why">' + esc(s.strength_why || "—") + '</div></td>' +
         '<td>' + fulltext(s) + '</td>' +
         '<td>' + ctry + '</td><td>' + w + '</td><td>' + team + '</td>' +
@@ -606,7 +618,9 @@ function renderShelf(){
     'but not yet placed in the argument.</b> Each sits under the sections its note says ' +
     'it <i>could</i> feed — a suggestion, not a placement. Nothing here is in either essay ' +
     'until a clip is made from it, and clips wait on a claim. A source appears under every ' +
-    'section it could serve.</p>';
+    'section it could serve. <b>Use</b> says what the source would <i>do</i> for you there, ' +
+    'distilled from its own note; the grey line below it is about quality instead. A card ' +
+    'with no Use has not been distilled yet.</p>';
 
   const card = s => '<div class="shelf-c s-' + s.strength + '">' +
     '<div class="src"><span class="auth">' + esc(s.authors) + '</span>' +
@@ -620,6 +634,7 @@ function renderShelf(){
         esc((s.countries||[]).join(", ")) + '</span>' : "") +
       (s.status ? '<span class="chip r">' + esc(s.status) + '</span>' : "") +
     '</div>' +
+    (s.use ? '<div class="use"><b>Use</b> ' + esc(s.use) + '</div>' : "") +
     (s.strength_why ? '<div class="why">' + esc(s.strength_why) + '</div>' : "") +
     fulltext(s) + '</div>';
 

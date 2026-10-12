@@ -2,8 +2,8 @@
 id: bokhari-2026-11
 key: bokhari-2026-technology-delusions
 essay: 2
-section: e2-practice
-order: 10
+section: e2-plan
+order: 80
 kind: quote
 locator: "Implications for Clinical Assessment"
 verified: true

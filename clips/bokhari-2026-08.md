@@ -2,7 +2,7 @@
 id: bokhari-2026-08
 key: bokhari-2026-technology-delusions
 essay: 1
-section: e1-continuum
+section: e1-what
 order: 20
 kind: quote
 locator: "Neurocognitive and Sociocultural Mechanisms"

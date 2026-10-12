@@ -11,6 +11,26 @@ design: RCT                       # RCT | single-arm-trial | cohort | case-contr
 n: 240                            # participants, or studies for a review; or: not reported
 population: "who, where"
 themes: []                        # assigned later, by literature-synthesis-coach
+
+# --- evidence-scout fields. Independence is judged from these, so code them
+# from the paper itself, never from where the authors work. Leave a field EMPTY
+# rather than guessing: triangulation_check.py reports "uncoded", which is a
+# true statement, whereas a guess silently changes a section's status.
+serves: []                        # section ids this source COULD feed, from outline.md.
+                                  # A suggestion, not a placement: it puts the source on
+                                  # the board's shelf against those sections until a clip
+                                  # is actually made. Leave EMPTY where the fit is poor —
+                                  # an honest blank beats an invitation to misuse it.
+harvard: ""                       # full Warwick Harvard reference, one line
+team: []                          # short labels for the lead group(s)
+affiliations: []
+countries: []                     # where PARTICIPANTS were recruited
+weird: ""                         # true | false | partial
+perspective: ""                   # "discipline / method"
+dataset: ""                       # named cohort or database, if any
+strength: ""                      # strong | moderate | indicative | weak | not-citable
+strength_why: ""                  # 2-4 sentences: what it can and cannot establish
+strength_basis: ""                # design-only | publication-status | full-appraisal
 appraised: false                  # true once appraisals/<key>.md exists
 read: 2026-09-06
 ---

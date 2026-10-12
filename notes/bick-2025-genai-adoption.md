@@ -25,7 +25,7 @@ Nationally representative US survey data from economists at the Federal Reserve 
 
 ## Clips drawn from it (1)
 
-- `bick-2025-01` → **e2-scale** · quote · Abstract, p. 2 · checked
+- `bick-2025-01` → **e2-naming** · quote · Abstract, p. 2 · checked
 
 ---
 

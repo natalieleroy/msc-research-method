@@ -2,8 +2,8 @@
 id: basaran-2026-04
 key: basaran-2026-llm-case
 essay: 2
-section: e2-practice
-order: 40
+section: e2-plan
+order: 110
 kind: quote
 locator: "p. 5"
 verified: true

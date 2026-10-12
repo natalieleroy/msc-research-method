@@ -2,8 +2,8 @@
 id: bergson-2026-05
 key: bergson-2026-ai-psychosis-ehr
 essay: 2
-section: e2-scale
-order: 30
+section: e2-naming
+order: 60
 kind: quote
 locator: "Discussion"
 verified: true

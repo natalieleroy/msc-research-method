@@ -25,10 +25,10 @@ Narrative review and perspective with no stated search strategy or quality appra
 
 ## Clips drawn from it (4)
 
-- `chamarthi-2025-01` → **e2-definition** · quote · abstract · checked
-- `chamarthi-2025-04` → **e2-practice** · quote · abstract · checked
-- `chamarthi-2025-02` → **e2-window** · quote · abstract · checked
-- `chamarthi-2025-03` → **e2-window** · quote · abstract · checked
+- `chamarthi-2025-01` → **e2-naming** · quote · abstract · checked
+- `chamarthi-2025-04` → **e2-plan** · quote · abstract · checked
+- `chamarthi-2025-02` → **e2-plan** · quote · abstract · checked
+- `chamarthi-2025-03` → **e2-plan** · quote · abstract · checked
 
 ---
 

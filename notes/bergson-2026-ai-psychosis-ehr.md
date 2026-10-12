@@ -27,10 +27,10 @@ The first systematic clinical-sample characterisation of AI psychosis: a retrosp
 
 - `bergson-2026-01` → **e2-evidence** · datum · Results · checked
 - `bergson-2026-06` → **e2-evidence** · mine · Table, clinical history rows · checked
+- `bergson-2026-02` → **e2-evidence** · quote · Results · checked
 - `bergson-2026-03` → **e2-mechanism** · datum · Results, typology · checked
 - `bergson-2026-04` → **e2-mechanism** · quote · Discussion · checked
-- `bergson-2026-05` → **e2-scale** · quote · Discussion · checked
-- `bergson-2026-02` → **e2-window** · quote · Results · checked
+- `bergson-2026-05` → **e2-naming** · quote · Discussion · checked
 
 ---
 

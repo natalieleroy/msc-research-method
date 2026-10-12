@@ -25,10 +25,9 @@ The best-conducted review in the corpus: three databases with no date restrictio
 
 ## Clips drawn from it (12)
 
-- `bokhari-2026-08` → **e1-continuum** · quote · Neurocognitive and Sociocultural Mechanisms · checked
 - `bokhari-2026-06` → **e1-predispose** · datum · Results, Historical Evolution and Table 1 · checked
+- `bokhari-2026-08` → **e1-what** · quote · Neurocognitive and Sociocultural Mechanisms · checked
 - `bokhari-2026-07` → **e1-what** · quote · Diagnostic and Therapeutic Implications · checked
-- `bokhari-2026-10` → **e2-definition** · quote · Discussion, Algorithmic and AI-Mediated Delusions · checked
 - `bokhari-2026-12` → **e2-evidence** · quote · Strengths and Limitations · checked
 - `bokhari-2026-01` → **e2-history** · quote · Introduction · checked
 - `bokhari-2026-02` → **e2-history** · quote · Results, Historical Evolution · checked
@@ -36,7 +35,8 @@ The best-conducted review in the corpus: three databases with no date restrictio
 - `bokhari-2026-04` → **e2-history** · datum · Results, Historical Evolution and Table 1 · checked
 - `bokhari-2026-05` → **e2-mechanism** · quote · Discussion, Summary of Findings · checked
 - `bokhari-2026-09` → **e2-mechanism** · quote · Discussion, Algorithmic and AI-Mediated Delusions · checked
-- `bokhari-2026-11` → **e2-practice** · quote · Implications for Clinical Assessment · checked
+- `bokhari-2026-10` → **e2-naming** · quote · Discussion, Algorithmic and AI-Mediated Delusions · checked
+- `bokhari-2026-11` → **e2-plan** · quote · Implications for Clinical Assessment · checked
 
 ---
 

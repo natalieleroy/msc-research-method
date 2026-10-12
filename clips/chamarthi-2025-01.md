@@ -2,7 +2,7 @@
 id: chamarthi-2025-01
 key: chamarthi-2025-adolescent-stressor
 essay: 2
-section: e2-definition
+section: e2-naming
 order: 20
 kind: quote
 locator: "abstract"

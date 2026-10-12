@@ -7,6 +7,7 @@ be published. But the method and the analysis can, and they are the interesting
 part, so this script builds a separate tree containing:
 
   - the pipeline: outline.md, the scripts, the templates, the board's source
+  - public/README.md, which is the public repository's front page
   - one file per source: its citation, design, strength grade and the reason
   - one file per clip: where it sits in the argument, its locator, and the
     commentary written about it -- but NEVER the quoted text
@@ -65,7 +66,16 @@ def redact_quotes(s):
 
 def shingles(s):
     w = re.findall(r"[a-z0-9]+", s.lower())
-    return {" ".join(w[i:i + SHINGLE]) for i in range(max(0, len(w) - SHINGLE + 1))}
+    out = set()
+    for i in range(max(0, len(w) - SHINGLE + 1)):
+        run = w[i:i + SHINGLE]
+        # Fewer than three alphabetic tokens means this is a number string --
+        # an odds ratio, a confidence interval, a sample size. Facts are not
+        # protectable expression and must not be mangled to satisfy a checker.
+        if sum(1 for x in run if x.isalpha()) < 3:
+            continue
+        out.add(" ".join(run))
+    return out
 
 def main():
     data = json.loads((ROOT / "board" / "clips.json").read_text())
@@ -87,6 +97,17 @@ def main():
                 continue
             shutil.rmtree(child) if child.is_dir() else child.unlink()
     TARGET.mkdir(parents=True, exist_ok=True)
+
+    # --- the public README lives here, not in the public tree ---
+    # The export clears its target, so anything hand-written there is lost on the
+    # next run. Keeping the source copy in this repo makes the public repository
+    # fully reproducible from this one, which is the point of generating it.
+    readme = ROOT / "public" / "README.md"
+    if readme.exists():
+        shutil.copy2(readme, TARGET / "README.md")
+    else:
+        print("  ! public/README.md is missing — the public repo will have no README",
+              file=sys.stderr)
 
     # --- pipeline files, copied verbatim: none contain quoted material ---
     (TARGET / "scripts").mkdir()
@@ -119,7 +140,7 @@ def main():
                 f"**{s['title']}**", "",
                 f"DOI: {s['doi']}", "",
                 f"## How much weight it bears: {s['strength']}", "",
-                s["strength_why"], "",
+                redact_quotes(s["strength_why"]), "",
                 f"*Graded on {s['strength_basis']}.*", "",
                 f"## Clips drawn from it ({len(mine)})", ""]
         for c in sorted(mine, key=lambda c: (c["section"], c["order"])):
@@ -143,7 +164,10 @@ def main():
 
     # --- board data with the text withheld, so the board still runs ---
     pub = dict(data)
-    pub["sources"] = srcs
+    pub["sources"] = [dict(s, strength_why=redact_quotes(s.get("strength_why", "")))
+                      for s in srcs]
+    pub["unplaced"] = [dict(s, strength_why=redact_quotes(s.get("strength_why", "")))
+                       for s in data.get("unplaced", []) if s["key"] not in excluded]
     pub["clips"] = [dict(c, text=WITHHELD, note=redact_quotes(c["note"]))
                     for c in clips]
     (TARGET / "board" / "clips.json").write_text(json.dumps(pub, indent=1) + "\n")

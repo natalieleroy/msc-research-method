@@ -25,12 +25,12 @@ A pilot single-arm feasibility trial with 10 completers, no control group, and o
 
 ## Clips drawn from it (6)
 
-- `boge-2025-04` → **e1-coping** · quote · p. 2 · checked
-- `boge-2025-05` → **e1-coping** · datum · pp. 1, 8 · checked
-- `boge-2025-06` → **e1-coping** · mine · pp. 4, 1 · checked
 - `boge-2025-02` → **e1-predispose** · quote · p. 2 · checked
-- `boge-2025-03` → **e1-treat** · quote · p. 2 · checked
 - `boge-2025-01` → **e1-what** · quote · p. 2 · checked
+- `boge-2025-04` → **e2-plan** · quote · p. 2 · checked
+- `boge-2025-05` → **e2-plan** · datum · pp. 1, 8 · checked
+- `boge-2025-06` → **e2-plan** · mine · pp. 4, 1 · checked
+- `boge-2025-03` → **e2-plan** · quote · p. 2 · checked
 
 ---
 

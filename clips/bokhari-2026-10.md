@@ -2,7 +2,7 @@
 id: bokhari-2026-10
 key: bokhari-2026-technology-delusions
 essay: 2
-section: e2-definition
+section: e2-naming
 order: 10
 kind: quote
 locator: "Discussion, Algorithmic and AI-Mediated Delusions"

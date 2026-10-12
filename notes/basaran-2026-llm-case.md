@@ -27,8 +27,8 @@ Single case report (n=1). Establishes that the co-occurrence can happen and noth
 
 - `basaran-2026-03` → **e2-evidence** · quote · p. 5 · checked
 - `basaran-2026-02` → **e2-mechanism** · quote · p. 4 · checked
-- `basaran-2026-01` → **e2-practice** · quote · pp. 4-5 · checked
-- `basaran-2026-04` → **e2-practice** · quote · p. 5 · checked
+- `basaran-2026-01` → **e2-plan** · quote · pp. 4-5 · checked
+- `basaran-2026-04` → **e2-plan** · quote · p. 5 · checked
 
 ---
 

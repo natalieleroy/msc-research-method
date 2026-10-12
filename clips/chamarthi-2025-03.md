@@ -2,8 +2,8 @@
 id: chamarthi-2025-03
 key: chamarthi-2025-adolescent-stressor
 essay: 2
-section: e2-window
-order: 40
+section: e2-plan
+order: 140
 kind: quote
 locator: "abstract"
 verified: true

@@ -108,6 +108,44 @@ label.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--m
 .mbtn:disabled{opacity:.3;cursor:default}
 .msel{font-size:10.5px;padding:2px 4px;max-width:110px}
 
+/* ---- shelf ---- */
+.shelf-sec{margin-bottom:22px}
+.shelf-h{font-family:var(--display);font-size:16px;font-weight:600;padding-bottom:7px;
+  border-bottom:1px solid var(--rule);margin-bottom:11px;display:flex;gap:10px;
+  align-items:baseline;flex-wrap:wrap}
+.shelf-h .lane-c{margin-left:auto}
+.shelf-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:11px}
+.shelf-c{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--rule);
+  border-radius:8px;padding:11px 12px;box-shadow:var(--shadow);min-width:0}
+.shelf-c.s-strong{border-left-color:var(--strong)} .shelf-c.s-moderate{border-left-color:var(--moderate)}
+.shelf-c.s-indicative{border-left-color:var(--indicative)} .shelf-c.s-weak{border-left-color:var(--weak)}
+.shelf-c.s-not-citable{border-left-color:var(--notcitable);background:var(--danger-soft)}
+.shelf-c .why{color:var(--muted);font-size:12px;line-height:1.45;margin-top:7px}
+.shelf-c .ttl{font-family:var(--display);font-size:13.5px;line-height:1.4;margin-top:3px;
+  color:var(--muted);overflow-wrap:anywhere}
+
+/* ---- sources table ---- */
+.tablewrap{overflow-x:auto;border:1px solid var(--rule);border-radius:10px;background:var(--surface)}
+table.src-t{border-collapse:collapse;width:100%;font-size:12.5px;min-width:900px}
+table.src-t th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--faint);font-weight:600;padding:10px 10px;border-bottom:1px solid var(--rule);
+  background:var(--surface-2);position:sticky;top:0;white-space:nowrap}
+table.src-t td{padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+table.src-t tr:last-child td{border-bottom:0}
+table.src-t td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+table.src-t .cite{font-weight:600}
+table.src-t .why{color:var(--muted);font-size:12px;line-height:1.45;max-width:38ch}
+table.src-t .hv{font-family:var(--mono);font-size:10.5px;color:var(--faint);max-width:44ch;
+  overflow-wrap:anywhere;display:block;margin-top:4px}
+.bar{display:inline-block;width:3px;height:1em;vertical-align:-2px;margin-right:6px;border-radius:2px}
+.legend{font-size:12px;color:var(--muted);margin:0 0 12px;line-height:1.6}
+
+/* ---- claim ---- */
+.claim{margin:14px 14px 0;padding:10px 12px;border-left:3px solid var(--accent);
+  background:var(--accent-soft);border-radius:0 6px 6px 0;font-size:13px;line-height:1.5}
+.claim b{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;
+  letter-spacing:.07em;color:var(--accent);display:block;margin-bottom:3px}
+
 /* ---- essay header ---- */
 .ehead{margin:26px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent)}
 .ehead:first-child{margin-top:4px}
@@ -168,6 +206,8 @@ label.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--m
       <div class="seg" role="group" aria-label="View">
         <button class="btn" id="vBoard" aria-pressed="true">Board</button>
         <button class="btn" id="vNarr" aria-pressed="false">Narrative</button>
+        <button class="btn" id="vSrc" aria-pressed="false">Sources</button>
+        <button class="btn" id="vShelf" aria-pressed="false">Shelf</button>
       </div>
       <input type="search" id="q" placeholder="Search clips" aria-label="Search clips">
       <select id="fSrc" aria-label="Filter by source"><option value="">All sources</option></select>
@@ -230,6 +270,7 @@ function card(c, i, n){
       '<span class="chip ' + sc + '">' + esc(c.strength) + '</span>' +
       '<span class="chip">' + esc(c.design) + nd + '</span>' +
       (c.kind !== "quote" ? '<span class="chip k">' + esc(c.kind) + '</span>' : "") +
+      (c.stance ? '<span class="chip k">' + esc(c.stance) + '</span>' : "") +
       (c.themes || []).slice(0, 3).map(t => '<span class="chip">' + esc(t) + '</span>').join("") +
     '</div>' +
     '<p class="q clamp" tabindex="0" title="Click to expand">' + esc(c.text) + '</p>' +
@@ -315,7 +356,16 @@ function renderBoard(){
       '<div style="min-width:0"><span class="lane-n">' + (si + 1) + '</span>' +
       '<span class="lane-t">' + esc(s.title) + '</span></div>' +
       '<div class="lane-i">' + esc(s.intent) + '</div>' +
-      '<div class="lane-c">' + lane.length + (shown.length !== lane.length ? " / " + shown.length + " shown" : "") + '</div></div>';
+      '<div class="lane-c">' + (s.claim ? '' : '<span class="chip a">no claim</span> ') +
+        lane.length + ' clip' + (lane.length === 1 ? "" : "s") +
+        (s.words ? ' · ' + s.words + 'w' : '') +
+        (s.words && lane.length * 45 > s.words ? ' <span class="chip o">over budget</span>' : '') +
+        (shown.length !== lane.length ? " · " + shown.length + " shown" : "") +
+      '</div></div>';
+    if (s.claim) {
+      d.insertAdjacentHTML("beforeend", '<div class="claim"><b>Claim</b> ' +
+        esc(s.claim) + '</div>');
+    }
     if (!lane.length) {
       d.insertAdjacentHTML("beforeend",
         '<div class="empty"><b>No clips.</b> This section of the argument has nothing behind it. ' +
@@ -345,6 +395,14 @@ function gaps(all){
       ' sections with fewer than 2 clips' +
       (thin.length ? " — " + thin.map(s => esc(s.title)).join("; ") : "") + '</div>');
   });
+  const closed = S.data.sections.filter(s => !s.claim);
+  out.push('<div class="gap' + (closed.length ? " d" : "") + '"><b>' + closed.length +
+    '</b> of ' + S.data.sections.length + ' sections have no claim written, so research ' +
+    'on them is gated' + (closed.length === S.data.sections.length ? " — every section" : "") + '</div>');
+  const budget = S.data.sections.filter(s => s.words && all.filter(c => c.section === s.id).length * 45 > s.words);
+  out.push('<div class="gap' + (budget.length ? " w" : "") + '"><b>' + budget.length +
+    '</b> sections hold more quotation than their word budget can carry' +
+    (budget.length ? ": " + budget.map(s => esc(s.title)).join("; ") : "") + '</div>');
   const emptySec = S.data.sections.filter(s => !all.some(c => c.section === s.id));
   out.push('<div class="gap' + (emptySec.length ? " w" : "") + '"><b>' + emptySec.length +
     '</b> of ' + S.data.sections.length + ' sections have no clips at all' +
@@ -365,6 +423,9 @@ function gaps(all){
   out.push('<div class="gap' + (un.length ? " w" : "") + '"><b>' + un.length +
     '</b> source' + (un.length === 1 ? "" : "s") + ' with no clips on the spine' +
     (un.length ? ": " + un.map(s => esc(s.authors)).join(", ") : "") + '</div>');
+  const shelf = (S.data.unplaced || []).length;
+  out.push('<div class="gap"><b>' + shelf + '</b> of ' + S.data.sources.length +
+    ' sources are read but not yet placed in the argument — see the Shelf view</div>');
   const ap = S.data.sources.filter(s => s.appraised).length;
   out.push('<div class="gap"><b>' + ap + '</b> of ' + S.data.sources.length + ' sources formally appraised</div>');
   const moved = all.filter(c => c.moved).length;
@@ -400,6 +461,7 @@ function renderNarrative(){
           '<span class="chip ' + (STR_CLASS[c.strength] || "") + '">' + esc(c.strength) + '</span>' +
           '<span class="chip">' + esc(c.design) + nd + '</span>' +
           (c.kind !== "quote" ? '<span class="chip k">' + esc(c.kind) + '</span>' : "") +
+      (c.stance ? '<span class="chip k">' + esc(c.stance) + '</span>' : "") +
           (c.verified ? '' : '<span class="chip a">unchecked</span>') + '</div>' +
         '<blockquote class="nq">' + esc(c.text) + '</blockquote>' +
         '<div class="ncite">' + (c.kind === "mine" ? "mine &mdash; from " : "&mdash; ") +
@@ -411,6 +473,113 @@ function renderNarrative(){
   });
 }
 
+function renderSources(){
+  const all = clips(), v = el("view");
+  const order = ["strong","moderate","indicative","weak","not-citable"];
+  const srcs = S.data.sources.slice().sort((a,b) =>
+    (order.indexOf(a.strength) - order.indexOf(b.strength)) ||
+    String(a.authors).localeCompare(String(b.authors)));
+  const weirdTrue = srcs.filter(s => s.weird === true).length;
+  const coded = srcs.filter(s => (s.countries||[]).length).length;
+  v.innerHTML =
+    '<p class="legend"><b>' + srcs.length + ' sources.</b> ' +
+    'Ranked by how much weight each can bear, then by author. ' +
+    '<b>' + coded + '</b> have a coded participant country; <b>' + weirdTrue +
+    '</b> are WEIRD samples. Independence on three axes — team, culture, ' +
+    'perspective — is what makes agreement between two sources mean something, ' +
+    'so a blank is an honest gap rather than a pass.</p>' +
+    '<div class="tablewrap"><table class="src-t"><thead><tr>' +
+    '<th>Source</th><th>Design</th><th>n</th><th>Strength &amp; why</th>' +
+    '<th>Countries</th><th>WEIRD</th><th>Team / dataset</th><th>Clips</th>' +
+    '</tr></thead><tbody>' +
+    srcs.map(s => {
+      const mine = all.filter(c => c.key === s.key);
+      const w = s.weird === true ? "yes" : s.weird === false
+        ? '<span class="ok">no</span>' : (s.weird ? esc(s.weird) : '<span class="no">—</span>');
+      const ctry = (s.countries||[]).length
+        ? esc((s.countries||[]).join(", ")) : '<span class="no">uncoded</span>';
+      const team = [(s.team||[]).join(", "), s.dataset].filter(Boolean).map(esc).join('<br>')
+        || '<span class="no">—</span>';
+      return '<tr><td><span class="bar" style="background:var(--' +
+        (s.strength === "not-citable" ? "notcitable" : s.strength) + ')"></span>' +
+        '<span class="cite">' + esc(s.authors) + '</span> (' + esc(s.year) + ')' +
+        (s.harvard ? '<span class="hv">' + esc(s.harvard) + '</span>'
+                   : '<span class="hv no">no Harvard reference yet</span>') + '</td>' +
+        '<td>' + esc(s.design) + (s.appraised ? ' <span class="chip g">appraised</span>' : '') + '</td>' +
+        '<td class="num">' + (s.n && s.n !== "not reported" ? esc(s.n) : "—") + '</td>' +
+        '<td><span class="chip ' + (STR_CLASS[s.strength]||"") + '">' + esc(s.strength) + '</span>' +
+          '<div class="why">' + esc(s.strength_why || "—") + '</div></td>' +
+        '<td>' + ctry + '</td><td>' + w + '</td><td>' + team + '</td>' +
+        '<td class="num">' + (mine.length || '<span class="no">0</span>') + '</td></tr>';
+    }).join("") + '</tbody></table></div>';
+}
+
+function renderShelf(){
+  const v = el("view"), shelf = S.data.unplaced || [];
+  const order = ["strong","moderate","indicative","weak","not-citable","ungraded"];
+  const byId = {};
+  S.data.essays.forEach(e => e.sections.forEach(s => { byId[s.id] = s; }));
+  const q = el("q").value.trim().toLowerCase();
+  const match = s => (!q || (s.authors + " " + s.title + " " + s.strength_why)
+      .toLowerCase().includes(q)) &&
+    (!el("fSrc").value || s.key === el("fSrc").value) &&
+    (!el("fStr").value || s.strength === el("fStr").value);
+
+  const unassigned = shelf.filter(s => !(s.serves || []).length && match(s));
+  v.innerHTML = '<p class="legend"><b>' + shelf.length + ' sources read and appraised ' +
+    'but not yet placed in the argument.</b> Each sits under the sections its note says ' +
+    'it <i>could</i> feed — a suggestion, not a placement. Nothing here is in either essay ' +
+    'until a clip is made from it, and clips wait on a claim. A source appears under every ' +
+    'section it could serve.</p>';
+
+  const card = s => '<div class="shelf-c s-' + s.strength + '">' +
+    '<div class="src"><span class="auth">' + esc(s.authors) + '</span>' +
+    '<span class="yr">' + esc(s.year) + '</span></div>' +
+    '<div class="ttl">' + esc(s.title) + '</div>' +
+    '<div class="chips" style="margin-top:7px">' +
+      '<span class="chip ' + (STR_CLASS[s.strength]||"") + '">' + esc(s.strength) + '</span>' +
+      '<span class="chip">' + esc(s.design) +
+        (s.n && s.n !== "not reported" ? ", n=" + esc(s.n) : "") + '</span>' +
+      ((s.countries||[]).length ? '<span class="chip' + (s.weird === false ? " g" : "") + '">' +
+        esc((s.countries||[]).join(", ")) + '</span>' : "") +
+      (s.status ? '<span class="chip r">' + esc(s.status) + '</span>' : "") +
+    '</div>' +
+    (s.strength_why ? '<div class="why">' + esc(s.strength_why) + '</div>' : "") + '</div>';
+
+  S.data.essays.forEach(e => {
+    if (S.essay && e.no !== S.essay) return;
+    const h = document.createElement("div");
+    h.className = "ehead";
+    h.innerHTML = '<div class="eno">Essay ' + esc(e.no) + '</div>' +
+      '<h2 class="etitle">' + esc(e.title) + '</h2>';
+    v.appendChild(h);
+    e.sections.forEach(s => {
+      const rows = shelf.filter(x => (x.serves||[]).includes(s.id)).filter(match)
+        .sort((a,b) => order.indexOf(a.strength) - order.indexOf(b.strength));
+      if (!rows.length) return;
+      const d = document.createElement("section");
+      d.className = "shelf-sec";
+      d.innerHTML = '<div class="shelf-h"><span>' + esc(s.title) + '</span>' +
+        '<span class="lane-c">' + rows.length + ' waiting' +
+        (s.words ? ' · ' + s.words + 'w budget' : '') + '</span></div>' +
+        '<div class="shelf-g">' + rows.map(card).join("") + '</div>';
+      v.appendChild(d);
+    });
+  });
+
+  if (unassigned.length && !S.essay) {
+    const d = document.createElement("section");
+    d.className = "shelf-sec";
+    d.innerHTML = '<div class="shelf-h"><span>Read, but deliberately unassigned</span>' +
+      '<span class="lane-c">' + unassigned.length + '</span></div>' +
+      '<p class="legend">No section named, on purpose. These are the ones a large library ' +
+      'tempts you to misuse — the fit is poor even where the quality is high, and an honest ' +
+      'blank beats an invitation. The reason is in each one\'s note.</p>' +
+      '<div class="shelf-g">' + unassigned.map(card).join("") + '</div>';
+    v.appendChild(d);
+  }
+}
+
 function render(){
   const all = clips();
   const v = all.filter(c => c.verified).length;
@@ -419,7 +588,8 @@ function render(){
     "</b> sources &middot; <b>" + v + "</b> checked against source text &middot; built <b>" +
     esc(S.data.generated) + "</b>" +
     (S.canWrite === false ? " &middot; read-only, arrangement cannot be saved" : "");
-  (S.view === "board" ? renderBoard : renderNarrative)();
+  ({board: renderBoard, narrative: renderNarrative, sources: renderSources,
+    shelf: renderShelf}[S.view])();
 }
 
 /* ---- arrangement, stored in db ---- */
@@ -523,8 +693,18 @@ document.addEventListener("dragend", e => {
   el("eAll").onclick = () => setEssay("");
   el("e1").onclick = () => setEssay("1");
   el("e2").onclick = () => setEssay("2");
-  el("vBoard").onclick = () => { S.view = "board"; el("vBoard").ariaPressed = "true"; el("vNarr").ariaPressed = "false"; render(); };
-  el("vNarr").onclick = () => { S.view = "narrative"; el("vNarr").ariaPressed = "true"; el("vBoard").ariaPressed = "false"; render(); };
+  const setView = v => {
+    S.view = v;
+    el("vBoard").ariaPressed = String(v === "board");
+    el("vNarr").ariaPressed = String(v === "narrative");
+    el("vSrc").ariaPressed = String(v === "sources");
+    el("vShelf").ariaPressed = String(v === "shelf");
+    render();
+  };
+  el("vBoard").onclick = () => setView("board");
+  el("vNarr").onclick = () => setView("narrative");
+  el("vSrc").onclick = () => setView("sources");
+  el("vShelf").onclick = () => setView("shelf");
   el("export").onclick = exportArrangement;
   render();
 

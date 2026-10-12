@@ -1,42 +1,30 @@
 # Narrative
 
-Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
+Generated 2026-10-12 from `outline.md` + `clips/`. Do not hand-edit — run
 `python3 scripts/build-clips.py`. To change the order, edit the clips'
 `section:`/`order:` or rearrange on the board and run
 `scripts/apply-arrangement.py`.
 
-**54 clips across 16 sections in 2 essays.** 53 verified against source text, 1 not.
+**56 clips across 15 sections in 2 essays.** 55 verified against source text, 1 not.
 
 
 ---
 
 # Essay 1 — Psychosis: first episode and predisposing factors
 
-*13 clips across 7 sections.*
+*9 clips across 7 sections.*
 
 
-## 1.1 What psychosis is, and how a delusion is defined
+## 1.1 Introduction · 200 words
 
-*Fix the terms before using them. Definition first, with its source named.*
+*The argument in two sentences, and the scope of the essay.*
 
-
-**Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-01`
-
-> [quotation withheld — see README]
-
-— Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025:p. 2)
+> **No clips yet.** This section of the argument is unevidenced.
 
 
-**Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026)** · narrative-review, n=43 · strength: moderate · `bokhari-2026-07`
+## 1.2 What psychosis is, and the continuum · 300 words
 
-> [quotation withheld — see README]
-
-— Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026:Diagnostic and Therapeutic Implications)
-
-
-## 1.2 Psychosis on a transdiagnostic continuum
-
-*The model that lets risk be discussed below the diagnostic threshold.*
+*Definition first, with its source named, then the transdiagnostic continuum that lets risk be discussed below the diagnostic threshold. Merged, because separately they were two descriptive sections.*
 
 
 **Buck, B. & Maheux, A. J. (2026)** · cross-sectional, n=1003 · strength: moderate · `buck-2026-06`
@@ -53,7 +41,21 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 — Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026:Neurocognitive and Sociocultural Mechanisms)
 
 
-## 1.3 The prodrome and the first episode
+**Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-01`
+
+> [quotation withheld — see README]
+
+— Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025:p. 2)
+
+
+**Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026)** · narrative-review, n=43 · strength: moderate · `bokhari-2026-07`
+
+> [quotation withheld — see README]
+
+— Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026:Diagnostic and Therapeutic Implications)
+
+
+## 1.3 The prodrome and the first episode · 250 words
 
 *The window in which onset happens, and what subthreshold symptoms predict.*
 
@@ -65,9 +67,9 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 — Buck, B. & Maheux, A. J. (2026:Introduction, para 3)
 
 
-## 1.4 Predisposing factors
+## 1.4 Predisposing factors · 600 words
 
-*What raises risk: neurodevelopmental, behavioural, environmental. The essay's title promises this section, so it carries the most weight.*
+*Neurodevelopmental, behavioural and environmental. The title promises this section, so it carries the most weight and the largest budget.*
 
 
 **Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-02`
@@ -91,9 +93,9 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 — Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026:Results, Historical Evolution and Table 1)
 
 
-## 1.5 Assessing risk, and what the instruments cannot say
+## 1.5 Assessing risk, and what the instruments cannot say · 300 words
 
-*PQ-B and its kind. A screening threshold is not a clinical determination.*
+*The PQ-B and its kind. A screening threshold is not a clinical determination.*
 
 
 **Buck, B. & Maheux, A. J. (2026)** · cross-sectional, n=1003 · strength: moderate · `buck-2026-16`
@@ -103,54 +105,37 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 — Buck, B. & Maheux, A. J. (2026:Methods, Measures)
 
 
-## 1.6 Treatment, and why CBTp underperforms for delusions
+## 1.6 Limitations · 200 words
 
-*Guideline-recommended, small-to-moderate effect. Say why.*
+*What this evidence base cannot establish. Mostly design: no longitudinal data.*
 
-
-**Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-03`
-
-> [quotation withheld — see README]
-
-— Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025:p. 2)
+> **No clips yet.** This section of the argument is unevidenced.
 
 
-## 1.7 Coping as the active ingredient
+## 1.7 Conclusion · 150 words
 
-*The mechanism the treatment section implies: coping mediates exacerbation.*
+*What follows, and the handover to Essay 2.*
 
-
-**Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-04`
-
-> [quotation withheld — see README]
-
-— Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025:p. 2)
-
-
-**Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-05`
-
-> [quotation withheld — see README]
-
-— Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025:pp. 1, 8)
-
-
-**Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-06`
-
-> [quotation withheld — see README]
-
-— mine — from Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025:pp. 4, 1)
+> **No clips yet.** This section of the argument is unevidenced.
 
 
 ---
 
-# Essay 2 — Vignette: internet and AI use as a predicating factor
+# Essay 2 — Vignette: internet and AI use as a precipitating factor
 
-*41 clips across 9 sections.*
+*47 clips across 8 sections.*
 
 
-## 2.1 The vignette
+## 2.1 Introduction · 150 words
 
-*The case the essay argues from. Published cases sit here as models and as corroboration, not as the vignette itself.*
+*The argument in two sentences.*
+
+> **No clips yet.** This section of the argument is unevidenced.
+
+
+## 2.2 The vignette · 150 words
+
+*The case the essay argues from. Composite, and labelled as such.*
 
 
 **Buck, B. & Maheux, A. J. (2026)** · cross-sectional, n=1003 · strength: moderate · `buck-2026-17`
@@ -160,9 +145,23 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 — Buck, B. & Maheux, A. J. (2026:Introduction, para 4)
 
 
-## 2.2 The scale of exposure
+## 2.3 Naming it, and the scale of exposure · 250 words
 
-*Establish a population-level exposure, with real adoption data.*
+*Define the term, say whose definition it is and that it is descriptive rather than diagnostic; establish the exposure is population-level. Merged.*
+
+
+**Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026)** · narrative-review, n=43 · strength: moderate · `bokhari-2026-10`
+
+> [quotation withheld — see README]
+
+— Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026:Discussion, Algorithmic and AI-Mediated Delusions)
+
+
+**Chamarthi, V. S., Das, P. & Kashyap, R. (2025)** · narrative-review · strength: indicative · `chamarthi-2025-01`
+
+> [quotation withheld — see README]
+
+— Chamarthi, V. S., Das, P. & Kashyap, R. (2025:abstract)
 
 
 **Bick, A., Blandin, A. & Deming, D. J. (2025)** · cross-sectional · strength: indicative · `bick-2025-01`
@@ -186,9 +185,16 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 — Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M. (2026:Discussion)
 
 
-## 2.3 This is not new: pathoplastic, not pathogenic
+**Hudon, A. & Stip, E. (2025)** · narrative-review · strength: indicative · `hudon-2025-01`
 
-*The intellectual core. Influencing machines since 1810; technology has shaped delusional content for two centuries. Concede this before claiming anything.*
+> [quotation withheld — see README]
+
+— Hudon, A. & Stip, E. (2025:Introduction)
+
+
+## 2.4 This is not new: pathoplastic, not pathogenic · 200 words
+
+*The intellectual core. Influencing machines since 1810. Concede this before claiming anything, then ask whether this technology differs.*
 
 
 **Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026)** · narrative-review, n=43 · strength: moderate · `bokhari-2026-01`
@@ -219,28 +225,9 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 — Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026:Results, Historical Evolution and Table 1)
 
 
-## 2.4 Naming it: AI-related psychosis, and its contested status
+## 2.5 Why this technology invites it · 300 words
 
-*Define the term, say whose definition it is, and that it is descriptive rather than diagnostic.*
-
-
-**Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026)** · narrative-review, n=43 · strength: moderate · `bokhari-2026-10`
-
-> [quotation withheld — see README]
-
-— Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026:Discussion, Algorithmic and AI-Mediated Delusions)
-
-
-**Chamarthi, V. S., Das, P. & Kashyap, R. (2025)** · narrative-review · strength: indicative · `chamarthi-2025-01`
-
-> [quotation withheld — see README]
-
-— Chamarthi, V. S., Das, P. & Kashyap, R. (2025:abstract)
-
-
-## 2.5 Why this technology invites it
-
-*What is actually different this time: a fluent, agreeable, second-person interlocutor. Mindless social response, sycophancy, misread referentiality, and the documented failures that stop this being theoretical.*
+*What is actually different: a fluent, agreeable, second-person interlocutor.*
 
 
 **Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026)** · narrative-review, n=43 · strength: moderate · `bokhari-2026-05`
@@ -306,9 +293,9 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 — Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026:Discussion, Algorithmic and AI-Mediated Delusions)
 
 
-## 2.6 What the evidence actually shows
+## 2.6 What the evidence actually shows · 300 words
 
-*The empirical core, with the cross-sectional limit stated in the authors' own words. Survey base rates, then the clinical tail.*
+*Survey base rates, then the clinical tail, with the cross-sectional limit in the authors' own words.*
 
 
 **Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M. (2026)** · cohort, n=73 · strength: moderate · `bergson-2026-01`
@@ -388,11 +375,6 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 — Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026:Strengths and Limitations)
 
 
-## 2.7 First episode and the developmental window
-
-*Where the two essays meet: peak adoption age meets peak onset age, and the clinical data points the same way.*
-
-
 **Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M. (2026)** · cohort, n=73 · strength: moderate · `bergson-2026-02`
 
 > [quotation withheld — see README]
@@ -400,30 +382,37 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 — Bergson, Z., Vassall, S. G., Wright, A., McCoy, A. B., Schafer, K. M., Achee, M. C. & Sheffield, J. M. (2026:Results)
 
 
-**Buck, B. & Maheux, A. J. (2026)** · cross-sectional, n=1003 · strength: moderate · `buck-2026-08`
+## 2.7 Formulation and holistic treatment plan · 500 words
+
+*The 5Ps formulation of the vignette, with each factor meeting the intervention that targets it: predisposing, precipitating, perpetuating, protective and presenting. Absorbs assessment and the digital-use history as its opening step, CBTp and coping as its interventions, and the access-and-companionship evidence as protective factors where the evidence supports reading it that way. "Holistic" is testable here: does the plan touch every P?*
+
+
+**Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-04`
 
 > [quotation withheld — see README]
 
-— Buck, B. & Maheux, A. J. (2026:Introduction, para 3)
+— Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025:p. 2)
 
 
-**Chamarthi, V. S., Das, P. & Kashyap, R. (2025)** · narrative-review · strength: indicative · `chamarthi-2025-02`
-
-> [quotation withheld — see README]
-
-— Chamarthi, V. S., Das, P. & Kashyap, R. (2025:abstract)
-
-
-**Chamarthi, V. S., Das, P. & Kashyap, R. (2025)** · narrative-review · strength: indicative · `chamarthi-2025-03`
+**Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-05`
 
 > [quotation withheld — see README]
 
-— Chamarthi, V. S., Das, P. & Kashyap, R. (2025:abstract)
+— Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025:pp. 1, 8)
 
 
-## 2.8 The other side
+**Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-06`
 
-*Access, waitlists, companionship, changing attitudes. Held after the risk so the essay is not a one-sided alarm.*
+> [quotation withheld — see README]
+
+— mine — from Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025:pp. 4, 1)
+
+
+**Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025)** · single-arm-trial, n=10 · strength: weak · `boge-2025-03`
+
+> [quotation withheld — see README]
+
+— Böge, K., Bergmann, N., Hahne, I., Emde, L., Cartner, S., Bell, I., Pillny, M. & Thomas, N. (2025:p. 2)
 
 
 **Buck, B. & Maheux, A. J. (2026)** · cross-sectional, n=1003 · strength: moderate · `buck-2026-02`
@@ -445,11 +434,6 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 > [quotation withheld — see README]
 
 — Buck, B. & Maheux, A. J. (2026:Abstract, Background)
-
-
-## 2.9 Assessment and practice implications
-
-*Digital-use history, technological literacy, screening, early intervention.*
 
 
 **Bokhari, S. A., Osman, A. A., Elnoor, M., Alnor, M. A. & Javaid, S. F. (2026)** · narrative-review, n=43 · strength: moderate · `bokhari-2026-11`
@@ -478,4 +462,39 @@ Generated 2026-10-11 from `outline.md` + `clips/`. Do not hand-edit — run
 > [quotation withheld — see README]
 
 — Basaran, A. S. & Cosar, B. (2026:p. 5)
+
+
+**Buck, B. & Maheux, A. J. (2026)** · cross-sectional, n=1003 · strength: moderate · `buck-2026-08`
+
+> [quotation withheld — see README]
+
+— Buck, B. & Maheux, A. J. (2026:Introduction, para 3)
+
+
+**Chamarthi, V. S., Das, P. & Kashyap, R. (2025)** · narrative-review · strength: indicative · `chamarthi-2025-02`
+
+> [quotation withheld — see README]
+
+— Chamarthi, V. S., Das, P. & Kashyap, R. (2025:abstract)
+
+
+**Chamarthi, V. S., Das, P. & Kashyap, R. (2025)** · narrative-review · strength: indicative · `chamarthi-2025-03`
+
+> [quotation withheld — see README]
+
+— Chamarthi, V. S., Das, P. & Kashyap, R. (2025:abstract)
+
+
+**Hudon, A. & Stip, E. (2025)** · narrative-review · strength: indicative · `hudon-2025-02`
+
+> [quotation withheld — see README]
+
+— Hudon, A. & Stip, E. (2025:Toward a Clinical Understanding and Management of AI Psychosis)
+
+
+## 2.8 Conclusion · 150 words
+
+*What the evidence can and cannot support, and what would settle it.*
+
+> **No clips yet.** This section of the argument is unevidenced.
 

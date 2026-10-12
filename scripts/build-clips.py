@@ -19,6 +19,11 @@ from collections import defaultdict
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CLIPS, NOTES, BOARD = ROOT / "clips", ROOT / "notes", ROOT / "board"
 KINDS = {"quote", "paraphrase", "datum", "mine"}
+STANCES = {"supports", "qualifies", "contradicts", ""}
+# Fields the evidence-scout skill adds to a source and copies onto its clips.
+# Lists are declared so the flat frontmatter parser's [] form round-trips.
+INDEP_LIST = ["team", "affiliations", "countries", "serves"]
+INDEP_STR = ["harvard", "population", "weird", "perspective", "dataset"]
 STRENGTHS = ["strong", "moderate", "indicative", "weak", "not-citable"]
 
 def parse_frontmatter(text):
@@ -40,6 +45,28 @@ def parse_frontmatter(text):
         out[k.strip()] = v
     return out, text[m.end():]
 
+def read_claims():
+    """Returns {section_id: (claim, date)} from claims.md.
+
+    claims.md holds Natalie's words and nothing else. This function only reads
+    it: no part of the build writes, tidies or normalises a claim. A section
+    absent from that file has a closed gate, which is what the evidence-scout
+    skill checks before it will search.
+    """
+    p = ROOT / "claims.md"
+    if not p.exists():
+        return {}
+    out, txt = {}, p.read_text()
+    body = txt.split("\n---\n", 1)[-1]
+    for m in re.finditer(r"^##\s+([a-z0-9-]+)\s*$\n(?:\*([0-9-]+)\*\s*\n)?(.*?)"
+                         r"(?=^##\s|\Z)", body, re.M | re.S):
+        sid, date, claim = m.group(1), m.group(2) or "", m.group(3)
+        claim = "\n".join(l for l in claim.strip().splitlines()
+                           if not l.strip().startswith("<!--")).strip()
+        if claim:
+            out[sid] = (claim, date)
+    return out
+
 def read_outline():
     """Returns ([(essay_no, essay_title, [(id, title, intent)])], flat_sections).
 
@@ -54,22 +81,33 @@ def read_outline():
     for i in range(1, len(parts) - 2, 3):
         no, title, body = parts[i], parts[i + 1], parts[i + 2]
         secs = []
-        for m in re.finditer(r"^\s*(\d+)\.\s+`([a-z0-9-]+)`\s+[—-]\s+(.+?)\s*$\n"
+        for m in re.finditer(r"^\s*(\d+)\.\s+`([a-z0-9-]+)`\s+[—-]\s+(.+?)"
+                             r"(?:\s+·\s+(\d+)\s+words)?\s*$\n"
                              r"((?:^[ \t]+\S.*$\n?)*)", body, re.M):
-            sec = (m.group(2), m.group(3), " ".join(m.group(4).split()))
+            sec = (m.group(2), m.group(3).strip(), " ".join(m.group(5).split()),
+                   int(m.group(4) or 0))
             secs.append(sec); flat.append(sec)
         essays.append((no, title, secs))
     return essays, flat
 
+def section_dict(sid, title, intent, words, claims):
+    claim, date = claims.get(sid, ("", ""))
+    return dict(id=sid, title=title, intent=intent, words=words, claim=claim,
+                claim_by=("natalie" if claim else ""), claim_date=date)
+
 def main():
     errors, warnings = [], []
     essays, sections = read_outline()
+    claims = read_claims()
+    for sid in claims:
+        if sid not in {s for s, _, _, _ in sections}:
+            errors.append(f"claims.md: '{sid}' is not a section in outline.md")
     if not sections:
         sys.exit("outline.md: no sections parsed — check the `## Essay N` and "
                  "`N. \\`id\\` — Title` formats")
-    order_of = {sid: i for i, (sid, _, _) in enumerate(sections)}
+    order_of = {sid: i for i, (sid, _, _, _) in enumerate(sections)}
     # Which essay each section belongs to, so a clip inherits it from its section.
-    essay_of = {sid: no for no, _, secs in essays for sid, _, _ in secs}
+    essay_of = {sid: no for no, _, secs in essays for sid, _, _, _ in secs}
 
     # --- sources, from the notes the clips point at ---
     srcs = {}
@@ -78,6 +116,10 @@ def main():
             continue
         fm, _ = parse_frontmatter(f.read_text())
         if fm:
+            for sid in (fm.get("serves") or []):
+                if sid not in order_of:
+                    errors.append(f"notes/{f.name}: serves '{sid}' is not a section "
+                                  f"in outline.md")
             srcs[fm.get("key", f.stem)] = fm
 
     # --- clips ---
@@ -98,6 +140,12 @@ def main():
             errors.append(f"{f.name}: key '{fm.get('key')}' has no note in notes/")
         if fm.get("kind") not in KINDS:
             errors.append(f"{f.name}: kind '{fm.get('kind')}' not one of {sorted(KINDS)}")
+        stance = fm.get("stance", "")
+        if isinstance(stance, list):
+            stance = ""
+        if stance not in STANCES:
+            errors.append(f"{f.name}: stance '{stance}' not one of "
+                          f"{sorted(x for x in STANCES if x)}")
 
         quote = "\n".join(l[1:].strip() for l in body.splitlines() if l.startswith(">")).strip()
         nm = re.search(r"^\*\*Note:\*\*\s*(.*?)(?=\n\n|\Z)", body, re.S | re.M)
@@ -117,9 +165,15 @@ def main():
             errors.append(f"{f.name}: order '{fm.get('order')}' is not a number")
             o = 0
 
+        indep = {k: (src.get(k) or []) for k in INDEP_LIST}
+        indep.update({k: (src.get(k) or "") for k in INDEP_STR})
+        if indep.get("weird") in ("true", "True"):
+            indep["weird"] = True
+        elif indep.get("weird") in ("false", "False"):
+            indep["weird"] = False
         clips.append(dict(
             id=cid, key=fm.get("key"), section=fm.get("section"), order=o,
-            essay=essay_of.get(fm.get("section"), "?"),
+            essay=essay_of.get(fm.get("section"), "?"), stance=stance, **indep,
             kind=fm.get("kind"), locator=fm.get("locator"), tags=fm.get("tags") or [],
             verified=str(fm.get("verified", "")).lower() == "true",
             text=quote, note=note,
@@ -163,9 +217,10 @@ def main():
         ec = [c for c in clips if c["essay"] == no]
         out.append(f"\n---\n\n# Essay {no} — {etitle}\n")
         out.append(f"*{len(ec)} clips across {len(secs)} sections.*\n")
-        for si, (sid, title, intent) in enumerate(secs, 1):
+        for si, (sid, title, intent, words) in enumerate(secs, 1):
             rows = [c for c in clips if c["section"] == sid]
-            out.append(f"\n## {no}.{si} {title}\n")
+            out.append(f"\n## {no}.{si} {title}"
+                       + (f" · {words} words" if words else "") + "\n")
             out.append(f"*{intent}*\n")
             if not rows:
                 out.append("> **No clips yet.** This section of the argument is "
@@ -187,11 +242,15 @@ def main():
     (BOARD / "clips.json").write_text(json.dumps(dict(
         generated=today,
         essays=[dict(no=no, title=et,
-                     sections=[dict(id=s, title=t2, intent=i) for s, t2, i in secs])
+                     sections=[section_dict(s, t2, i, w, claims) for s, t2, i, w in secs])
                 for no, et, secs in essays],
-        sections=[dict(id=s, title=t2, intent=i) for s, t2, i in sections],
+        sections=[section_dict(s, t2, i, w, claims) for s, t2, i, w in sections],
         strengths=STRENGTHS,
         sources=[dict(key=k, authors=v.get("authors"), year=str(v.get("year")),
+                      **{f: (v.get(f) or []) for f in INDEP_LIST},
+                      **{f: (True if v.get(f) in ("true", "True") else
+                             False if v.get(f) in ("false", "False") else
+                             (v.get(f) or "")) for f in INDEP_STR},
                       title=v.get("title"), doi=v.get("doi"), design=v.get("design"),
                       n=str(v.get("n", "")), strength=v.get("strength", "ungraded"),
                       strength_why=v.get("strength_why", ""),
@@ -200,16 +259,48 @@ def main():
                       appraised=(ROOT / "appraisals" / f"{k}.md").exists())
                  for k, v in sorted(srcs.items())],
         clips=clips,
+        unplaced=[dict(key=k, authors=v.get("authors"), year=str(v.get("year")),
+                       title=v.get("title"), design=v.get("design"),
+                       n=str(v.get("n", "")), strength=v.get("strength", "ungraded"),
+                       strength_why=v.get("strength_why", ""),
+                       strength_basis=v.get("strength_basis", ""),
+                       serves=v.get("serves") or [],
+                       countries=v.get("countries") or [],
+                       weird=(True if v.get("weird") in ("true", "True") else
+                              False if v.get("weird") in ("false", "False") else
+                              (v.get("weird") or "")),
+                       harvard=v.get("harvard", ""), doi=v.get("doi", ""),
+                       status=v.get("status", ""))
+                 for k, v in sorted(srcs.items())
+                 if not any(c["key"] == k for c in clips)],
     ), indent=1) + "\n")
 
     print(f"NARRATIVE.md      {len(clips)} clips, {len(sections)} sections, "
           f"{len(essays)} essays")
     for no, et, secs in essays:
         print(f"  essay {no}  {sum(1 for c in clips if c['essay'] == no):>3} clips  {et}")
+    unplaced = [k for k in srcs if not any(c["key"] == k for c in clips)]
+    assigned = [k for k in unplaced if srcs[k].get("serves")]
     print(f"board/clips.json  {len(srcs)} sources")
-    empty = [t for s, t, _ in sections if not any(c["section"] == s for c in clips)]
+    print(f"shelf            {len(unplaced)} sources read but not yet placed in the "
+          f"argument, {len(assigned)} of them with a `serves` section named")
+    open_gates = [s for s, _, _, _ in sections if s in claims]
+    print(f"claims.md        {len(open_gates)} of {len(sections)} section gates open"
+          + (f": {', '.join(open_gates)}" if open_gates
+             else " — no research can start until a claim is written"))
+    empty = [t for s, t, _, _ in sections if not any(c["section"] == s for c in clips)]
     if empty:
         print(f"\n  sections with no clips: {', '.join(empty)}")
+    over = []
+    for sid, title, _, words in sections:
+        n = sum(1 for c in clips if c["section"] == sid)
+        if words and n * 45 > words:
+            over.append(f"{title[:44]}: {n} clips vs {words} words")
+    if over:
+        print(f"\n  {len(over)} sections hold more quotation than their budget can"
+              f" carry (at ~45 words a clip):")
+        for o in over:
+            print("   - " + o)
     if warnings:
         print(f"\n  {len(warnings)} warnings:")
         for w in warnings:

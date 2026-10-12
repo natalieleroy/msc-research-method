@@ -3,7 +3,7 @@ id: bokhari-2026-07
 key: bokhari-2026-technology-delusions
 essay: 1
 section: e1-what
-order: 20
+order: 40
 kind: quote
 locator: "Diagnostic and Therapeutic Implications"
 verified: true

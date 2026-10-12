@@ -8,6 +8,7 @@ order: 10                   # position within the section. Gaps of 10 are fine.
 kind: quote                 # quote | paraphrase | datum | mine
 locator: "p. 488"           # page or paragraph. "not reported" if you truly lack it.
 verified: false             # true ONLY once you have checked it against the source text
+stance: supports            # supports | qualifies | contradicts  (relation to the section's claim)
 tags: [example]
 ---
 

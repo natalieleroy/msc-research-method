@@ -23,7 +23,7 @@ STANCES = {"supports", "qualifies", "contradicts", ""}
 # Fields the evidence-scout skill adds to a source and copies onto its clips.
 # Lists are declared so the flat frontmatter parser's [] form round-trips.
 INDEP_LIST = ["team", "affiliations", "countries", "serves"]
-INDEP_STR = ["harvard", "population", "weird", "perspective", "dataset"]
+INDEP_STR = ["harvard", "population", "weird", "perspective", "dataset", "url"]
 STRENGTHS = ["strong", "moderate", "indicative", "weak", "not-citable"]
 
 def parse_frontmatter(text):

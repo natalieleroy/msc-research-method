@@ -122,6 +122,11 @@ label.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;color:var(--m
 a.ext{font-family:var(--mono);font-size:10.5px;color:var(--accent);text-decoration:none;
   border-bottom:1px solid color-mix(in srgb,var(--accent) 40%,transparent);overflow-wrap:anywhere}
 a.ext:hover{border-bottom-color:var(--accent)}
+a.ext.read{color:var(--strong);border-bottom-color:color-mix(in srgb,var(--strong) 45%,transparent)}
+.lk{display:inline-flex;align-items:baseline;gap:4px;max-width:100%}
+.cp{background:none;border:0;padding:0 2px;font-family:var(--mono);font-size:9.5px;
+  color:var(--faint);cursor:pointer;text-decoration:underline;flex:none}
+.cp:hover{color:var(--accent)}
 
 /* ---- shelf ---- */
 .shelf-sec{margin-bottom:22px}
@@ -249,28 +254,41 @@ const kb = n => n >= 1048576 ? (n/1048576).toFixed(1) + " MB" : Math.round(n/102
 /* The PDFs stay on Natalie's machine: this board is shared by link and they are
    publisher copyright. So the board says what she holds and where, and links out
    to the publisher for the rest. */
-function fulltext(s){
-  const doi = s.doi && s.doi !== "not reported"
-    ? '<a class="ext" href="https://doi.org/' + esc(s.doi) + '" target="_blank" rel="noopener">doi.org/' + esc(s.doi) + '</a>' : "";
-  if (s.pdf) {
-    return '<div class="ft"><button class="pdfbtn" data-path="' + esc(s.pdf) + '" ' +
-      'title="Copy the path">PDF held · ' + kb(s.pdf_bytes) + '</button>' +
-      '<code class="path">' + esc(s.pdf) + '</code>' + doi + '</div>';
-  }
-  return '<div class="ft"><span class="chip a">no PDF yet</span>' + doi + '</div>';
+/* No target="_blank": the viewer opens external links in a new tab itself, and
+   setting it here can be refused silently, which is what was happening. Every
+   link is also copyable, because a link in a sandboxed frame is a convenience
+   that may do nothing. */
+function link(href, label, cls){
+  return '<span class="lk"><a class="ext ' + (cls||"") + '" href="' + esc(href) + '" ' +
+    'rel="noopener">' + esc(label) + '</a>' +
+    '<button class="cp" data-copy="' + esc(href) + '" title="Copy this link">copy</button></span>';
 }
-document.addEventListener("click", async e => {
-  const b = e.target.closest && e.target.closest(".pdfbtn");
-  if (!b) return;
-  const full = "~/Github/msc-research/" + b.dataset.path;
-  try { await navigator.clipboard.writeText(full); b.textContent = "path copied"; }
-  catch (_) {
-    const r = document.createRange(); r.selectNodeContents(b.parentNode.querySelector(".path"));
-    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
-    b.textContent = "path selected — copy it";
+function fulltext(s){
+  const bits = [];
+  if (s.pdf) {
+    bits.push('<button class="pdfbtn" data-copy="~/Github/msc-research/' + esc(s.pdf) + '" ' +
+      'title="Copy the path">PDF on disk · ' + kb(s.pdf_bytes) + '</button>');
+    bits.push('<code class="path">' + esc(s.pdf) + '</code>');
+  } else {
+    bits.push('<span class="chip a">no PDF</span>');
   }
-  setTimeout(() => { b.textContent = "PDF held"; }, 2200);
+  if (s.url) bits.push(link(s.url, s.url.replace(/^https?:\/\//, "").slice(0, 46), "read"));
+  if (s.doi && s.doi !== "not reported")
+    bits.push(link("https://doi.org/" + s.doi, "doi.org/" + s.doi, ""));
+  if (!s.url && (!s.doi || s.doi === "not reported"))
+    bits.push('<span class="chip">no link — see its note</span>');
+  return '<div class="ft">' + bits.join("") + '</div>';
+}
+/* one handler for every copy affordance on the page */
+document.addEventListener("click", async e => {
+  const b = e.target.closest && e.target.closest("[data-copy]");
+  if (!b) return;
+  const was = b.textContent;
+  try { await navigator.clipboard.writeText(b.dataset.copy); b.textContent = "copied"; }
+  catch (_) { b.textContent = "copy failed"; }
+  setTimeout(() => { b.textContent = was; }, 1800);
 });
+
 
 function setStatus(t){ el("status").textContent = t || ""; }
 
@@ -541,7 +559,9 @@ function renderSources(){
     'so a blank is an honest gap rather than a pass. ' +
     '<b>The PDFs are deliberately not on this page.</b> This board is shared by ' +
     'link and they are publisher copyright, so it shows what is held and where, ' +
-    'and links out for the rest.</p>' +
+    'and links out for the rest. A green link goes straight to free full text; ' +
+    'a DOI link goes to the publisher. Every link has a <i>copy</i> next to it, ' +
+    'because a link inside this frame may not open on every device.</p>' +
     '<div class="tablewrap"><table class="src-t"><thead><tr>' +
     '<th>Source &amp; title</th><th>Design</th><th>n</th><th>Strength &amp; why</th>' +
     '<th>Full text</th><th>Countries</th><th>WEIRD</th><th>Team / dataset</th><th>Clips</th>' +

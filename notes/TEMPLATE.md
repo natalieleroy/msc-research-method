@@ -7,7 +7,7 @@ year: 2024
 title: "Exact title as published."
 source: ScienceDirect             # ScienceDirect | PubMed | Lancet | Cochrane | Google Scholar | other
 doi: 10.xxxx/xxxxx                # or: not reported
-design: RCT                       # RCT | single-arm-trial | cohort | case-control | cross-sectional | systematic-review | meta-analysis | qualitative | narrative-review | case-report
+design: RCT                       # RCT | single-arm-trial | cohort | case-control | cross-sectional | systematic-review | meta-analysis | qualitative | narrative-review | case-report | guideline
 n: 240                            # participants, or studies for a review; or: not reported
 population: "who, where"
 themes: []                        # assigned later, by literature-synthesis-coach

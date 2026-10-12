@@ -1921,6 +1921,51 @@
    "appraised": false
   },
   {
+   "key": "louise-2018-mindfulness-psychosis-meta",
+   "authors": "Louise, S., Fitzpatrick, M., Strauss, C., Rossell, S. L. & Thomas, N.",
+   "year": "2018",
+   "team": [
+    "Louise / Thomas / Rossell - Swinburne University of Technology and Monash Alfred Psychiatry Research Centre",
+    "Melbourne",
+    "with Strauss - University of Sussex"
+   ],
+   "affiliations": [
+    "Centre for Mental Health",
+    "Swinburne University of Technology",
+    "Melbourne",
+    "Australia",
+    "Monash Alfred Psychiatry Research Centre",
+    "Monash University and The Alfred Hospital",
+    "Melbourne",
+    "Australia",
+    "School of Psychology",
+    "University of Sussex",
+    "and Sussex Partnership NHS Foundation Trust",
+    "UK",
+    "St Vincent's Hospital",
+    "Melbourne",
+    "Australia"
+   ],
+   "countries": [],
+   "serves": [
+    "e2-plan"
+   ],
+   "harvard": "Louise, S., Fitzpatrick, M., Strauss, C., Rossell, S. L. & Thomas, N. (2018) Mindfulness- and acceptance-based interventions for psychosis: our current understanding and a meta-analysis. *Schizophrenia Research*, 192: 57-63. Available from: https://doi.org/10.1016/j.schres.2017.05.023 (Accessed 12 October 2026).",
+   "population": "10 randomised controlled trials of mindfulness-, acceptance- and compassion-based ('third wave') interventions in people with psychotic disorders; trial countries not extracted",
+   "weird": "",
+   "perspective": "clinical psychology / random-effects meta-analysis of randomised controlled trials with subgroup analysis by intervention format",
+   "dataset": "",
+   "title": "Mindfulness- and acceptance-based interventions for psychosis: our current understanding and a meta-analysis.",
+   "doi": "10.1016/j.schres.2017.05.023",
+   "design": "meta-analysis",
+   "n": "10",
+   "strength": "moderate",
+   "strength_why": "A meta-analysis of randomised controlled trials of third-wave (mindfulness, acceptance and compassion) interventions in psychosis, with psychotic symptoms as the pre-specified primary outcome and subgroup analysis separating group mindfulness-based work from individual ACT. It establishes that a usable randomised evidence base for mindfulness in psychosis EXISTS, and that its pooled effect on symptoms is small: g = 0.29 overall, with g = 0.46 for group mindfulness-based interventions and g = 0.08 for individual ACT-based ones. It cannot carry more than that: only 10 trials were pooled, there were no significant effects on positive symptoms, negative symptoms, hallucination distress or functioning, the authors state that further research is needed to determine the efficacy of specific treatment models, and the paper is closed access so the forest plots, risk-of-bias table and trial countries have NOT been read. Moderate rather than strong on the small number of trials, the null secondary outcomes and the abstract-only basis.",
+   "strength_basis": "design-only",
+   "themes": [],
+   "appraised": false
+  },
+  {
    "key": "lowe-2024-persistent-symptoms",
    "authors": "L\u00f6we, B., Toussaint, A., Rosmalen, J. G. M., Huang, W.-L., Burton, C., Weigel, A., Levenson, J. L. & Henningsen, P.",
    "year": "2024",
@@ -2403,6 +2448,73 @@
     "social-response",
     "mindlessness"
    ],
+   "appraised": false
+  },
+  {
+   "key": "nice-2014-cg178-psychosis-adults",
+   "authors": "National Institute for Health and Care Excellence",
+   "year": "2014",
+   "team": [
+    "National Institute for Health and Care Excellence (NICE) guideline committee"
+   ],
+   "affiliations": [
+    "National Institute for Health and Care Excellence",
+    "London",
+    "UK"
+   ],
+   "countries": [
+    "England"
+   ],
+   "serves": [
+    "e1-prodrome",
+    "e2-plan"
+   ],
+   "harvard": "National Institute for Health and Care Excellence. (2014) *Psychosis and schizophrenia in adults: prevention and management*. (last updated 4 September 2026). Available from: https://www.nice.org.uk/guidance/cg178 (Accessed 12 October 2026). London: National Institute for Health and Care Excellence.",
+   "population": "no participants; UK clinical guideline for adults aged 18 and over with psychosis or schizophrenia with onset before 60 years",
+   "weird": true,
+   "perspective": "UK health policy and guideline development / consensus synthesis by a multidisciplinary guideline committee working from commissioned systematic reviews",
+   "dataset": "",
+   "title": "Psychosis and schizophrenia in adults: prevention and management. NICE clinical guideline CG178.",
+   "doi": "not reported",
+   "design": "guideline",
+   "n": "not reported",
+   "strength": "strong",
+   "strength_why": "A national clinical guideline developed through NICE's published process: commissioned systematic reviews, a multidisciplinary committee including service users and carers, consultation, and dated versioning with an audit trail of what changed and when. For the question 'what should a care plan for psychosis contain, and on whose authority', nothing outranks it in a UK context, and it is the document a UK marker will expect a holistic plan to be measured against. It establishes the expected SHAPE of care - oral antipsychotic plus family intervention and individual CBT at first episode, crisis resolution and home treatment as the first-line crisis service, supported employment, physical health monitoring, carer support, peer support and self-management - and it does so at the level of detail a 500-word plan can actually use. It establishes NOTHING about whether any of those interventions works: it is a consensus synthesis, so its recommendations are a committee's judgement on evidence, not evidence, and several load-bearing recommendations are marked [2009], meaning their last evidence review was in 2009. Essay 2 may cite it for what a plan should include and must not cite it for efficacy.",
+   "strength_basis": "full-appraisal",
+   "themes": [],
+   "appraised": false
+  },
+  {
+   "key": "nice-2020-ng181-rehabilitation-psychosis",
+   "authors": "National Institute for Health and Care Excellence",
+   "year": "2020",
+   "team": [
+    "National Institute for Health and Care Excellence (NICE) guideline committee"
+   ],
+   "affiliations": [
+    "National Institute for Health and Care Excellence",
+    "London",
+    "UK"
+   ],
+   "countries": [
+    "England"
+   ],
+   "serves": [
+    "e2-plan"
+   ],
+   "harvard": "National Institute for Health and Care Excellence. (2020) *Rehabilitation for adults with complex psychosis*. (last reviewed 16 August 2024). Available from: https://www.nice.org.uk/guidance/ng181 (Accessed 12 October 2026). London: National Institute for Health and Care Excellence.",
+   "population": "no participants; UK clinical guideline for adults with complex psychosis needing mental health rehabilitation",
+   "weird": true,
+   "perspective": "UK health and social care policy / consensus synthesis by a guideline committee working from commissioned evidence reviews, with explicit social-care and supported-housing scope",
+   "dataset": "",
+   "title": "Rehabilitation for adults with complex psychosis. NICE guideline NG181.",
+   "doi": "not reported",
+   "design": "guideline",
+   "n": "not reported",
+   "strength": "strong",
+   "strength_why": "A national guideline developed through NICE's documented process, with named evidence reviews cited against each recommendation group (reviews A, C, E, F, G, I and P), covering a territory CG178 barely touches: rehabilitation pathways, supported accommodation, structured daily and group activity, supported employment, and team formulation. For the question 'what does rehabilitation actually consist of, and on whose authority', it is the UK authority and the only source in this corpus that addresses housing at all. It establishes the expected CONTENT of a rehabilitation and recovery plan - supported accommodation, daily living skills, structured group social and leisure activity, IPS-model supported employment, recovery colleges, and mindfulness among the additional psychological interventions - at a level a short plan can cite in one go. It establishes NOTHING about efficacy: it is a consensus synthesis, and it is scoped to COMPLEX psychosis, meaning treatment-resistant symptoms with impaired functioning, so it is the wrong citation for a first-episode or recent-onset case without saying so explicitly.",
+   "strength_basis": "full-appraisal",
+   "themes": [],
    "appraised": false
   },
   {
@@ -6901,6 +7013,25 @@
    "status": ""
   },
   {
+   "key": "louise-2018-mindfulness-psychosis-meta",
+   "authors": "Louise, S., Fitzpatrick, M., Strauss, C., Rossell, S. L. & Thomas, N.",
+   "year": "2018",
+   "title": "Mindfulness- and acceptance-based interventions for psychosis: our current understanding and a meta-analysis.",
+   "design": "meta-analysis",
+   "n": "10",
+   "strength": "moderate",
+   "strength_why": "A meta-analysis of randomised controlled trials of third-wave (mindfulness, acceptance and compassion) interventions in psychosis, with psychotic symptoms as the pre-specified primary outcome and subgroup analysis separating group mindfulness-based work from individual ACT. It establishes that a usable randomised evidence base for mindfulness in psychosis EXISTS, and that its pooled effect on symptoms is small: g = 0.29 overall, with g = 0.46 for group mindfulness-based interventions and g = 0.08 for individual ACT-based ones. It cannot carry more than that: only 10 trials were pooled, there were no significant effects on positive symptoms, negative symptoms, hallucination distress or functioning, the authors state that further research is needed to determine the efficacy of specific treatment models, and the paper is closed access so the forest plots, risk-of-bias table and trial countries have NOT been read. Moderate rather than strong on the small number of trials, the null secondary outcomes and the abstract-only basis.",
+   "strength_basis": "design-only",
+   "serves": [
+    "e2-plan"
+   ],
+   "countries": [],
+   "weird": "",
+   "harvard": "Louise, S., Fitzpatrick, M., Strauss, C., Rossell, S. L. & Thomas, N. (2018) Mindfulness- and acceptance-based interventions for psychosis: our current understanding and a meta-analysis. *Schizophrenia Research*, 192: 57-63. Available from: https://doi.org/10.1016/j.schres.2017.05.023 (Accessed 12 October 2026).",
+   "doi": "10.1016/j.schres.2017.05.023",
+   "status": ""
+  },
+  {
    "key": "lowe-2024-persistent-symptoms",
    "authors": "L\u00f6we, B., Toussaint, A., Rosmalen, J. G. M., Huang, W.-L., Burton, C., Weigel, A., Levenson, J. L. & Henningsen, P.",
    "year": "2024",
@@ -7138,6 +7269,49 @@
    "weird": "",
    "harvard": "Morrin, H., Nicholls, L., Levin, M., Yiend, J., Iyengar, U., DelGuidice, F., Bhattacharya, S., Tognin, S., MacCabe, J., Twumasi, R., Alderson-Day, B. & Pollak, T. A. (2026) Artificial intelligence-associated delusions and large language models: risks, mechanisms of delusion co-creation, and safeguarding strategies. *Lancet Psychiatry*, 13 (6): 522-530. Available from: https://doi.org/10.1016/S2215-0366(25)00396-7 (Accessed 12 October 2026).",
    "doi": "10.1016/S2215-0366(25)00396-7",
+   "status": ""
+  },
+  {
+   "key": "nice-2014-cg178-psychosis-adults",
+   "authors": "National Institute for Health and Care Excellence",
+   "year": "2014",
+   "title": "Psychosis and schizophrenia in adults: prevention and management. NICE clinical guideline CG178.",
+   "design": "guideline",
+   "n": "not reported",
+   "strength": "strong",
+   "strength_why": "A national clinical guideline developed through NICE's published process: commissioned systematic reviews, a multidisciplinary committee including service users and carers, consultation, and dated versioning with an audit trail of what changed and when. For the question 'what should a care plan for psychosis contain, and on whose authority', nothing outranks it in a UK context, and it is the document a UK marker will expect a holistic plan to be measured against. It establishes the expected SHAPE of care - oral antipsychotic plus family intervention and individual CBT at first episode, crisis resolution and home treatment as the first-line crisis service, supported employment, physical health monitoring, carer support, peer support and self-management - and it does so at the level of detail a 500-word plan can actually use. It establishes NOTHING about whether any of those interventions works: it is a consensus synthesis, so its recommendations are a committee's judgement on evidence, not evidence, and several load-bearing recommendations are marked [2009], meaning their last evidence review was in 2009. Essay 2 may cite it for what a plan should include and must not cite it for efficacy.",
+   "strength_basis": "full-appraisal",
+   "serves": [
+    "e1-prodrome",
+    "e2-plan"
+   ],
+   "countries": [
+    "England"
+   ],
+   "weird": true,
+   "harvard": "National Institute for Health and Care Excellence. (2014) *Psychosis and schizophrenia in adults: prevention and management*. (last updated 4 September 2026). Available from: https://www.nice.org.uk/guidance/cg178 (Accessed 12 October 2026). London: National Institute for Health and Care Excellence.",
+   "doi": "not reported",
+   "status": ""
+  },
+  {
+   "key": "nice-2020-ng181-rehabilitation-psychosis",
+   "authors": "National Institute for Health and Care Excellence",
+   "year": "2020",
+   "title": "Rehabilitation for adults with complex psychosis. NICE guideline NG181.",
+   "design": "guideline",
+   "n": "not reported",
+   "strength": "strong",
+   "strength_why": "A national guideline developed through NICE's documented process, with named evidence reviews cited against each recommendation group (reviews A, C, E, F, G, I and P), covering a territory CG178 barely touches: rehabilitation pathways, supported accommodation, structured daily and group activity, supported employment, and team formulation. For the question 'what does rehabilitation actually consist of, and on whose authority', it is the UK authority and the only source in this corpus that addresses housing at all. It establishes the expected CONTENT of a rehabilitation and recovery plan - supported accommodation, daily living skills, structured group social and leisure activity, IPS-model supported employment, recovery colleges, and mindfulness among the additional psychological interventions - at a level a short plan can cite in one go. It establishes NOTHING about efficacy: it is a consensus synthesis, and it is scoped to COMPLEX psychosis, meaning treatment-resistant symptoms with impaired functioning, so it is the wrong citation for a first-episode or recent-onset case without saying so explicitly.",
+   "strength_basis": "full-appraisal",
+   "serves": [
+    "e2-plan"
+   ],
+   "countries": [
+    "England"
+   ],
+   "weird": true,
+   "harvard": "National Institute for Health and Care Excellence. (2020) *Rehabilitation for adults with complex psychosis*. (last reviewed 16 August 2024). Available from: https://www.nice.org.uk/guidance/ng181 (Accessed 12 October 2026). London: National Institute for Health and Care Excellence.",
+   "doi": "not reported",
    "status": ""
   },
   {
